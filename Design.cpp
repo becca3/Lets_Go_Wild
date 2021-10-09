@@ -66,6 +66,16 @@ void randomEvent(Ecosystem& protag, int& age)
 }
 
 
+template <typename T>
+void print_vector(const std::vector<T>& vec, std::string sep = " ")
+{
+	for (auto elem : vec)
+	{
+		std::cout << elem << sep;
+	}
+	std::cout << std::endl;
+}
+
 //Function to read in file from folder and print list of available animals to display to user. 
 void AnimalList(Ecosystem& protag, int& age)
 {
@@ -75,6 +85,7 @@ void AnimalList(Ecosystem& protag, int& age)
 	/*User needs to be precise in this section
 	can modify once we have a base game to make it easier for user */
 	/* Also need to create a stop after 3 inputs have been taken */
+
 	std::cout << "Below is a list of animals that you can choose to reintroduce. \n";
 	std::cout << "Please select 3 to begin with and type names exactly as they are shown on screen: \n";
 	std::cout << "Once you have made you choice of 3, please type 'done' and the game will continue. \n";
@@ -90,10 +101,13 @@ void AnimalList(Ecosystem& protag, int& age)
 		while (getline(newfile, tp)) //Read data from file object and put it into string
 		{  
 			cout << tp << "\n";   //Print the data of the string
+			cout << "\n";
 		}
 		newfile.close();   //Close the file object
 	}
 	std::cin >> input;
 	while ((cin >> input) && input != "done");
 	AniList.push_back(input);
+	
+	print_vector(AniList);
 }
