@@ -31,6 +31,7 @@ int startGame()
 	std::string input;
 	int age = 0;
 	Ecosystem protag = createEco();
+	AnimalList(protag, age);
 
 	while (age < 60)	//Length of rewilding project
 	{

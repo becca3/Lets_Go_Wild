@@ -27,6 +27,7 @@ private:
 };
 
 void randomEvent(Ecosystem& protag, int& distance);
+void AnimalList(Ecosystem& protag, int& age);
 
 
 #endif
