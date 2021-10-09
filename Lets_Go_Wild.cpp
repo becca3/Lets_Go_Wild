@@ -15,9 +15,9 @@ int main()
 	std::cin >> input;
 	if (input == "y" || input == "Y")
 	{
-		int distance = startGame();
-		std::cout << "\nYour ecosystem is  " << distance << " years old\n";
-		if (distance >= 60)
+		int age = startGame();
+		std::cout << "\nYour ecosystem is  " << age << " years old\n";
+		if (age >= 60)
 		{
 			std::cout << "You have completed Lets Go Wild!\n";
 		}
@@ -29,17 +29,17 @@ int main()
 int startGame()
 {
 	std::string input;
-	int distance = 0;
+	int age = 0;
 	Ecosystem protag = createEco();
 
-	while (distance < 60)	//Length of rewilding project
+	while (age < 60)	//Length of rewilding project
 	{
-		randomEvent(protag, distance);
-		std::cout << "\nYour ecosystem is  " << distance << " years old \nContinue?\n(Y/n)";
+		randomEvent(protag, age);
+		std::cout << "\n Your ecosystem is  " << age << " years old \n Continue?\n (Y/n)";
 		std::cin >> input;
 		if (input == "n" || input == "N") break;
 	}
-	return distance;
+	return age;
 }
 
 //Creates Ecosystem.

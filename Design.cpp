@@ -7,35 +7,35 @@
 using Random = effolkronium::random_static;
 
 //Small fire. 
-void fire(Ecosystem& protag, int& distance)
+void fire(Ecosystem& protag, int& age)
 {
 	system("CLS");
 	std::cout << "Unfortunately, there was a small fire on a portion of land.\t";
 	std::cout << "It's destroyed some vegetation.";
 	protag.setHealth(protag.health() - 10);
-	distance += 5;
+	age += 5;
 }
 
 //Drought.
-void drought(Ecosystem& protag, int& distance)
+void drought(Ecosystem& protag, int& age)
 {
 	system("CLS");
 	std::cout << "Due to climate change, your land suffered a drought";
 	protag.setHealth(protag.health() - 10);
-	distance += 5;
+	age += 5;
 }
 
 //Flood. 
-void flood(Ecosystem& protag, int& distance)
+void flood(Ecosystem& protag, int& age)
 {
 	system("CLS");
 	std::cout << "Due to climate change, your land suffered a flood.";
 	protag.setHealth(protag.health() - 10);
-	distance += 5;
+	age += 5;
 }
 
 //Places all events into a vector and generates one randomly. 
-void randomEvent(Ecosystem& protag, int& distance)
+void randomEvent(Ecosystem& protag, int& age)
 {
 	std::vector<std::string> events;
 	events.push_back("fire");
@@ -47,16 +47,16 @@ void randomEvent(Ecosystem& protag, int& distance)
 	//if (events[0] == "fire")
 	//{
 	//	FireImg();
-	//	fire(protag, distance);
+	//	fire(protag, age);
 	//}
 	//else if (events[0] == "drought")
 	//{
 	//	DroughtImg();
-	//	drought(protag, distance);
+	//	drought(protag, age);
 	//}
 	//else if (events[0] == "flood")
 	//{
 	//	FloodImg();
-	//	flood(protag, distance);
+	//	flood(protag, age);
 	//}
 }
