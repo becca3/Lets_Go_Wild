@@ -80,8 +80,9 @@ void AnimalList(Ecosystem& protag, int& age)
 	/* Also need to create a stop after 3 inputs have been taken */
 
 	std::cout << "Below is a list of animals that you can choose to reintroduce. \n";
-	std::cout << "Please select 3 to begin with and type names exactly as they are shown on screen: \n";
-	std::cout << "Once you have made you choice of 3, please type 'done' and the game will continue. \n";
+	std::cout << "Please select 3 to begin with and type names e.g., 'Long Horn Cattle' as 'LongHornCattle' followed by enter. Then type choice 2 etc. \n";
+	std::cout << "Once you have made you choice of 3, please type 'x and the game will continue. \n";
+	std::cout << "Type 'Y' then make your selection.";
 	std::cout << "\n";
 
 	fstream newfile;
@@ -98,8 +99,9 @@ void AnimalList(Ecosystem& protag, int& age)
 		}
 		newfile.close();   //Close the file object
 	}
+
 	std::cin >> input;
-	while ((cin >> input) && input != "done")
+	while ((cin >> input) && input != "x")
 	{
 		AniList.push_back(input);
 	}
