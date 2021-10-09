@@ -28,6 +28,7 @@ private:
 
 void randomEvent(Ecosystem& protag, int& distance);
 void AnimalList(Ecosystem& protag, int& age);
+void print_vec();
 
 
 #endif

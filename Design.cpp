@@ -10,6 +10,9 @@ using namespace std;
 
 using Random = effolkronium::random_static;
 
+//Vector to hold list of playable animals.
+std::vector<std::string> AniList;
+
 //Small fire. 
 void fire(Ecosystem& protag, int& age)
 {
@@ -66,21 +69,11 @@ void randomEvent(Ecosystem& protag, int& age)
 }
 
 
-template <typename T>
-void print_vector(const std::vector<T>& vec, std::string sep = " ")
-{
-	for (auto elem : vec)
-	{
-		std::cout << elem << sep;
-	}
-	std::cout << std::endl;
-}
 
 //Function to read in file from folder and print list of available animals to display to user. 
 void AnimalList(Ecosystem& protag, int& age)
 {
 	std::string input;
-	std::vector<std::string> AniList;
 
 	/*User needs to be precise in this section
 	can modify once we have a base game to make it easier for user */
@@ -106,8 +99,16 @@ void AnimalList(Ecosystem& protag, int& age)
 		newfile.close();   //Close the file object
 	}
 	std::cin >> input;
-	while ((cin >> input) && input != "done");
-	AniList.push_back(input);
-	
-	print_vector(AniList);
+	while ((cin >> input) && input != "done")
+	{
+		AniList.push_back(input);
+	}
+}
+
+void print_vec()
+{
+	for (int i = 0; i < AniList.size(); i++)
+	{
+		std::cout << AniList[i] << std::endl;
+	}
 }

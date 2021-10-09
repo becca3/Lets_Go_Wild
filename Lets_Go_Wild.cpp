@@ -11,7 +11,7 @@ int main()
 {
 	//Player input taken.
 	std::string input;
-	std::cout << "Welcome to Lets Go Wild!\n Are you ready to create your own rewilding project? \n(Y/n)";
+	std::cout << "Welcome to Lets Go Wild!\nAre you ready to create your own rewilding project? \n(Y/n)";
 	std::cin >> input;
 	if (input == "y" || input == "Y")
 	{
@@ -32,11 +32,13 @@ int startGame()
 	int age = 0;
 	Ecosystem protag = createEco();
 	AnimalList(protag, age);
+	std::cout << "This is your selection: \n";
+	print_vec();
 
-	while (age < 60)	//Length of rewilding project
+	while (age < 60)	//Length of rewilding project in years. 
 	{
 		randomEvent(protag, age);
-		std::cout << "\n Your ecosystem is  " << age << " years old \n Continue?\n (Y/n)";
+		std::cout << "\nYour ecosystem is  " << age << " years old \nContinue?\n (Y/n)";
 		std::cin >> input;
 		if (input == "n" || input == "N") break;
 	}
