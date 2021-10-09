@@ -4,9 +4,25 @@
 
 #include <iostream>
 
+int startGame();
+Ecosystem createEco();
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Player input taken.
+	std::string input;
+	std::cout << "Welcome to Lets Go Wild!\n Are you ready to create your own rewilding project? \n(Y/n)";
+	std::cin >> input;
+	if (input == "y" || input == "Y")
+	{
+		int distance = startGame();
+		std::cout << "\nYour ecosystem is  " << distance << " years old\n";
+		if (distance >= 60)
+		{
+			std::cout << "You have completed Lets Go Wild!\n";
+		}
+	}
+	else return 0;
 }
 
 //Begins game.
