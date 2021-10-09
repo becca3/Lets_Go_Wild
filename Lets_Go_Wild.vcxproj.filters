@@ -18,9 +18,12 @@
     <ClCompile Include="Lets_Go_Wild.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Design.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Deisgn.h">
+    <ClInclude Include="Design.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="random.h">

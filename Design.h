@@ -16,6 +16,9 @@ public:
 	std::string name();
 	void setName(std::string name);
 
+	int health();
+	void setHealth(int hp);
+
 	bool alive();
 
 private:

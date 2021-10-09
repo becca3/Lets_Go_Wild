@@ -139,10 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Design.cpp" />
     <ClCompile Include="Lets_Go_Wild.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Deisgn.h" />
+    <ClInclude Include="Design.h" />
     <ClInclude Include="random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
