@@ -26,9 +26,11 @@ private:
 	int health_{ 100 };
 };
 
-void randomEvent(Ecosystem& protag, int& distance);
+void randomEvent(Ecosystem& protag, int& age);
 void AnimalList(Ecosystem& protag, int& age);
 void print_vec();
+void turn_one(Ecosystem& protag, int age);
+void vec_find();
 
 
 #endif

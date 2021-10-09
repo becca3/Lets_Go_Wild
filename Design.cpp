@@ -5,6 +5,7 @@
 #include <ctime>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 using namespace std;
 
@@ -38,6 +39,13 @@ void flood(Ecosystem& protag, int& age)
 	system("CLS");
 	std::cout << "Due to climate change, your land suffered a flood.";
 	protag.setHealth(protag.health() - 10);
+	age += 5;
+}
+
+void turn_one(Ecosystem& protag, int age)
+{
+	std::cout << "\n";
+	std::cout << "You introduced 3 species to your ecosystem. \n";
 	age += 5;
 }
 
@@ -80,7 +88,7 @@ void AnimalList(Ecosystem& protag, int& age)
 	/* Also need to create a stop after 3 inputs have been taken */
 
 	std::cout << "Below is a list of animals that you can choose to reintroduce. \n";
-	std::cout << "Please select 3 to begin with and type names e.g., 'Long Horn Cattle' as 'LongHornCattle' followed by enter. Then type choice 2 etc. \n";
+	std::cout << "Please select 3 to begin with and type names e.g., 'Long Horn Cattle' as 'LongHornCattle' followed by a comma. \n";
 	std::cout << "Once you have made you choice of 3, please type 'x and the game will continue. \n";
 	std::cout << "Type 'Y' then make your selection.";
 	std::cout << "\n";
@@ -113,4 +121,15 @@ void print_vec()
 	{
 		std::cout << AniList[i] << std::endl;
 	}
+}
+
+void vec_find()
+{
+	std::string n1 = "RedDeer, Elk, Stork";
+
+	auto result1 = std::find(begin(AniList), end(AniList), n1);
+
+	(result1 != std::end(AniList))
+		? std::cout << "AniList contains " << n1 << '\n'
+		: std::cout << "AniList does not contain " << n1 << '\n';
 }
