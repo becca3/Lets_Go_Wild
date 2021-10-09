@@ -65,6 +65,8 @@ void randomEvent(Ecosystem& protag, int& age)
 	//}
 }
 
+
+//Function to read in file from folder and print list of available animals to display to user. 
 void AnimalList(Ecosystem& protag, int& age)
 {
 	std::cout << "Below is a list of animals that you can choose to reintroduce. Please select 3 to begin with: \n";
