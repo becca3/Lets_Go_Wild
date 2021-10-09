@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Design.cpp" />
+    <ClCompile Include="Ecosystem.cpp" />
     <ClCompile Include="Lets_Go_Wild.cpp" />
   </ItemGroup>
   <ItemGroup>

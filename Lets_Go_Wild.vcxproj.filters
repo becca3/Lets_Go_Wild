@@ -21,6 +21,9 @@
     <ClCompile Include="Design.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ecosystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Design.h">
