@@ -69,7 +69,15 @@ void randomEvent(Ecosystem& protag, int& age)
 //Function to read in file from folder and print list of available animals to display to user. 
 void AnimalList(Ecosystem& protag, int& age)
 {
-	std::cout << "Below is a list of animals that you can choose to reintroduce. Please select 3 to begin with: \n";
+	std::string input;
+	std::vector<std::string> AniList;
+
+	/*User needs to be precise in this section
+	can modify once we have a base game to make it easier for user */
+
+	std::cout << "Below is a list of animals that you can choose to reintroduce. \n";
+	std::cout << "Please select 3 to begin with and type names exactly as they are shown on screen: \n";
+	std::cout << "Once you have made you choice of 3, please type 'done' and the game will continue. \n";
 	std::cout << "\n";
 
 	fstream newfile;
@@ -85,4 +93,7 @@ void AnimalList(Ecosystem& protag, int& age)
 		}
 		newfile.close();   //Close the file object
 	}
+	std::cin >> input;
+	while ((cin >> input) && input != "done");
+	AniList.push_back(input);
 }
