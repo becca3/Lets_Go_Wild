@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Alive.cpp" />
     <ClCompile Include="Design.cpp" />
     <ClCompile Include="Ecosystem.cpp" />
     <ClCompile Include="Lets_Go_Wild.cpp" />

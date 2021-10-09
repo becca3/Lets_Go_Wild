@@ -32,6 +32,6 @@ Ecosystem createEco()
 	std::string name;
 	std::cout << "\nWhat would you like to name your Ecosystem? ";
 	std::cin >> name;
-	Ecosystem protag(name);
+	Ecosystem protag(name); 
 	return protag;
 }
