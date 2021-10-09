@@ -42,21 +42,21 @@ void randomEvent(Ecosystem& protag, int& distance)
 	events.push_back("drought");
 	events.push_back("flood");
 
-	//Shuffles events and chooses one at random.
-	Random::shuffle(events);
-	if (events[0] == "fire")
-	{
-		FireImg();
-		fire(protag, distance);
-	}
-	else if (events[0] == "drought")
-	{
-		DroughtImg();
-		drought(protag, distance);
-	}
-	else if (events[0] == "flood")
-	{
-		FloodImg();
-		flood(protag, distance);
-	}
+	////Shuffles events and chooses one at random.
+	//Random::shuffle(events);
+	//if (events[0] == "fire")
+	//{
+	//	FireImg();
+	//	fire(protag, distance);
+	//}
+	//else if (events[0] == "drought")
+	//{
+	//	DroughtImg();
+	//	drought(protag, distance);
+	//}
+	//else if (events[0] == "flood")
+	//{
+	//	FloodImg();
+	//	flood(protag, distance);
+	//}
 }
