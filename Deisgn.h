@@ -1,9 +1,10 @@
 #ifndef PAGE_DESIGN_H
 #define PAGE_DESIGN_H
 
-#include "random.hpp"
-#include "character.h"
-#include "Items.h"
+#include "random.h"
+//#include "character.h"
+//#include "Items.h"
+
 #include <string>
 
 class Ecosystem
