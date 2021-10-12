@@ -137,7 +137,43 @@ void Game_Core(Ecosystem& protag, int age, int hp)
 	protag.setHealth(protag.health() + 10);
 }
 
-void T_2(Ecosystem& protag, int hp)
+void T_2(Ecosystem& protag, int age, int hp)
 {
+	std::string input;
+
+	std::cout << "5 years on, your ecosystem has thrived. not too much but enough to notice some changes. \n";
+	std::cout << "You now have 2 choices: \n";
+	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
+	std::cout << "2 - Choose to add another speices from the following list: \n";
+	std::cout << "Fallow Deer \n";
+	std::cout << "Tamworth Pigs \n";
+	std::cout << "Roe Deer \n";
+	std::cin >> input;
+
+	if (input == "1")
+	{
+		protag.setHealth(protag.health() + 5);
+		age += 5;
+	}
+	else if (input == "2")
+	{
+		std::string input2;
+
+		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cin >> input2;
+
+		if (input2 == "Fallow Deer")
+		{
+			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
+		}
+		else if (input2 == "Tamworth Pigs")
+		{
+			std::cout << "You chose to add Tamworth Pigs to your ecosystem. \n";
+		}
+		else if (input2 == "Roe Deer")
+		{
+			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
+		}
+	}
 
 }

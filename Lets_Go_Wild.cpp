@@ -42,25 +42,23 @@ int startGame()
 	std::cout << "This is your selection: \n";
 	print_vec();
 
-	while (age < 60 && hp > 0) 	//Length of rewilding project in years. 
+	while (age < 60 && hp > 0) 	//Length of rewilding project in years. Health of ecosystem in percentage
 	{
 		//randomEvent(protag, age, hp);
 		Game_Core(protag, age, hp);
-		age = +5;
 		std::cout << "\nYour ecosystem is  " << age << " years old \n";
-		std::cout << "Your ecosystem is " << hp << "% healthy. \n";
-		std::cout << "Continue? Y/N \n";
+		std::cout << "Your ecosystem is at " << hp << "% health. \n";
+		if (age < 60 && hp > 0)
+		{
+			T_2(protag, age, hp);
+		}
 		if (input == "n" || "N")
 		{
 			break;
 		}
-		else if (input == "Y" || "y")
-		{
-			T_2(protag, hp);
-		}
+		
 	}
 	return age;
-	return hp;
 }
 
 //Creates Ecosystem.
