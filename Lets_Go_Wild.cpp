@@ -48,7 +48,7 @@ int startGame()
 		Game_Core(protag, age, hp);
 		age = +5;
 		std::cout << "\nYour ecosystem is  " << age << " years old \n";
-		std::cout << "Your ecosystem is " << hp << " healthy. \n";
+		std::cout << "Your ecosystem is " << hp << "% healthy. \n";
 		std::cout << "Continue? Y/N \n";
 		if (input == "n" || "N")
 		{
