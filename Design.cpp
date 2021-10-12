@@ -1,5 +1,6 @@
 #include "Design.h"
 //#include "Images.h"
+
 #include <vector>
 #include <iostream>
 #include <ctime>
@@ -7,6 +8,7 @@
 #include <fstream>
 #include <algorithm>
 
+//Not best practice.
 using namespace std;
 
 using Random = effolkronium::random_static;
@@ -17,9 +19,8 @@ std::vector<std::string> AniList;
 //Small fire. 
 void fire(Ecosystem& protag, int& age)
 {
-	system("CLS");
-	std::cout << "Unfortunately, there was a small fire on a portion of land.\t";
-	std::cout << "It's destroyed some vegetation.";
+	std::cout << "Unfortunately, there was a small fire on a portion of land.\n";
+	std::cout << "It's destroyed some vegetation. \n";
 	protag.setHealth(protag.health() - 10);
 	age += 5;
 }
@@ -27,8 +28,7 @@ void fire(Ecosystem& protag, int& age)
 //Drought.
 void drought(Ecosystem& protag, int& age)
 {
-	system("CLS");
-	std::cout << "Due to climate change, your land suffered a drought";
+	std::cout << "Due to climate change, your land suffered a drought. \n";
 	protag.setHealth(protag.health() - 10);
 	age += 5;
 }
@@ -36,50 +36,55 @@ void drought(Ecosystem& protag, int& age)
 //Flood. 
 void flood(Ecosystem& protag, int& age)
 {
-	system("CLS");
-	std::cout << "Due to climate change, your land suffered a flood.";
+	std::cout << "Due to climate change, your land suffered a flood. \n";
 	protag.setHealth(protag.health() - 10);
 	age += 5;
 }
 
-void turn_one(Ecosystem& protag, int age)
+void nothing(Ecosystem& protag, int& age)
 {
-	std::cout << "\n";
-	std::cout << "You introduced 3 species to your ecosystem. \n";
-	age += 5;
+	std::cout << "Nothing major happened \n";
+	protag.setHealth(protag.health() - 0);
+	age += 0;
 }
 
 //Places all events into a vector and generates one randomly. 
-void randomEvent(Ecosystem& protag, int& age)
+void randomEvent(Ecosystem& protag, int& age, int hp)
 {
 	std::vector<std::string> events;
 	events.push_back("fire");
 	events.push_back("drought");
 	events.push_back("flood");
+	//multiply the number of "nothing" events to reduce chances of other events occurring 
+	events.push_back("nothing");
 
-	////Shuffles events and chooses one at random.
-	//Random::shuffle(events);
-	//if (events[0] == "fire")
-	//{
-	//	FireImg();
-	//	fire(protag, age);
-	//}
-	//else if (events[0] == "drought")
-	//{
-	//	DroughtImg();
-	//	drought(protag, age);
-	//}
-	//else if (events[0] == "flood")
-	//{
-	//	FloodImg();
-	//	flood(protag, age);
-	//}
+	//Shuffles events and chooses one at random.
+	Random::shuffle(events);
+	if (events[0] == "fire")
+	{
+		//FireImg();
+		fire(protag, age);
+	}
+	else if (events[0] == "drought")
+	{
+		//DroughtImg();
+		drought(protag, age);
+	}
+	else if (events[0] == "flood")
+	{
+		//FloodImg();
+		flood(protag, age);
+	}
+	else if (events[0] == "nothing")
+	{
+		nothing(protag, age);
+	}
 }
 
 
 
 //Function to read in file from folder and print list of available animals to display to user. 
-void AnimalList(Ecosystem& protag, int& age)
+void AnimalList()
 {
 	std::string input;
 
@@ -123,13 +128,16 @@ void print_vec()
 	}
 }
 
-void vec_find()
+void Game_Core(Ecosystem& protag, int age, int hp)
 {
-	std::string n1 = "RedDeer, Elk, Stork";
+	std::cout << "You have chosen Red Deer, Beaver, and Heck Cattle as your starter species for your ecosystem. \n";
+	std::cout << "These spp all have certain ecological roles: describle roles \n";
+	std::cout << "These three species will determine how your ecosystem is going to look in the next 5 years \n";
 
-	auto result1 = std::find(begin(AniList), end(AniList), n1);
+	protag.setHealth(protag.health() + 10);
+}
 
-	(result1 != std::end(AniList))
-		? std::cout << "AniList contains " << n1 << '\n'
-		: std::cout << "AniList does not contain " << n1 << '\n';
+void T_2(Ecosystem& protag, int hp)
+{
+
 }
