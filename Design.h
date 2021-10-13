@@ -30,4 +30,6 @@ void AnimalList();
 void print_vec();
 void Game_Core(Ecosystem& protag, int age, int hp);
 void T_2(Ecosystem& protag, int age, int hp);
+
+
 #endif

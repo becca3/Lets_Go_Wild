@@ -48,6 +48,13 @@ void nothing(Ecosystem& protag, int& age)
 	age += 0;
 }
 
+void nothing2(Ecosystem& protag, int& age)
+{
+	std::cout << "Nothing major happened \n";
+	protag.setHealth(protag.health() - 0);
+	age += 0;
+}
+
 //Places all events into a vector and generates one randomly. 
 void randomEvent(Ecosystem& protag, int& age, int hp)
 {
@@ -57,6 +64,7 @@ void randomEvent(Ecosystem& protag, int& age, int hp)
 	events.push_back("flood");
 	//multiply the number of "nothing" events to reduce chances of other events occurring 
 	events.push_back("nothing");
+	events.push_back("nothing2");
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -75,12 +83,17 @@ void randomEvent(Ecosystem& protag, int& age, int hp)
 		//FloodImg();
 		flood(protag, age);
 	}
+
+	//These are to reduce probability of an actual event.
 	else if (events[0] == "nothing")
 	{
 		nothing(protag, age);
 	}
+	else if (events[0] == "nothing2")
+	{
+		nothing2(protag, age);
+	}
 }
-
 
 
 //Function to read in file from folder and print list of available animals to display to user. 
@@ -145,9 +158,12 @@ void T_2(Ecosystem& protag, int age, int hp)
 	std::cout << "You now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
+	std::cout << "\n";
 	std::cout << "Fallow Deer \n";
 	std::cout << "Tamworth Pigs \n";
 	std::cout << "Roe Deer \n";
+	std::cout << "\n";
+	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
