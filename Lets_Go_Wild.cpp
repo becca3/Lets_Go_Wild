@@ -46,17 +46,22 @@ int startGame()
 	{
 		//randomEvent(protag, age, hp);
 		Game_Core(protag, age, hp);
-		std::cout << "\nYour ecosystem is  " << age << " years old \n";
+		
+		//Adds 5 years onto age each turn.
+		Aging(age);
+
+
+		std::cout << "\nYour ecosystem is " << age << " years old \n";
 		std::cout << "Your ecosystem is at " << hp << "% health. \n";
 		if (age < 60 && hp > 0)
 		{
 			T_2(protag, age, hp);
+			Aging(age);
 		}
 		if (input == "n" || "N")
 		{
 			break;
 		}
-		
 	}
 	return age;
 }

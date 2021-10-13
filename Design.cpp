@@ -55,6 +55,12 @@ void nothing2(Ecosystem& protag, int& age)
 	age += 0;
 }
 
+void Aging(int& age)
+{
+	age += 5;
+}
+
+
 //Places all events into a vector and generates one randomly. 
 void randomEvent(Ecosystem& protag, int& age, int hp)
 {
@@ -146,8 +152,7 @@ void Game_Core(Ecosystem& protag, int age, int hp)
 	std::cout << "You have chosen Red Deer, Beaver, and Heck Cattle as your starter species for your ecosystem. \n";
 	std::cout << "These spp all have certain ecological roles: describle roles \n";
 	std::cout << "These three species will determine how your ecosystem is going to look in the next 5 years \n";
-
-	protag.setHealth(protag.health() + 10);
+	std::cout << "\n";
 }
 
 void T_2(Ecosystem& protag, int age, int hp)
