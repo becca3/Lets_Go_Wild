@@ -31,5 +31,9 @@ void print_vec();
 void Game_Core(Ecosystem& protag, int age, int hp);
 void T_2(Ecosystem& protag, int age, int hp);
 void Aging(int& age);
+void health_5(int& hp);
+void health_10(int& hp);
+void health_n5(int& hp);
+void health_n10(int& hp);
 
 #endif

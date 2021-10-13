@@ -182,8 +182,9 @@ void Game_Core(Ecosystem& protag, int age, int hp)
 void T_2(Ecosystem& protag, int age, int hp)
 {
 	std::string input;
+	std::string input2;
 
-	std::cout << "5 years on, your ecosystem has thrived. not too much but enough to notice some changes. \n";
+	std::cout << "5 years on, your ecosystem has thrived. Not too much but enough to notice some changes. \n";
 	std::cout << "You now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
@@ -197,13 +198,10 @@ void T_2(Ecosystem& protag, int age, int hp)
 
 	if (input == "1")
 	{
-		protag.setHealth(protag.health() + 5);
-		age += 5;
+		Aging(age);
 	}
 	else if (input == "2")
 	{
-		std::string input2;
-
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
@@ -220,5 +218,5 @@ void T_2(Ecosystem& protag, int age, int hp)
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 		}
 	}
-
+	//std::cout << "You added " << input2 << " to your ecosystem. \n";
 }

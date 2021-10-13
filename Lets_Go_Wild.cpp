@@ -57,6 +57,7 @@ int startGame()
 		{
 			T_2(protag, age, hp);
 			Aging(age);
+			health_10(hp);
 		}
 		if (input == "n" || "N")
 		{
