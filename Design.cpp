@@ -55,11 +55,35 @@ void nothing2(Ecosystem& protag, int& age)
 	age += 0;
 }
 
+//Adds 5 years
 void Aging(int& age)
 {
 	age += 5;
 }
 
+//Add 5 health
+void health_5(int& hp)
+{
+	hp += 5;
+}
+
+//Adds 10 health
+void health_10(int& hp)
+{
+	hp += 10;
+}
+
+//Removes 5 health
+void health_n5(int& hp)
+{
+	hp -= 5;
+}
+
+//Removes 10 health
+void health_n10(int& hp)
+{
+	hp -= 10;
+}
 
 //Places all events into a vector and generates one randomly. 
 void randomEvent(Ecosystem& protag, int& age, int hp)
