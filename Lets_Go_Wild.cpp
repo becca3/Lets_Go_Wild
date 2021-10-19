@@ -12,8 +12,8 @@ int main(int argc, char** argv)
 	//Player input taken.
 	std::string input;
 	std::cout << "Welcome to Lets Go Wild!\n"; 
-	std::cout << "ADD DESCRIPTION OF GAME HERE";
-	std::cout << "ADD SIZE OF AREA - DESCRIBE WHY RELEVANT";
+	std::cout << "ADD DESCRIPTION OF GAME HERE \n";
+	std::cout << "ADD SIZE OF AREA - DESCRIBE WHY RELEVANT \n";
 	std::cout << "Are you ready to create your own rewilding project ? \n(Y / n)";
 	std::cin >> input;
 	if (input == "y" || input == "Y")
