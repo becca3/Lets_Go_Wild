@@ -13,7 +13,7 @@ int main(int argc, char** argv)
 	std::string input;
 	std::cout << "Welcome to Lets Go Wild!\n"; 
 	std::cout << "ADD DESCRIPTION OF GAME HERE \n";
-	std::cout << "ADD SIZE OF AREA - DESCRIBE WHY RELEVANT \n";
+	std::cout << "ADD SIZE OF AREA - 10000ha - DESCRIBE WHY RELEVANT \n";
 	std::cout << "Are you ready to create your own rewilding project ? \n(Y / n)";
 	std::cin >> input;
 	if (input == "y" || input == "Y")
@@ -38,12 +38,11 @@ int startGame()
 {
 	std::string input;
 	int age = 0;
-	int hp = 100;
+	int hp = 10;
 	Ecosystem protag = createEco();
 
 	AnimalList();
-	std::cout << "This is your selection: \n";
-	print_vec();
+	//print_vec();
 
 	while (age < 60 && hp > 0) 	//Length of rewilding project in years. Health of ecosystem in percentage
 	{
@@ -54,13 +53,21 @@ int startGame()
 		Aging(age);
 
 
-		std::cout << "\nYour ecosystem is " << age << " years old \n";
-		std::cout << "Your ecosystem is at " << hp << "% health. \n";
+		/*std::cout << "\nYour ecosystem is " << age << " years old \n";
+		std::cout << "Your ecosystem is at " << hp << "% health. \n";*/
 		if (age < 60 && hp > 0)
 		{
 			T_2(protag, age, hp);
 			Aging(age);
 			health_10(hp);
+			std::cout << "\n";
+			std::cout << "Your ecosystem is " << age << " years old \n";
+			std::cout << "Your ecosystem is at " << hp << "% health. \n";
+			std::cout << "\n";
+
+			T_3(protag, age, hp);
+			std::cout << "Your ecosystem is " << age << " years old \n";
+			std::cout << "Your ecosystem is at " << hp << "% health. \n";
 		}
 		if (input == "n" || "N")
 		{
