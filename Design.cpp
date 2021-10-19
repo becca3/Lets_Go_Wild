@@ -143,6 +143,9 @@ void AnimalList()
 	std::cout << "On this occassion, we'll give you the starting 3 species. \n";
 	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle \n";
 
+	std::cout << "Each turn, a list of animals already inhabiting the land will be printed.\n";
+	std::cout << "Read the list carefully and choose a species that is not already on the list to reintroduce.\n";
+
 	AniUsed.push_back("Red Deer");
 	AniUsed.push_back("Tamworth Pigs");
 	AniUsed.push_back("Heck Cattle");
@@ -159,7 +162,7 @@ void print()
 
 void Game_Core(Ecosystem& protag, int age, int hp)
 {
-	std::cout << "These species all have certain ecological roles: describle roles \n";
+	std::cout << "\nThese species all have certain ecological roles: describle roles \n";
 	std::cout << "These three species will determine how your ecosystem is going to look in the next 5 years \n";
 	std::cout << "\n";
 }
@@ -177,6 +180,16 @@ void T_2(Ecosystem& protag, int age, int hp)
 	std::cout << "Fallow Deer \n";
 	std::cout << "Red Squirrel \n";
 	std::cout << "Roe Deer \n";
+	std::cout << "European Bison \n";
+	std::cout << "Exmoor Ponies \n";
+	std::cout << "Wild Horses \n";
+	std::cout << "Long Horn Cattle \n";
+	std::cout << "Elk \n";
+	std::cout << "Wild Boar \n";
+	std::cout << "Stork \n";
+	std::cout << "White-Tailed Eagles \n";
+	std::cout << "Pine Marten \n";
+	std::cout << "Red Squirrel \n";
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -221,9 +234,19 @@ void T_3(Ecosystem& protag, int age, int hp)
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
 
-	std::cout << "Wild Horses \n";
+	std::cout << "Fallow Deer \n";
+	std::cout << "Red Squirrel \n";
+	std::cout << "Roe Deer \n";
 	std::cout << "European Bison \n";
+	std::cout << "Exmoor Ponies \n";
+	std::cout << "Wild Horses \n";
+	std::cout << "Long Horn Cattle \n";
+	std::cout << "Elk \n";
+	std::cout << "Wild Boar \n";
 	std::cout << "Stork \n";
+	std::cout << "White-Tailed Eagles \n";
+	std::cout << "Pine Marten \n";
+	std::cout << "Red Squirrel \n";
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -265,9 +288,19 @@ void T_4(Ecosystem& protag, int age, int hp)
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
 
-	std::cout << "Wild Horses \n";
+	std::cout << "Fallow Deer \n";
+	std::cout << "Red Squirrel \n";
+	std::cout << "Roe Deer \n";
 	std::cout << "European Bison \n";
+	std::cout << "Exmoor Ponies \n";
+	std::cout << "Wild Horses \n";
+	std::cout << "Long Horn Cattle \n";
+	std::cout << "Elk \n";
+	std::cout << "Wild Boar \n";
 	std::cout << "Stork \n";
+	std::cout << "White-Tailed Eagles \n";
+	std::cout << "Pine Marten \n";
+	std::cout << "Red Squirrel \n";
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -296,3 +329,11 @@ void T_4(Ecosystem& protag, int age, int hp)
 		AniUsed.push_back(input2);
 	}
 }
+
+//void T_5(Ecosystem& protag, int age, int hp);
+//void T_6(Ecosystem& protag, int age, int hp);
+//void T_7(Ecosystem& protag, int age, int hp);
+//void T_8(Ecosystem& protag, int age, int hp);
+//void T_9(Ecosystem& protag, int age, int hp);
+//void T_11(Ecosystem& protag, int age, int hp);
+//void T_12(Ecosystem& protag, int age, int hp);

@@ -59,7 +59,6 @@ int startGame()
 			Aging(age);
 			print();
 
-			std::cout << "\n";
 			std::cout << "\nYour ecosystem is " << age << " years old \n";
 			std::cout << "Your ecosystem is at " << hp << "% health. \n";
 			std::cout << "\n"; 
@@ -77,6 +76,46 @@ int startGame()
 
 			std::cout << "\nYour ecosystem is " << age << " years old \n";
 			std::cout << "Your ecosystem is at " << hp << "% health. \n";
+
+
+			/*T_5(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_6(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_7(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_8(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_9(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_10(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_11(protag, age, hp);
+			Aging(age);
+			print();
+
+
+			T_12(protag, age, hp);
+			Aging(age);
+			print();*/
 		}
 		if (input == "n" || "N")
 		{
