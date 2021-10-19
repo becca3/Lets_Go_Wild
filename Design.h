@@ -22,20 +22,19 @@ public:
 private:
 	std::string name_{ "The Shadow" };
 
-	int health_{ 100 };
+	int health_{ 10 };
 };
 
 void randomEvent(Ecosystem& protag, int& age, int hp);
 void AnimalList();
-void print_vec();
+void print();
+
 void Game_Core(Ecosystem& protag, int age, int hp);
 void T_2(Ecosystem& protag, int age, int hp);
 void T_3(Ecosystem& protag, int age, int hp);
+void T_4(Ecosystem& protag, int age, int hp);
 
 void Aging(int& age);
-void health_5(int& hp);
-void health_10(int& hp);
-void health_n5(int& hp);
-void health_n10(int& hp);
+void fallow(Ecosystem& protag, int& hp);
 
 #endif

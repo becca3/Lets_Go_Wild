@@ -1,3 +1,4 @@
+//Code created by Rebecca Morgan for the Rewilding and ecosystem services class at Sussex University
 // Lets_Go_Wild.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include "Design.h"
@@ -6,6 +7,9 @@
 
 int startGame();
 Ecosystem createEco();
+int age = 0;
+int hp = 10;
+
 
 int main(int argc, char** argv)
 {
@@ -19,15 +23,11 @@ int main(int argc, char** argv)
 	if (input == "y" || input == "Y")
 	{
 		int age = startGame();
-		std::cout << "\nYour ecosystem is  " << age << " years old\n";
 
-		if (age >= 60)
+		if (age >= 60 && hp > 50)
 		{
 			std::cout << "You have completed Lets Go Wild!\n";
-			//if health => 70 ...
-			//if health => 50 but < 70 ...
-			//if health =< 49 ...
-			//if health =< 20... 
+			std::cout << "Most rewilding projects are happy with 50% + health";
 		}
 	}
 	else return 0;
@@ -42,7 +42,8 @@ int startGame()
 	Ecosystem protag = createEco();
 
 	AnimalList();
-	//print_vec();
+	print();
+
 
 	while (age < 60 && hp > 0) 	//Length of rewilding project in years. Health of ecosystem in percentage
 	{
@@ -50,23 +51,31 @@ int startGame()
 		Game_Core(protag, age, hp);
 		
 		//Adds 5 years onto age each turn.
-		Aging(age);
+		//Aging(age);
 
-
-		/*std::cout << "\nYour ecosystem is " << age << " years old \n";
-		std::cout << "Your ecosystem is at " << hp << "% health. \n";*/
 		if (age < 60 && hp > 0)
 		{
 			T_2(protag, age, hp);
 			Aging(age);
-			health_10(hp);
+			print();
+
 			std::cout << "\n";
-			std::cout << "Your ecosystem is " << age << " years old \n";
+			std::cout << "\nYour ecosystem is " << age << " years old \n";
 			std::cout << "Your ecosystem is at " << hp << "% health. \n";
-			std::cout << "\n";
+			std::cout << "\n"; 
 
 			T_3(protag, age, hp);
-			std::cout << "Your ecosystem is " << age << " years old \n";
+			Aging(age);
+			print();
+
+			std::cout << "\nYour ecosystem is " << age << " years old \n";
+			std::cout << "Your ecosystem is at " << hp << "% health. \n";
+
+			T_4(protag, age, hp);
+			Aging(age);
+			print();
+
+			std::cout << "\nYour ecosystem is " << age << " years old \n";
 			std::cout << "Your ecosystem is at " << hp << "% health. \n";
 		}
 		if (input == "n" || "N")
