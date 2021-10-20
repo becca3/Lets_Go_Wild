@@ -2,6 +2,7 @@
 // Lets_Go_Wild.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include "Design.h"
+#include "Images.h"
 
 #include <iostream>
 
@@ -16,6 +17,7 @@ int main(int argc, char** argv)
 	//Player input taken.
 	std::string input;
 	std::cout << "Welcome to Lets Go Wild!\n"; 
+	LogoImg();
 	std::cout << "ADD DESCRIPTION OF GAME HERE \n";
 	std::cout << "ADD SIZE OF AREA - 10000ha - DESCRIBE WHY RELEVANT \n";
 	std::cout << "Are you ready to create your own rewilding project ? \n(Y / n)";
