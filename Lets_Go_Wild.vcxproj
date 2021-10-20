@@ -152,10 +152,12 @@
     <ClCompile Include="Alive.cpp" />
     <ClCompile Include="Design.cpp" />
     <ClCompile Include="Ecosystem.cpp" />
+    <ClCompile Include="Images.cpp" />
     <ClCompile Include="Lets_Go_Wild.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Design.h" />
+    <ClInclude Include="Images.h" />
     <ClInclude Include="random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
