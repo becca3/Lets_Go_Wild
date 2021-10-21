@@ -19,12 +19,12 @@ void Ecosystem::setName(std::string name)
 	name_ == name;
 }
 
-int Ecosystem::health()
-{
-	return health_;
-}
-
-void Ecosystem::setHealth(int hp)
-{
-	health_ = hp;
-}
+//int Ecosystem::life()
+//{
+//	return health_;
+//}
+//
+//void Ecosystem::setLife(int hp)
+//{
+//	health_ = hp;
+//}

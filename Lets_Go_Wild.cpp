@@ -8,15 +8,14 @@
 
 int startGame();
 Ecosystem createEco();
-int age = 0;
-int hp = 10;
 
 
 int main(int argc, char** argv)
 {
 	//Player input taken.
 	std::string input;
-	std::cout << "Welcome to Lets Go Wild!\n"; 
+	std::cout << "Welcome to Lets Go Wild!\n";
+	//Displays logo.
 	LogoImg();
 	std::cout << "ADD DESCRIPTION OF GAME HERE \n";
 	std::cout << "ADD SIZE OF AREA - 10000ha - DESCRIBE WHY RELEVANT \n";
@@ -26,10 +25,9 @@ int main(int argc, char** argv)
 	{
 		int age = startGame();
 
-		if (age >= 60 && hp > 50)
+		if (age >= 60) //Need to add health to this.
 		{
 			std::cout << "You have completed Lets Go Wild!\n";
-			std::cout << "Most rewilding projects are happy with 50% + health";
 		}
 	}
 	else return 0;
@@ -40,80 +38,79 @@ int startGame()
 {
 	std::string input;
 	int age = 0;
-	int hp = 10;
+
 	Ecosystem protag = createEco();
 
 	AnimalList();
 	print();
 
 
-	while (age < 60 && hp > 0) 	//Length of rewilding project in years. Health of ecosystem in percentage
+	while (age < 60) 	//Length of rewilding project in years. Health of ecosystem in percentage
 	{
-		//randomEvent(protag, age, hp);
-		Game_Core(protag, age, hp);
-		
-		//Adds 5 years onto age each turn.
-		//Aging(age);
+		Game_Core(protag, age);
 
-		if (age < 60 && hp > 0)
+		if (age < 60)
 		{
-			T_2(protag, age, hp);
+			T_2(protag, age);
+			//randomEvent(protag, age);
 			Aging(age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old \n";
-			std::cout << "Your ecosystem is at " << hp << "% health. \n";
-			std::cout << "\n"; 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			T_3(protag, age, hp);
+			T_3(protag, age);
 			Aging(age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old \n";
-			std::cout << "Your ecosystem is at " << hp << "% health. \n";
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			T_4(protag, age, hp);
+			T_4(protag, age);
 			Aging(age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old \n";
-			std::cout << "Your ecosystem is at " << hp << "% health. \n";
-
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			/*T_5(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_6(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_7(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_8(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_9(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_10(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_11(protag, age, hp);
 			Aging(age);
 			print();
 
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_12(protag, age, hp);
 			Aging(age);

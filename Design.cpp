@@ -1,6 +1,5 @@
 #include "Design.h"
 
-
 //#include "Images.h"
 
 #include <vector>
@@ -15,6 +14,8 @@ using namespace std;
 
 using Random = effolkronium::random_static;
 
+int life = 10;
+
 //Vector to hold list of playable animals.
 std::vector<std::string> AniList;
 
@@ -22,43 +23,43 @@ std::vector<std::string> AniList;
 std::vector<std::string> AniUsed;
 
 //Small fire. 
-void fire(Ecosystem& protag, int& age)
-{
-	std::cout << "There was a small fire on a portion of land.\n";
-	std::cout << "It's destroyed some vegetation. \n";
-	protag.setHealth(protag.health() - 10);
-	age += 5;
-}
-
-//Drought.
-void drought(Ecosystem& protag, int& age)
-{
-	std::cout << "Due to climate change, your land suffered a drought. \n";
-	protag.setHealth(protag.health() - 10);
-	age += 5;
-}
-
-//Flood. 
-void flood(Ecosystem& protag, int& age)
-{
-	std::cout << "Due to climate change, your land suffered a flood. \n";
-	protag.setHealth(protag.health() - 10);
-	age += 5;
-}
-
-void nothing(Ecosystem& protag, int& age)
-{
-	std::cout << "Nothing major happened \n";
-	protag.setHealth(protag.health() - 0);
-	age += 0;
-}
-
-void nothing2(Ecosystem& protag, int& age)
-{
-	std::cout << "Nothing major happened \n";
-	protag.setHealth(protag.health() - 0);
-	age += 0;
-}
+//void fire(Ecosystem& protag, int& age)
+//{
+//	std::cout << "There was a small fire on a portion of land.\n";
+//	std::cout << "It's destroyed some vegetation. \n";
+//	protag.setHealth(protag.health() - 10);
+//	age += 5;
+//}
+//
+////Drought.
+//void drought(Ecosystem& protag, int& age)
+//{
+//	std::cout << "Due to climate change, your land suffered a drought. \n";
+//	protag.setHealth(protag.health() - 10);
+//	age += 5;
+//}
+//
+////Flood. 
+//void flood(Ecosystem& protag, int& age)
+//{
+//	std::cout << "Due to climate change, your land suffered a flood. \n";
+//	protag.setHealth(protag.health() - 10);
+//	age += 5;
+//}
+//
+//void nothing(Ecosystem& protag, int& age)
+//{
+//	std::cout << "Nothing devastating happened \n";
+//	protag.setHealth(protag.health() - 0);
+//	age += 0;
+//}
+//
+//void nothing2(Ecosystem& protag, int& age)
+//{
+//	std::cout << "Nothing devastating happened \n";
+//	protag.setHealth(protag.health() - 0);
+//	age += 0;
+//}
 
 //Adds 5 years
 void Aging(int& age)
@@ -67,19 +68,19 @@ void Aging(int& age)
 }
 
 //Add 5 health
-void fallow(Ecosystem& protag, int& hp)
-{
-	protag.setHealth(protag.health() + 5);
-}
+//void fallow(int& life)
+//{
+//	life += 5;
+//}
 
-//Adds 10 health
-void health_10(int& hp)
-{
-	hp += 10;
-}
+////Adds 10 health
+//void health_10(int& hp)
+//{
+//	hp += 10;
+//}
 
 //Places all events into a vector and generates one randomly. 
-void randomEvent(Ecosystem& protag, int& age, int hp)
+void randomEvent(Ecosystem& protag, int& age)
 {
 	std::vector<std::string> events;
 	events.push_back("fire");
@@ -94,27 +95,27 @@ void randomEvent(Ecosystem& protag, int& age, int hp)
 	if (events[0] == "fire")
 	{
 		//FireImg();
-		fire(protag, age);
+		//fire(protag, age);
 	}
 	else if (events[0] == "drought")
 	{
 		//DroughtImg();
-		drought(protag, age);
+		//drought(protag, age);
 	}
 	else if (events[0] == "flood")
 	{
 		//FloodImg();
-		flood(protag, age);
+		//flood(protag, age);
 	}
 
 	//These are to reduce probability of an actual event.
 	else if (events[0] == "nothing")
 	{
-		nothing(protag, age);
+		//nothing(protag, age);
 	}
 	else if (events[0] == "nothing2")
 	{
-		nothing2(protag, age);
+		//nothing2(protag, age);
 	}
 }
 
@@ -141,9 +142,10 @@ void AnimalList()
 	}
 
 	std::cout << "\nSome of these species, such as the predators, can only be introduced once your herbivore population is established.";
-	std::cout << "Bit about establishment \n";
+	std::cout << "\nBit about establishment \n";
 	std::cout << "On this occassion, we'll give you the starting 3 species. \n";
-	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle \n";
+	std::cout << "\n";
+	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle. \n";
 
 	std::cout << "Each turn, a list of animals already inhabiting the land will be printed.\n";
 	std::cout << "Read the list carefully and choose a species that is not already on the list to reintroduce.\n";
@@ -155,26 +157,28 @@ void AnimalList()
 
 void print() 
 {
-	std::cout << "These are the species on your land: \n";
+	std::cout << "These are the species currently on your land: \n";
 
 	for (int i = 0; i < AniUsed.size(); i++)
 		std::cout << AniUsed.at(i) << '\n';
 }
 
 
-void Game_Core(Ecosystem& protag, int age, int hp)
+void Game_Core(Ecosystem& protag, int age)
 {
 	std::cout << "\nThese species all have certain ecological roles: describle roles \n";
 	std::cout << "These three species will determine how your ecosystem is going to look in the next 5 years \n";
 	std::cout << "\n";
 }
 
-void T_2(Ecosystem& protag, int age, int hp)
+void T_2(Ecosystem& protag, int age)
 {
 	std::string input;
 	std::string input2;
 
-	std::cout << "5 years on, your ecosystem has thrived. Not too much, but enough to notice some changes. \n";
+	std::cout << "Your ecosystem is at " << life << "% health. \n";
+	std::cout << "\n";
+	std::cout << "\n5 years on, your ecosystem has changed. \n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
@@ -191,7 +195,6 @@ void T_2(Ecosystem& protag, int age, int hp)
 	std::cout << "Stork \n";
 	std::cout << "White-Tailed Eagles \n";
 	std::cout << "Pine Marten \n";
-	std::cout << "Red Squirrel \n";
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -205,10 +208,11 @@ void T_2(Ecosystem& protag, int age, int hp)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
-		if (input2 == "Fallow Deer")
+		if (input2 == "FallowDeer")
 		{
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description";
+			life += 5;
 		}
 		else if (input2 == "Red Squirrel")
 		{
@@ -225,12 +229,14 @@ void T_2(Ecosystem& protag, int age, int hp)
 	}
 }
 
-void T_3(Ecosystem& protag, int age, int hp)
+void T_3(Ecosystem& protag, int age)
 {
 	std::string input;
 	std::string input2;
+	//randomEvent(protag, age);
 
-	std::cout << "5 years on, your ecosystem has thrived. Not too much but enough to notice some changes. \n";
+	std::cout << "Your ecosystem is at " << life << "% health. \n";
+	std::cout << "\n5 years on, your ecosystem has changed. \n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
@@ -248,7 +254,6 @@ void T_3(Ecosystem& protag, int age, int hp)
 	std::cout << "Stork \n";
 	std::cout << "White-Tailed Eagles \n";
 	std::cout << "Pine Marten \n";
-	std::cout << "Red Squirrel \n";
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -262,14 +267,15 @@ void T_3(Ecosystem& protag, int age, int hp)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
-		if (input2 == "Wild Horses")
+		if (input2 == "FallowDeer")
 		{
-			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
+			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
+			std::cout << "Description";
+			life += 5;
 		}
 		else if (input2 == "European Bison")
 		{
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
-			hp += 10;
 		}
 		else if (input2 == "Stork")
 		{
@@ -279,12 +285,13 @@ void T_3(Ecosystem& protag, int age, int hp)
 	}
 }
 
-void T_4(Ecosystem& protag, int age, int hp)
+void T_4(Ecosystem& protag, int age)
 {
 	std::string input;
 	std::string input2;
 
-	std::cout << "5 years on, your ecosystem has thrived. Not too much but enough to notice some changes. \n";
+	std::cout << "Your ecosystem is at " << life << "% health. \n";
+	std::cout << "\n5 years on, your ecosystem has changed. \n";
 	std::cout << "You now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
@@ -319,6 +326,7 @@ void T_4(Ecosystem& protag, int age, int hp)
 		if (input2 == "Wild Horses")
 		{
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
+			life += 5;
 		}
 		else if (input2 == "European Bison")
 		{
