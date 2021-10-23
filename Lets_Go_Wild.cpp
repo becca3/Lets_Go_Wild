@@ -51,7 +51,7 @@ int main(int argc, char** argv)
 int startGame()
 {
 	std::string input;
-	int age = 0;
+	int age = 5;
 
 	Ecosystem protag = createEco();
 
@@ -66,37 +66,41 @@ int startGame()
 		if (age < 60)
 		{
 			T_2(protag, age);
-			//randomEvent(protag, age);
+			randomEvent(protag, age);
 			Aging(age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_3(protag, age);
+			randomEvent(protag, age);
 			Aging(age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_4(protag, age);
+			randomEvent(protag, age);
 			Aging(age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			/*T_5(protag, age, hp);
+			T_5(protag, age);
+			randomEvent(protag, age);
 			Aging(age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			T_6(protag, age, hp);
+			T_6(protag, age);
+			randomEvent(protag, age);
 			Aging(age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			T_7(protag, age, hp);
+			/*T_7(protag, age, hp);
 			Aging(age);
 			print();
 
