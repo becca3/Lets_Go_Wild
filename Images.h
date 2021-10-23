@@ -22,6 +22,14 @@ void WildBoarImg();
 void StorkImg();
 void WTEImg();
 void PiMarImg();
+void TamPigImg();
+void HeckImg();
+void RedDeerImg();
+void EUBevImg();
+void WolfImg();
+void BearImg();
+void EULyImg();
+void WildcatImg();
 
 
 #endif // !IMAGES_H
