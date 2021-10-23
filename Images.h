@@ -9,5 +9,6 @@
 #include <iostream>
 
 void LogoImg();
+void PeopleImg();
 
 #endif // !IMAGES_H

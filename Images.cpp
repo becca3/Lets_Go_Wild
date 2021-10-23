@@ -16,3 +16,18 @@ void LogoImg()
     int k = waitKey(10000);
     destroyWindow("Welcome to Let's Go Wild!");
 }
+
+void PeopleImg()
+{
+    std::string image_path = samples::findFile("people.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("People", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("People");
+}

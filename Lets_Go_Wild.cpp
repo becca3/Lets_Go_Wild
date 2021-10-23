@@ -17,9 +17,23 @@ int main(int argc, char** argv)
 	std::cout << "Welcome to Lets Go Wild!\n";
 	//Displays logo.
 	LogoImg();
-	std::cout << "ADD DESCRIPTION OF GAME HERE \n";
-	std::cout << "ADD SIZE OF AREA - 10000ha - DESCRIBE WHY RELEVANT \n";
-	std::cout << "Are you ready to create your own rewilding project ? \n(Y / n)";
+	PeopleImg();
+	/*std::cout << "Let's Go Wild is a text-based adventure game where you, the ecologist, decides how to manage an area of land! \n"
+		"What is rewilding you ask? Well, currelty there is no real agreed upon definition. However, most agree that rewilding is the\n"
+		"restoration of ecosystems through the introductions of keystone species. \n"
+		"It's a low management conservation strategy. \n"
+		"The term rewilding originated from the term 'Pleistocene Rewilding' which is similar to rewilding but introducing species that were\n"
+		"present during the Pleistocene, the period of time before the last ice age.\n"
+		"Britain has lost lots of its megafauna (BIG animals) since then.\n";*/
+	std::cout << "You will play as manager of a 10000ha arable farmland in Southern Britain. It will be up to you to choose what species\n"
+		"to reintroduce based off a list that will be printed each turn.\n"
+		"10000ha is a size of land large enough to house predators such as wolves or bears! However, these should only be introduced\n"
+		"when you have an established herbivore population, otherwise the predators won't survive.\n"
+		"\n"
+		"Aim - keep ecosystem health above 0%.\n"
+		"There will be random chance events that can affect your ecosystem too such as fires or floods. These will affect ecosystem health.\n";
+	
+	std::cout << "So, are you ready to create your own rewilding project ? \n(Y / n)";
 	std::cin >> input;
 	if (input == "y" || input == "Y")
 	{
