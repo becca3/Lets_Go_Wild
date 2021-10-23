@@ -25,84 +25,89 @@ std::vector<std::string> AniList;
 //Vector to hold animals already in game.
 std::vector<std::string> AniUsed;
 
-////Small fire. 
-//void fire(Ecosystem& protag, int& age) //remove protag and age - test if works - should do 
-//{
-//	std::cout << "There was a small fire on a portion of land.\n";
-//	std::cout << "It's destroyed some vegetation. \n";
-//	std::cout << "\n";
-//	life -= 10;
-//	age += 5;
-//
-//	if (life == 0)
-//	{
-//		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
-//		std::cout << "Health has hit 0% \n";
-//	}
-//	exit(0);
-//}
-//
-////Drought.
-//void drought(Ecosystem& protag, int& age)
-//{
-//	std::cout << "Due to climate change, your land suffered a drought. \n";
-//	std::cout << "\n";
-//	life -= 10;
-//	age += 5;
-//
-//	if (life == 0)
-//	{
-//		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
-//		std::cout << "Health has hit 0% \n";
-//	}
-//	exit(0);
-//}
-//
-////Flood. 
-//void flood(Ecosystem& protag, int& age)
-//{
-//	std::cout << "Due to climate change, your land suffered a flood. \n";
-//	std::cout << "\n";
-//	life -= 10;
-//	age += 5;
-//
-//	if (life == 0)
-//	{
-//		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
-//		std::cout << "Health has hit 0% \n";
-//	}
-//	exit(0);
-//}
-// 
-////Invasive species.
-//void Invasive(Ecosystem& protag, int& age)
-//{
-//	std::cout << "An invasive species has appeared on your land!\n";
-//	std::cout << "\n";
-//	life -= 20;
-//	age += 5;
-//
-//	if (life == 0)
-//	{
-//		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
-//		std::cout << "Health has hit 0% \n";
-//	}
-//	exit(0);
-//}
-//
-//void nothing(Ecosystem& protag, int& age)
-//{
-//	std::cout << "Nothing devastating happened \n";
-//	std::cout << "\n";
-//	age += 0;
-//}
-//
-//void nothing2(Ecosystem& protag, int& age)
-//{
-//	std::cout << "Nothing devastating happened \n";
-//	std::cout << "\n";
-//	age += 0;
-//}
+//Small fire. 
+void fire(Ecosystem& protag, int& age) //remove protag and age - test if works - should do 
+{
+	std::cout << "There was a small fire on a portion of land.\n";
+	std::cout << "It's destroyed some vegetation. \n";
+	std::cout << "\n";
+	life -= 10;
+	age += 5;
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+}
+
+//Drought.
+void drought(Ecosystem& protag, int& age)
+{
+	std::cout << "Due to climate change, your land suffered a drought. \n";
+	std::cout << "\n";
+	life -= 10;
+	age += 5;
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+}
+
+//Flood. 
+void flood(Ecosystem& protag, int& age)
+{
+	std::cout << "Due to climate change, your land suffered a flood. \n";
+	std::cout << "\n";
+	std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+	life -= 10;
+	age += 5;
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+}
+ 
+//Invasive species.
+void Invasive(Ecosystem& protag, int& age)
+{
+	std::cout << "An invasive species has appeared on your land!\n";
+	std::cout << "\n";
+	life -= 20;
+	age += 5;
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+}
+
+void nothing(Ecosystem& protag, int& age)
+{
+	std::cout << "Nothing devastating happened \n";
+	std::cout << "\n";
+	age += 0;
+}
+
+void nothing2(Ecosystem& protag, int& age)
+{
+	std::cout << "Nothing devastating happened \n";
+	std::cout << "\n";
+	age += 0;
+}
 
 //Adds 5 years
 void Aging(int& age)
@@ -122,33 +127,33 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("nothing");
 	events.push_back("nothing2");
 
-	////Shuffles events and chooses one at random.
-	//Random::shuffle(events);
-	//if (events[0] == "fire")
-	//{
-	//	//FireImg();
-	//	fire(protag, age);
-	//}
-	//else if (events[0] == "drought")
-	//{
-	//	//DroughtImg();
-	//	drought(protag, age);
-	//}
-	//else if (events[0] == "flood")
-	//{
-	//	//FloodImg();
-	//	flood(protag, age);
-	//}
+	//Shuffles events and chooses one at random.
+	Random::shuffle(events);
+	if (events[0] == "fire")
+	{
+		//FireImg();
+		fire(protag, age);
+	}
+	else if (events[0] == "drought")
+	{
+		//DroughtImg();
+		drought(protag, age);
+	}
+	else if (events[0] == "flood")
+	{
+		//FloodImg();
+		flood(protag, age);
+	}
 
-	////These are to reduce probability of an actual event.
-	//else if (events[0] == "nothing")
-	//{
-	//	nothing(protag, age);
-	//}
-	//else if (events[0] == "nothing2")
-	//{
-	//	nothing2(protag, age);
-	//}
+	//These are to reduce probability of an actual event.
+	else if (events[0] == "nothing")
+	{
+		nothing(protag, age);
+	}
+	else if (events[0] == "nothing2")
+	{
+		nothing2(protag, age);
+	}
 }
 
 
@@ -232,10 +237,11 @@ void T_2(Ecosystem& protag, int age)
 
 	std::cout << "Your ecosystem is at " << life << "% health. \n";
 
-	if (life == 0 || life <= 0)
+	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
 		exit(0);
 	}
 
@@ -303,8 +309,8 @@ void T_2(Ecosystem& protag, int age)
 		}
 		else if (input2 == "Elk")
 		{
+			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WildBoar")
@@ -342,10 +348,11 @@ void T_3(Ecosystem& protag, int age)
 
 	std::cout << "Your ecosystem is at " << life << "% health. \n";
 
-	if (life == 0 || life <= 0)
+	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
 		exit(0);
 	}
 
@@ -373,7 +380,7 @@ void T_3(Ecosystem& protag, int age)
 		{
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
-			life -= 20;
+			life += 5;
 		}
 		else if (input2 == "RedSquirrel")
 		{
@@ -453,10 +460,11 @@ void T_4(Ecosystem& protag, int age)
 
 	std::cout << "Your ecosystem is at " << life << "% health.\n";
 
-	if (life == 0 || life <= 0)
+	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
 		exit(0);
 	}
 
@@ -556,12 +564,21 @@ void T_4(Ecosystem& protag, int age)
 	}
 }
 
-/*void T_5(Ecosystem& protag, int age)
+void T_5(Ecosystem& protag, int age)
 {
 	std::string input;
 	std::string input2;
 
 	std::cout << "Your ecosystem is at " << life << "% health. \n";
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+
 	std::cout << "\n5 years on, your ecosystem has changed. \n";
 	//Insert map?
 	std::cout << "\nYou now have 2 choices: \n";
@@ -671,6 +688,15 @@ void T_6(Ecosystem& protag, int age)
 	std::string input2;
 
 	std::cout << "Your ecosystem is at " << life << "% health. \n";
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		exit(0);
+	}
+
 	std::cout << "\n5 years on, your ecosystem has changed. \n";
 	//Insert map?
 	std::cout << "\nYou now have 2 choices: \n";
@@ -772,7 +798,7 @@ void T_6(Ecosystem& protag, int age)
 		std::cout << "Health has hit 0% \n";
 	}
 	exit(0);
-}*/
+}
 
 //void T_7(Ecosystem& protag, int age);
 //void T_8(Ecosystem& protag, int age);

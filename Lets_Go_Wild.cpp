@@ -148,6 +148,7 @@ Ecosystem createEco()
 	std::string name;
 	std::cout << "\nWhat would you like to name your Ecosystem? \n";
 	std::cin >> name;
+	std::cout << "\n";
 	Ecosystem protag(name); 
 	return protag;
 }
