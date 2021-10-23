@@ -86,7 +86,7 @@ int startGame()
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
-			T_5(protag, age);
+			/*T_5(protag, age);
 			randomEvent(protag, age);
 			Aging(age);
 			print();
@@ -98,7 +98,7 @@ int startGame()
 			Aging(age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour ecosystem is " << age << " years old\n";*/
 
 			/*T_7(protag, age, hp);
 			Aging(age);
