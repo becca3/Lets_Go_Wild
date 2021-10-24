@@ -34,6 +34,36 @@ void PeopleImg()
     destroyWindow("People");
 }
 
+void EcoWomanImg()
+{
+    std::string image_path = samples::findFile("ecowoman.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("ecowoman", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("ecowoman");
+}
+
+void EcomanImg()
+{
+    std::string image_path = samples::findFile("ecoman.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("ecoman", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("ecoman");
+}
+
 void ElkImg()
 {
     std::string image_path = samples::findFile("elk.jpg");

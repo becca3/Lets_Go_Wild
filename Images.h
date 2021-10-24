@@ -11,6 +11,8 @@
 
 void LogoImg();
 void PeopleImg();
+void EcoWomanImg();
+void EcomanImg();
 void ElkImg();
 void FallowImg();
 void RedSqImg();

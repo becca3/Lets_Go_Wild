@@ -40,11 +40,12 @@ void T_4(Ecosystem& protag, int age);
 void T_4(Ecosystem& protag, int age);
 void T_5(Ecosystem& protag, int age);
 void T_6(Ecosystem& protag, int age);
-//void T_7(Ecosystem& protag, int age);
-//void T_8(Ecosystem& protag, int age);
-//void T_9(Ecosystem& protag, int age);
-//void T_11(Ecosystem& protag, int age);
-//void T_12(Ecosystem& protag, int age);
+void T_7(Ecosystem& protag, int age);
+void T_8(Ecosystem& protag, int age);
+void T_9(Ecosystem& protag, int age);
+void T_10(Ecosystem& protag, int age);
+void T_11(Ecosystem& protag, int age);
+void T_12(Ecosystem& protag, int age);
 
 void Aging(int& age);
 
