@@ -1,3 +1,5 @@
+//Code created by Rebecca Morgan for the Rewilding and ecosystem services class at Sussex University
+
 //Include files
 #include "Design.h"
 #include "Images.h"

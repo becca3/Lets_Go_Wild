@@ -1,3 +1,5 @@
+//Code created by Rebecca Morgan for the Rewilding and ecosystem services class at Sussex University
+
 #include "Design.h"
 
 Ecosystem::Ecosystem(std::string name)

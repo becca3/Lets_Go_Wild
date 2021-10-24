@@ -1,6 +1,7 @@
+//Code created by Rebecca Morgan for the Rewilding and ecosystem services class at Sussex University
+
 #ifndef IMAGES_H
 #define	IMAGES_H
-
 
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
