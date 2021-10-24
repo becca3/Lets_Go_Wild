@@ -127,6 +127,9 @@ int startGame()
 			randomEvent(protag, age);
 			Aging(age);
 			print();
+
+			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			EndGame();
 		}
 		if (input == "n" || "N")
 		{

@@ -29,6 +29,7 @@ void TamPigImg();
 void HeckImg();
 void RedDeerImg();
 void EUBevImg();
+void PredImg();
 void WolfImg();
 void BearImg();
 void EULyImg();

@@ -304,6 +304,22 @@ void EUBevImg()
     destroyWindow("Beaver");
 }
 
+//Function telling user that predators can be introduced
+void PredImg()
+{
+    std::string image_path = samples::findFile("PredatorIntro.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("PredatorIntro", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("PredatorIntro");
+}
+
 void WolfImg()
 {
     std::string image_path = samples::findFile("Wolf.jpg");

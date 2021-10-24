@@ -48,6 +48,8 @@ void T_10(Ecosystem& protag, int age);
 void T_11(Ecosystem& protag, int age);
 void T_12(Ecosystem& protag, int age);
 
+void EndGame();
+
 void Aging(int& age);
 
 #endif
