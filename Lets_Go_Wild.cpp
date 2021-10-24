@@ -101,6 +101,7 @@ int startGame()
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
+			//Introduce predators here.
 			T_9(protag, age);
 			randomEvent(protag, age);
 			Aging(age);

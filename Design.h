@@ -31,6 +31,7 @@ private:
 void randomEvent(Ecosystem& protag, int& age);
 void AnimalList(); 
 void AnimalListInit();
+void AnimalListPred();
 void print();
 
 void Game_Core(Ecosystem& protag, int age);

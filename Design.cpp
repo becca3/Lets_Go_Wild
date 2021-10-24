@@ -33,8 +33,7 @@ void fire(Ecosystem& protag, int& age) //remove protag and age - test if works -
 	std::cout << "There was a small fire on a portion of land.\n";
 	std::cout << "It's destroyed some vegetation. \n";
 	std::cout << "\n";
-	life -= 10;
-	age += 5;
+	life -= 1;
 
 	if (life <= 0)
 	{
@@ -50,8 +49,7 @@ void drought(Ecosystem& protag, int& age)
 {
 	std::cout << "Due to climate change, your land suffered a drought. \n";
 	std::cout << "\n";
-	life -= 10;
-	age += 5;
+	life -= 1;
 
 	if (life <= 0)
 	{
@@ -68,8 +66,7 @@ void flood(Ecosystem& protag, int& age)
 	std::cout << "Due to climate change, your land suffered a flood. \n";
 	std::cout << "\n";
 	std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
-	life -= 10;
-	age += 5;
+	life -= 1;
 
 	if (life <= 0)
 	{
@@ -85,8 +82,7 @@ void Invasive(Ecosystem& protag, int& age)
 {
 	std::cout << "An invasive species has appeared on your land!\n";
 	std::cout << "\n";
-	life -= 20;
-	age += 5;
+	life -= 1; //-20
 
 	if (life <= 0)
 	{
@@ -210,6 +206,27 @@ void AnimalListInit()
 	fstream newfile;
 
 	newfile.open("Initial_Animals.txt", ios::in); //Open a file to perform read operation using file object
+
+	if (newfile.is_open()) //Checks whether file is open
+	{
+		string tp;
+		while (getline(newfile, tp)) //Read data from file object and put it into string
+		{
+			cout << tp << "\n";   //Print the data of the string
+			//cout << "\n";
+		}
+		newfile.close();   //Close the file object
+	}
+}
+
+void AnimalListPred()
+{
+	std::cout << "Below is a list of animals that you could choose to reintroduce. \n";
+	std::cout << "\n";
+
+	fstream newfile;
+
+	newfile.open("GameAnimals.txt", ios::in); //Open a file to perform read operation using file object
 
 	if (newfile.is_open()) //Checks whether file is open
 	{
@@ -1187,6 +1204,7 @@ void T_8(Ecosystem& protag, int age)
 	}
 }
 
+//Add images and functions for predators here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 void T_9(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1203,11 +1221,12 @@ void T_9(Ecosystem& protag, int age)
 	}
 
 	std::cout << "\n5 years on, your ecosystem has changed.\n";
+	std::cout << "You can now introduce predators!! Your herbivores have established and your ecosystem can now support predators.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -1342,7 +1361,7 @@ void T_10(Ecosystem& protag, int age)
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -1477,7 +1496,7 @@ void T_11(Ecosystem& protag, int age)
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -1612,7 +1631,7 @@ void T_12(Ecosystem& protag, int age)
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another speices from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
