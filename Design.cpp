@@ -33,13 +33,13 @@ void fire(Ecosystem& protag, int& age) //remove protag and age - test if works -
 	std::cout << "There was a small fire on a portion of land.\n";
 	std::cout << "It's destroyed some vegetation. \n";
 	std::cout << "\n";
-	life -= 1;
+	life -= 5;
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW FIRE AFFECTS LAND.";
+		std::cout << "DESCRIPTION ABOUT HOW FIRE AFFECTS LAND.\n";
 		exit(0);
 	}
 }
@@ -49,13 +49,13 @@ void drought(Ecosystem& protag, int& age)
 {
 	std::cout << "Due to climate change, your land suffered a drought. \n";
 	std::cout << "\n";
-	life -= 1;
+	life -= 5;
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW DROUGHT AFFECTS LAND.";
+		std::cout << "DESCRIPTION ABOUT HOW DROUGHT AFFECTS LAND.\n";
 		exit(0);
 	}
 }
@@ -65,14 +65,14 @@ void flood(Ecosystem& protag, int& age)
 {
 	std::cout << "Due to climate change, your land suffered a flood. \n";
 	std::cout << "\n";
-	std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
-	life -= 1;
+	std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.\n";
+	life -= 5;
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW FLOODS AFFECT LAND.";
+		std::cout << "DESCRIPTION ABOUT HOW FLOODS AFFECT LAND.\n";
 		exit(0);
 	}
 }
@@ -82,13 +82,13 @@ void Invasive(Ecosystem& protag, int& age)
 {
 	std::cout << "An invasive species has appeared on your land!\n";
 	std::cout << "\n";
-	life -= 1; //-20
+	life -= 5;
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.";
+		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
 		exit(0);
 	}
 }
@@ -121,6 +121,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("drought");
 	events.push_back("flood");
 	events.push_back("Invasive");
+
 	//Multiply the number of "nothing" events to reduce chances of other events occurring 
 	events.push_back("nothing");
 	events.push_back("nothing2");
@@ -157,6 +158,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	{
 		nothing2(protag, age);
 	}
+	//Add more nothings to reduce probability of bad things happening 
 }
 
 
@@ -240,6 +242,7 @@ void AnimalListPred()
 	}
 }
 
+//Prints species already on land.
 void print() 
 {
 	std::cout << "These are the species currently on your land: \n";
@@ -248,6 +251,7 @@ void print()
 		std::cout << AniUsed.at(i) << '\n';
 }
 
+//Turn into image?
 void Game_Core(Ecosystem& protag, int age)
 {
 	std::cout << "\nThese species all have certain ecological roles: describle roles \n";
@@ -256,6 +260,7 @@ void Game_Core(Ecosystem& protag, int age)
 	//Aging(age);
 }
 
+//Turn 2 - first user input
 void T_2(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -297,14 +302,14 @@ void T_2(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer" /*|| "fallowdeer" || "fallow deer"*/)
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
 			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel" /*|| "redsquirrel" || "red squirrel"*/)
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -312,69 +317,69 @@ void T_2(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer" /*|| "roedeer" || "roe deer"*/)
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison" /*|| "europeanbison" || "european bison"*/)
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies" /*|| "exmoorponies" || "exmoor ponies"*/)
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses" /*|| "wildhorses" || "wild horses"*/)
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle" /*|| "longhorncattle" || "long horn cattle"*/)
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk" /*|| "elk"*/)
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar" /*|| "wildboar" || "wild boar"*/)
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork" /*|| "stork"*/)
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles" /*|| "whitetailedeagles" || "white tailed eagles"*/)
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten" /*|| "pinemarten" || "pine marten"*/)
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -433,14 +438,14 @@ void T_3(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
 			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -448,69 +453,69 @@ void T_3(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -568,14 +573,14 @@ void T_4(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -583,69 +588,69 @@ void T_4(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -704,14 +709,14 @@ void T_5(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -719,69 +724,69 @@ void T_5(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -840,14 +845,14 @@ void T_6(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -855,69 +860,69 @@ void T_6(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -975,14 +980,14 @@ void T_7(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -990,69 +995,69 @@ void T_7(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -1110,14 +1115,14 @@ void T_8(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -1125,69 +1130,69 @@ void T_8(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
@@ -1247,118 +1252,118 @@ void T_9(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
+
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wolf")
+		else if (input2 == "Wolf" || input2 == "wolf")
 		{
 			WolfImg();
 			std::cout << "You chose to add Wolf to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Eurasian Lynx")
+		else if (input2 == "EurasianLynx" || input2 == "eurasianlynx" || input2 == "Eurasianlynx")
 		{
 			EULyImg();
 			std::cout << "You chose to add Eurasian Lynx to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wild Cat")
+		else if (input2 == "WildCat" || input2 == "wildcat" || input2 == "Wildcat")
 		{
 			WildcatImg();
 			std::cout << "You chose to add Wild Cat to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Bears")
+		else if (input2 == "Bears" || input2 == "bears")
 		{
 			BearImg();
 			std::cout << "You chose to add Bears to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 	if (life == 0)
@@ -1410,14 +1415,14 @@ void T_10(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -1425,104 +1430,103 @@ void T_10(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wolf")
+		else if (input2 == "Wolf" || input2 == "wolf")
 		{
 			WolfImg();
 			std::cout << "You chose to add Wolf to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Eurasian Lynx")
+		else if (input2 == "EurasianLynx" || input2 == "eurasianlynx" || input2 == "Eurasianlynx")
 		{
 			EULyImg();
 			std::cout << "You chose to add Eurasian Lynx to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wild Cat")
+		else if (input2 == "WildCat" || input2 == "wildcat" || input2 == "Wildcat")
 		{
 			WildcatImg();
 			std::cout << "You chose to add Wild Cat to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Bears")
+		else if (input2 == "Bears" || input2 == "bears")
 		{
 			BearImg();
 			std::cout << "You chose to add Bears to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 	if (life == 0)
@@ -1574,14 +1578,14 @@ void T_11(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -1589,104 +1593,103 @@ void T_11(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wolf")
+		else if (input2 == "Wolf" || input2 == "wolf")
 		{
 			WolfImg();
 			std::cout << "You chose to add Wolf to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Eurasian Lynx")
+		else if (input2 == "EurasianLynx" || input2 == "eurasianlynx" || input2 == "Eurasianlynx")
 		{
 			EULyImg();
 			std::cout << "You chose to add Eurasian Lynx to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wild Cat")
+		else if (input2 == "WildCat" || input2 == "wildcat" || input2 == "Wildcat")
 		{
 			WildcatImg();
 			std::cout << "You chose to add Wild Cat to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Bears")
+		else if (input2 == "Bears" || input2 == "bears")
 		{
 			BearImg();
 			std::cout << "You chose to add Bears to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 	if (life == 0)
@@ -1738,14 +1741,14 @@ void T_12(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "FallowDeer")
+		if (input2 == "FallowDeer" || input2 == "fallowdeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RedSquirrel")
+		else if (input2 == "RedSquirrel" || input2 == "redsquirrel")
 		{
 			RedSqImg();
 			std::cout << "You chose to add Red Squirrel to your ecosystem. \n";
@@ -1753,104 +1756,103 @@ void T_12(Ecosystem& protag, int age)
 			life += 0;
 
 		}
-		else if (input2 == "RoeDeer")
+		else if (input2 == "RoeDeer" || input2 == "roedeer")
 		{
 			RoeImg();
 			std::cout << "You chose to add Roe Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "EuropeanBison")
+		else if (input2 == "EuropeanBison" || input2 == "europeanbison")
 		{
 			EUbiImg();
 			std::cout << "You chose to add European Bison to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "ExmoorPonies")
+		else if (input2 == "ExmoorPonies" || input2 == "exmoorponies")
 		{
 			ExPonImg();
 			std::cout << "You chose to add Exmoor Ponies to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "WildHorses")
+		else if (input2 == "WildHorses" || input2 == "wildhorses")
 		{
 			HorseImg();
 			std::cout << "You chose to add Wild Horses to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "LongHornCattle")
+		else if (input2 == "LongHornCattle" || input2 == "longhorncattle")
 		{
 			LHCatImg();
 			std::cout << "You chose to add Long Horn Cattle to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Elk")
+		else if (input2 == "Elk" || input2 == "elk")
 		{
 			ElkImg();
 			std::cout << "You chose to add Elk to your ecosystem. \n";
 			life += 10;
 		}
-		else if (input2 == "WildBoar")
+		else if (input2 == "WildBoar" || input2 == "wildboar")
 		{
 			WildBoarImg();
 			std::cout << "You chose to add Wild Boar to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Stork")
+		else if (input2 == "Stork" || input2 == "stork")
 		{
 			StorkImg();
 			std::cout << "You chose to add Stork to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WhiteTailedEagles")
+		else if (input2 == "WhiteTailedEagles" || input2 == "whitetailedeagles")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "PineMarten")
+		else if (input2 == "PineMarten" || input2 == "pinemarten")
 		{
 			PiMarImg();
 			std::cout << "You chose to add Pine Marten to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wolf")
+		else if (input2 == "Wolf" || input2 == "wolf")
 		{
 			WolfImg();
 			std::cout << "You chose to add Wolf to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "Eurasian Lynx")
+		else if (input2 == "EurasianLynx" || input2 == "eurasianlynx" || input2 == "Eurasianlynx")
 		{
 			EULyImg();
 			std::cout << "You chose to add Eurasian Lynx to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Wild Cat")
+		else if (input2 == "WildCat" || input2 == "wildcat" || input2 == "Wildcat")
 		{
 			WildcatImg();
 			std::cout << "You chose to add Wild Cat to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "Bears")
+		else if (input2 == "Bears" || input2 == "bears")
 		{
 			BearImg();
 			std::cout << "You chose to add Bears to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 	if (life == 0)
@@ -1861,6 +1863,7 @@ void T_12(Ecosystem& protag, int age)
 	}
 }
 
+//To be edited
 void EndGame()
 {
 	std::cout << "Your ecosystem is at " << life << "% health.\n";
