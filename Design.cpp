@@ -40,7 +40,7 @@ void fire(Ecosystem& protag, int& age) //remove protag and age - test if works -
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "DESCRIPTION ABOUT HOW FIRE AFFECTS LAND.";
 		exit(0);
 	}
 }
@@ -57,7 +57,7 @@ void drought(Ecosystem& protag, int& age)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "DESCRIPTION ABOUT HOW DROUGHT AFFECTS LAND.";
 		exit(0);
 	}
 }
@@ -75,7 +75,7 @@ void flood(Ecosystem& protag, int& age)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "DESCRIPTION ABOUT HOW FLOODS AFFECT LAND.";
 		exit(0);
 	}
 }
@@ -92,7 +92,7 @@ void Invasive(Ecosystem& protag, int& age)
 	{
 		std::cout << "Game Over!! Your ecosystem was destroyed :( \n";
 		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.";
 		exit(0);
 	}
 }
@@ -146,6 +146,11 @@ void randomEvent(Ecosystem& protag, int& age)
 		//FloodImg();
 		flood(protag, age);
 	}
+	else if (events[0] == "Invasive")
+	{
+		//InvasiveImg();
+		Invasive(protag, age);
+	}
 
 	//These are to reduce probability of an actual event.
 	else if (events[0] == "nothing")
@@ -181,7 +186,6 @@ void AnimalList()
 	}
 
 	std::cout << "\nSome of these species, such as the predators, can only be introduced once your herbivore population is established.";
-	std::cout << "\nBit about establishment \n";
 	std::cout << "On this occassion, we'll give you the starting 3 species. \n";
 	std::cout << "\n";
 	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle. \n";
@@ -269,9 +273,16 @@ void T_2(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
@@ -398,9 +409,16 @@ void T_3(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
-			FallowImg();
+			//FallowImg();
 			std::cout << "You chose to add Fallow Deer to your ecosystem. \n";
 			std::cout << "Description\n";
 			life += 5;
@@ -525,6 +543,13 @@ void T_4(Ecosystem& protag, int age)
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
 
 		if (input2 == "FallowDeer")
 		{
@@ -655,6 +680,13 @@ void T_5(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
 			FallowImg();
@@ -784,6 +816,13 @@ void T_6(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
 			FallowImg();
@@ -911,6 +950,13 @@ void T_7(Ecosystem& protag, int age)
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
 
 		if (input2 == "FallowDeer")
 		{
@@ -1040,6 +1086,13 @@ void T_8(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
 			FallowImg();
@@ -1168,6 +1221,13 @@ void T_9(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
 			FallowImg();
@@ -1295,6 +1355,13 @@ void T_10(Ecosystem& protag, int age)
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
+		
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
 
 		if (input2 == "FallowDeer")
 		{
@@ -1424,6 +1491,13 @@ void T_11(Ecosystem& protag, int age)
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
 
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
 		if (input2 == "FallowDeer")
 		{
 			FallowImg();
@@ -1551,6 +1625,13 @@ void T_12(Ecosystem& protag, int age)
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
 		std::cin >> input2;
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in ecosystem\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
 
 		if (input2 == "FallowDeer")
 		{
