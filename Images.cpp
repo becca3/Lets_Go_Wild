@@ -51,167 +51,167 @@ void ElkImg()
 
 void FallowImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("FallowDeer.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("FallowDeer", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("FallowDeer");
 }
 
 void RedSqImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("RedSquirrel.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("RedSquirrel", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("RedSquirrel");
 }
 
 void RoeImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("RoeDeer.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("RoeDeer", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("RoeDeer");
 }
 
 void EUbiImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("Bison.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("Bison", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("Bison");
 }
 
 void ExPonImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("ExmoorPony.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("ExmoorPony", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("ExmoorPony");
 }
 
 void HorseImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("Horse.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("Horse", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("Horse");
 }
 
 void LHCatImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("LHCattle.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("LHCattle", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("LHCattle");
 }
 
 void WildBoarImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("WildBoar.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("WildBoar", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("WildBoar");
 }
 
 void StorkImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("Stork.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("Stork", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("Stork");
 }
 
 void WTEImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("WTEagle.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("WTEagle", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("WTEagle");
 }
 
 void PiMarImg()
 {
-    std::string image_path = samples::findFile("elk.jpg");
+    std::string image_path = samples::findFile("PineMarten.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
         std::cout << "Could not read the image: " << image_path << std::endl;
     }
-    imshow("elk", img);
+    imshow("PineMarten", img);
 
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
-    destroyWindow("elk");
+    destroyWindow("PineMarten");
 }
 
 void TamPigImg()
