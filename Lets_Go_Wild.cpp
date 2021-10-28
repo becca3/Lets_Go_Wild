@@ -53,79 +53,79 @@ int startGame()
 		if (age < 60)
 		{
 			T_2(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_3(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_4(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_5(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_6(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_7(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_8(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			//Introduce predators here.
 			T_9(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_10(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_11(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";
 
 			T_12(protag, age);
-			randomEvent(protag, age);
 			Aging(age);
+			randomEvent(protag, age);
 			print();
 
 			std::cout << "\nYour ecosystem is " << age << " years old\n";

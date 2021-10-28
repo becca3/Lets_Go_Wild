@@ -1,13 +1,16 @@
-Fallow Deer
-Red Squirrel
-Roe Deer
-European Bison 
-Exmoor Ponies
-Wild Horses
-Long Horn Cattle
-Elk
-Wild Boar
-Stork
-White-Tailed Eagle
-Pine Marten
-Eurasian Beaver
+FALLOW DEER
+RED SQUIRREL
+ROE DEER 
+EUROPEAN BISON
+EXMOOR PONIES
+WILD HORSES
+LONG HORN CATTLE
+ELK 
+WILD BOAR
+STORK
+WHITE-TAILED EAGLE
+PINE MARTEN
+EURASIAN BEAVER
+HECK CATTLE
+RED DEER
+TAMWORTH PIGS

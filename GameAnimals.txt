@@ -1,17 +1,20 @@
-Wild Boar
-Fallow Deer
-Eurasian Beaver 
-European Bison
-Exmoor Ponies
-Heck Cattle
-Wild Horses
-Elk
-Roe Deer
-Wolf 
-Eurasian Lynx 
-Wild Cat 
-Bears 
-Stork
-White-tailed Eagles
-Pine Marten
-Red Squirrel
+FALLOW DEER
+RED SQUIRREL
+ROE DEER 
+EUROPEAN BISON
+EXMOOR PONIES
+WILD HORSES
+LONG HORN CATTLE
+ELK 
+WILD BOAR
+STORK
+WHITE-TAILED EAGLE
+PINE MARTEN
+EURASIAN BEAVER
+HECK CATTLE
+RED DEER 
+TAMWORTH PIGS
+WOLF
+EURASIAN LYNX
+WILD CAT
+BEARS
