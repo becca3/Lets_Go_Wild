@@ -218,9 +218,9 @@ void AnimalList()
 	std::cout << "Each turn, a list of animals already inhabiting the land will be printed.\n";
 	std::cout << "Read the list carefully and choose a species that is not already on the list to reintroduce.\n";
 
-	AniUsed.push_back("RED DEER");
-	AniUsed.push_back("TAMWORTH PIGS");
-	AniUsed.push_back("HECK CATTLE");
+	AniUsed.push_back("REDDEER");
+	AniUsed.push_back("TAMWORTHPIGS");
+	AniUsed.push_back("HECKCATTLE");
 }
 
 //This function lists animals available for reintroduction with the exclusion of predators.
