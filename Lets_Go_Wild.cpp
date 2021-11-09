@@ -46,7 +46,7 @@ int startGame()
 	print();
 
 
-	while (age < 60) 	//Length of rewilding project in years. Health of ecosystem in percentage
+	while (age < 60) 	//Length of rewilding project in years. Health of rewilding project in percentage
 	{
 		Game_Core(protag, age);
 
@@ -57,49 +57,49 @@ int startGame()
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_3(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_4(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_5(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_6(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_7(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_8(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			//Introduce predators here.
 			T_9(protag, age);
@@ -107,28 +107,28 @@ int startGame()
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_10(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_11(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 			T_12(protag, age);
 			Aging(age);
 			randomEvent(protag, age);
 			print();
 
-			std::cout << "\nYour ecosystem is " << age << " years old\n";
+			std::cout << "\nYour rewilding project is " << age << " years old\n";
 			EndGame();
 		}
 		if (input == "n" || "N")
@@ -139,11 +139,11 @@ int startGame()
 	return age;
 }
 
-//Creates Ecosystem.
+//Creates rewilding project.
 Ecosystem createEco()
 {
 	std::string name;
-	std::cout << "\nWhat would you like to name your Ecosystem? \n";
+	std::cout << "\nWhat would you like to name your rewilding project? \n";
 	std::cin >> name;
 	std::cout << "\n";
 	Ecosystem protag(name); 
