@@ -228,7 +228,7 @@ void AnimalList()
 	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle. \n";
 	//RedDeerImg();
 	TamPigImg();
-	//HeckImg();
+	HeckImg();
 
 	std::cout << "Each turn, a list of animals already inhabiting the land will be printed.\n";
 	std::cout << "Read the list carefully and choose a species that is not already on the list to reintroduce.\n";
