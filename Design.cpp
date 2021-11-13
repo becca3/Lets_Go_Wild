@@ -226,7 +226,7 @@ void AnimalList()
 	std::cout << "\nOn this occasion, we'll give you the starting 3 species. \n";
 	std::cout << "\n";
 	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle. \n";
-	//RedDeerImg();
+	RedDeerImg();
 	TamPigImg();
 	HeckImg();
 
