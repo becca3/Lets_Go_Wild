@@ -18,7 +18,6 @@ void FallowImg();
 void RedSqImg();
 void RoeImg();
 void EUbiImg();
-void ExPonImg();
 void HorseImg();
 void LHCatImg();
 void WildBoarImg();

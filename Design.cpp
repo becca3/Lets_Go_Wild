@@ -293,13 +293,9 @@ void print()
 //Turn into image?
 void Game_Core(Ecosystem& protag, int age)
 {
-	std::cout << "\nThese species all have certain ecological roles: describe roles \n";
 	std::cout << "These three species will determine how your rewilding project is going to look in the next 5 years \n";
 	std::cout << "\n";
 }
-
-// change image sizes 
-// change text around to be left aligned 
 
 //Turn 2 - first user input
 void T_2(Ecosystem& protag, int age)
@@ -385,13 +381,6 @@ void T_2(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -427,7 +416,7 @@ void T_2(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -470,13 +459,6 @@ void T_2(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -512,7 +494,7 @@ void T_2(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -620,13 +602,6 @@ void T_3(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -662,7 +637,7 @@ void T_3(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -706,13 +681,6 @@ void T_3(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -748,7 +716,7 @@ void T_3(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -855,13 +823,6 @@ void T_4(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -897,7 +858,7 @@ void T_4(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -941,13 +902,6 @@ void T_4(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -983,7 +937,7 @@ void T_4(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1091,13 +1045,6 @@ void T_5(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -1133,7 +1080,7 @@ void T_5(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1177,13 +1124,6 @@ void T_5(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -1219,7 +1159,7 @@ void T_5(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1327,13 +1267,6 @@ void T_6(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -1369,7 +1302,7 @@ void T_6(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1413,13 +1346,6 @@ void T_6(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -1455,7 +1381,7 @@ void T_6(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1562,13 +1488,6 @@ void T_7(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -1604,7 +1523,7 @@ void T_7(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1648,13 +1567,6 @@ void T_7(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -1690,7 +1602,7 @@ void T_7(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1796,14 +1708,7 @@ void T_8(Ecosystem& protag, int age)
 				std::cout << "You chose to add European Bison to your rewilding project. \n";
 				std::cout << "Description\n";
 				life += 10;
-			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
+			}			
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -1839,7 +1744,7 @@ void T_8(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -1883,13 +1788,6 @@ void T_8(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -1925,7 +1823,7 @@ void T_8(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2034,13 +1932,6 @@ void T_9(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -2076,7 +1967,7 @@ void T_9(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2120,13 +2011,6 @@ void T_9(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -2162,7 +2046,7 @@ void T_9(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2298,13 +2182,6 @@ void T_10(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -2340,7 +2217,7 @@ void T_10(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2384,13 +2261,6 @@ void T_10(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -2426,7 +2296,7 @@ void T_10(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2562,13 +2432,6 @@ void T_11(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -2604,7 +2467,7 @@ void T_11(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2648,13 +2511,6 @@ void T_11(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 10;
 		}
-		else if (input2 == "EXMOORPONIES")
-		{
-			ExPonImg();
-			std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-			std::cout << "Description\n";
-			life += 5;
-		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
@@ -2690,7 +2546,7 @@ void T_11(Ecosystem& protag, int age)
 			std::cout << "Description\n";
 			life += 0;
 		}
-		else if (input2 == "WHITETAILEDEAGLES")
+		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
 			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
@@ -2826,13 +2682,6 @@ void T_12(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 10;
 			}
-			else if (input2 == "EXMOORPONIES")
-			{
-				ExPonImg();
-				std::cout << "You chose to add Exmoor Ponies to your rewilding project. \n";
-				std::cout << "Description\n";
-				life += 5;
-			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
@@ -2868,7 +2717,7 @@ void T_12(Ecosystem& protag, int age)
 				std::cout << "Description\n";
 				life += 0;
 			}
-			else if (input2 == "WHITETAILEDEAGLES")
+			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
 				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
