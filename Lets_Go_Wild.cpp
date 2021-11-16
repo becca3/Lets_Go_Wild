@@ -49,6 +49,7 @@ int startGame()
 	while (age < 60) 	//Length of rewilding project in years. Health of rewilding project in percentage
 	{
 		Game_Core(protag, age);
+		std::string input3;
 
 		if (age < 60)
 		{

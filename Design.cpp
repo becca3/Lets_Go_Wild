@@ -146,6 +146,10 @@ void Aging(int& age)
 void randomEvent(Ecosystem& protag, int& age)
 {
 	std::vector<std::string> events;
+	std::vector<std::string> EventsOccurred;
+
+	std::string input1;
+
 	events.push_back("fire");
 	events.push_back("drought");
 	events.push_back("flood");
@@ -166,21 +170,37 @@ void randomEvent(Ecosystem& protag, int& age)
 	{
 		//FireImg();
 		fire(protag, age);
+		EventsOccurred.push_back("fire");
+		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "fire") != EventsOccurred.end())
+		{
+			std::cout << "There was a fire on the land, do you want to do something? \n";
+			std::cin >> input1;
+			EventsOccurred.erase(EventsOccurred.begin());
+		}
 	}
 	else if (events[0] == "drought")
 	{
 		//DroughtImg();
 		drought(protag, age);
+		EventsOccurred.push_back("drought");
+		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "drought") != EventsOccurred.end())
+		{
+			std::cout << "There was a drought on the land, do you want to do something? \n";
+			std::cin >> input1;
+			EventsOccurred.erase(EventsOccurred.begin());
+		}
 	}
 	else if (events[0] == "flood")
 	{
 		//FloodImg();
 		flood(protag, age);
+		EventsOccurred.push_back("flood");
 	}
 	else if (events[0] == "Invasive")
 	{
 		//InvasiveImg();
 		Invasive(protag, age);
+		EventsOccurred.push_back("invasive");
 	}
 
 	//These are to reduce probability of an actual event.
