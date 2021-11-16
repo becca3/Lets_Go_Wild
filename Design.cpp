@@ -157,6 +157,9 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("nothing3");
 	events.push_back("nothing4");
 
+	//vectorise the events to follow which have occurred then give player choice to add supp. feeding 
+	//Refer to todays lecture 16/11/21 for other metrics 	
+
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
 	if (events[0] == "fire")
