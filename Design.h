@@ -32,9 +32,12 @@ void randomEvent(Ecosystem& protag, int& age);
 void AnimalList(); 
 void AnimalListInit();
 void AnimalListPred();
+void AnimalListPleio();
 void print();
 
 void Game_Core(Ecosystem& protag, int age);
+void Game_CorePleio(Ecosystem& protag, int age);
+//Trophic RW
 void T_2(Ecosystem& protag, int age);
 void T_3(Ecosystem& protag, int age);
 void T_4(Ecosystem& protag, int age);
@@ -47,6 +50,11 @@ void T_9(Ecosystem& protag, int age);
 void T_10(Ecosystem& protag, int age);
 void T_11(Ecosystem& protag, int age);
 void T_12(Ecosystem& protag, int age);
+
+//Pleistocene RW
+void PT_2(Ecosystem& protag, int age);
+void PT_3(Ecosystem& protag, int age);
+void PT_4(Ecosystem& protag, int age);
 
 void EndGame();
 
