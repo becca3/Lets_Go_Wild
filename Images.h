@@ -9,6 +9,7 @@
 
 #include <iostream>
 
+//Trophic rewilding
 void LogoImg();
 void PeopleImg();
 void EcoWomanImg();
@@ -34,5 +35,13 @@ void BearImg();
 void EULyImg();
 void WildcatImg();
 
+//Pleistocene rewilding
+void RhinoImg();
+void ElephantImg();
+void MammothImg();
+void LionImg();
+void ReindeerImg();
+void HyenaImg();
+void PelicanImg();
 
 #endif // !IMAGES_H

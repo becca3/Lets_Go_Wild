@@ -4,6 +4,7 @@
 
 using namespace cv;
 
+//Intro and ending
 void LogoImg()
 {
     std::string image_path = samples::findFile("Logo.jpg");
@@ -64,6 +65,7 @@ void EcomanImg()
     destroyWindow("ecoman");
 }
 
+//Trophic rewilding 
 void ElkImg()
 {
     std::string image_path = samples::findFile("elk.jpg");
@@ -363,4 +365,110 @@ void WildcatImg()
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
     destroyWindow("Wildcat");
+}
+
+//Pleistocene rewilding 
+void RhinoImg()
+{
+    std::string image_path = samples::findFile("Rhino.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Rhino", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Rhino");
+}
+
+void ElephantImg()
+{
+    std::string image_path = samples::findFile("Elephant.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Elephant", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Elephant");
+}
+
+void MammothImg()
+{
+    std::string image_path = samples::findFile("Mammoth.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Mammoth", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Mammoth");
+}
+
+void LionImg()
+{
+    std::string image_path = samples::findFile("Lion.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Lion", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Lion");
+}
+
+void ReindeerImg()
+{
+    std::string image_path = samples::findFile("Reindeer.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Reindeer", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Reindeer");
+}
+
+void HyenaImg()
+{
+    std::string image_path = samples::findFile("Hyena.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Hyena", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Hyena");
+}
+
+void PelicanImg()
+{
+    std::string image_path = samples::findFile("Pelican.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Pelican", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Pelican");
 }

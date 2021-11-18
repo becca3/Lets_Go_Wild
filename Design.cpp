@@ -194,13 +194,13 @@ void randomEvent(Ecosystem& protag, int& age)
 	{
 		//FloodImg();
 		flood(protag, age);
-		EventsOccurred.push_back("flood");
+		//EventsOccurred.push_back("flood");
 	}
 	else if (events[0] == "Invasive")
 	{
 		//InvasiveImg();
 		Invasive(protag, age);
-		EventsOccurred.push_back("invasive");
+		//EventsOccurred.push_back("invasive");
 	}
 
 	//These are to reduce probability of an actual event.
