@@ -2822,18 +2822,22 @@ void EndGame()
 	if (life == 10)
 	{
 		std::cout << "You didn't change anything\n";
+		EndImg();
 	}
 	else if (life >= 10 && life <= 25)
 	{
 		std::cout << "You made some change - good\n";
+		EndImg();
 	}
 	else if (life >= 26 && life <= 50)
 	{
 		std::cout << "You made big change - great\n";
+		EndImg();
 	}
 	else if (life >= 51)
 	{
 		std::cout << "You made huge change - amazing\n";
+		EndImg();
 	}
 }
 

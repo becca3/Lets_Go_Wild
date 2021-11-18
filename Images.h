@@ -44,4 +44,6 @@ void ReindeerImg();
 void HyenaImg();
 void PelicanImg();
 
+void EndImg();
+
 #endif // !IMAGES_H

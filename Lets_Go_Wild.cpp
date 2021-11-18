@@ -178,6 +178,7 @@ int startGame()
 				print();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
+				EndGame();
 
 			}
 			if (input == "n" || "N")

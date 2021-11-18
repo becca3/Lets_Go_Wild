@@ -65,6 +65,21 @@ void EcomanImg()
     destroyWindow("ecoman");
 }
 
+void EndImg()
+{
+    std::string image_path = samples::findFile("EndImage.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("EndImage", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("EndImage");
+}
+
 //Trophic rewilding 
 void ElkImg()
 {
