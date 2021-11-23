@@ -12,8 +12,13 @@
 //Trophic rewilding
 void LogoImg();
 void PeopleImg();
+void People2Img();
 void EcoWomanImg();
 void EcomanImg();
+void ZeroImg();
+void TwentyImg();
+void SixtyImg();
+
 void ElkImg();
 void FallowImg();
 void RedSqImg();

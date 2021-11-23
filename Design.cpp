@@ -245,16 +245,9 @@ void AnimalList()
 		newfile.close();   //Close the file object
 	}
 
-	std::cout << "\nSome of these species, such as the predators, can only be introduced once your herbivore population is established.";
-	std::cout << "\nOn this occasion, we'll give you the starting 3 species. \n";
-	std::cout << "\n";
-	std::cout << "These species will be Red Deer, Tamworth Pigs, and Heck Cattle. \n";
 	RedDeerImg();
 	TamPigImg();
 	HeckImg();
-
-	std::cout << "Each turn, a list of animals already inhabiting the land will be printed.\n";
-	std::cout << "Read the list carefully and choose a species that is not already on the list to reintroduce.\n";
 
 	AniUsed.push_back("REDDEER");
 	AniUsed.push_back("TAMWORTHPIGS");
@@ -320,6 +313,7 @@ void AnimalListPleio()
 	AniUsed.push_back("HECKCATTLE");
 }
 
+//Prints animal list for Pleistocene - excluding predators.
 void AnimalListPleioInit()
 {
 	std::cout << "Below is a list of animals that you could choose to reintroduce. \n";
@@ -341,6 +335,7 @@ void AnimalListPleioInit()
 	}
 }
 
+//Prints trophic animal list and predators.
 void AnimalListPred()
 {
 	std::cout << "Below is a list of animals that you could choose to reintroduce. \n";
@@ -362,6 +357,7 @@ void AnimalListPred()
 	}
 }
 
+//Prints Pleistocene animals and predators.
 void AnimalListPredPleio()
 {
 	std::cout << "Below is a list of animals that you could choose to reintroduce. \n";
@@ -1068,6 +1064,8 @@ void T_5(Ecosystem& protag, int age)
 {
 	std::string input;
 	std::string input2;
+
+	//add 20 year map
 
 	std::cout << "Your rewilding project is at " << life << "% health. \n";
 

@@ -35,6 +35,21 @@ void PeopleImg()
     destroyWindow("People");
 }
 
+void People2Img()
+{
+    std::string image_path = samples::findFile("people2.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("People", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("People");
+}
+
 void EcoWomanImg()
 {
     std::string image_path = samples::findFile("ecowoman.jpg");
@@ -63,6 +78,51 @@ void EcomanImg()
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
     destroyWindow("ecoman");
+}
+
+void ZeroImg()
+{
+    std::string image_path = samples::findFile("Zero.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Zero", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Zero");
+}
+
+void TwentyImg()
+{
+    std::string image_path = samples::findFile("Twenty.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Twenty", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Twenty");
+}
+
+void SixtyImg()
+{
+    std::string image_path = samples::findFile("Sixty.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Sixty", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Sixty");
 }
 
 void EndImg()

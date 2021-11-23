@@ -20,6 +20,7 @@ int main(int argc, char** argv)
 	PeopleImg();
 	EcoWomanImg();
 	EcomanImg();
+	People2Img();
 	std::cout << "So, are you ready to create your own rewilding project ? \n(Y / n)";
 	std::cin >> input;
 	if (input == "y" || input == "Y")
@@ -38,7 +39,7 @@ int main(int argc, char** argv)
 int startGame()
 {
 	std::string input;
-	int age = 0;
+	int age = 5;
 	std::string input1;
 
 	Ecosystem protag = createEco();
@@ -48,7 +49,7 @@ int startGame()
 
 	if (input1 == "1")
 	{
-
+		ZeroImg();
 		AnimalList();
 		print();
 
@@ -87,6 +88,7 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				TwentyImg();
 				T_6(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -134,6 +136,8 @@ int startGame()
 				Aging(age);
 				randomEvent(protag, age);
 				print();
+
+				SixtyImg();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 				EndGame();
