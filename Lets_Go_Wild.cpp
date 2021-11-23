@@ -152,6 +152,7 @@ int startGame()
 
 	else if (input1 == "2")
 	{
+		ZeroImg();
 		AnimalListPleio();
 		print();
 
@@ -190,6 +191,7 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				TwentyImg();
 				PT_6(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -238,6 +240,7 @@ int startGame()
 				randomEvent(protag, age);
 				print();
 
+				SixtyImg();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 				EndGame();
