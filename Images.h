@@ -42,7 +42,6 @@ void MammothImg();
 void LionImg();
 void ReindeerImg();
 void HyenaImg();
-void PelicanImg();
 
 void EndImg();
 

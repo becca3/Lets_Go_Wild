@@ -33,6 +33,7 @@ void AnimalList();
 void AnimalListInit();
 void AnimalListPred();
 void AnimalListPleio();
+void AnimalListPleioInit();
 void print();
 
 void Game_Core(Ecosystem& protag, int age);
@@ -55,6 +56,14 @@ void T_12(Ecosystem& protag, int age);
 void PT_2(Ecosystem& protag, int age);
 void PT_3(Ecosystem& protag, int age);
 void PT_4(Ecosystem& protag, int age);
+void PT_5(Ecosystem& protag, int age);
+void PT_6(Ecosystem& protag, int age);
+void PT_7(Ecosystem& protag, int age);
+void PT_8(Ecosystem& protag, int age);
+void PT_9(Ecosystem& protag, int age);
+void PT_10(Ecosystem& protag, int age);
+void PT_11(Ecosystem& protag, int age);
+void PT_12(Ecosystem& protag, int age);
 
 void EndGame();
 
