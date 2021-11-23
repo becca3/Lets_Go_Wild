@@ -34,6 +34,7 @@ void AnimalListInit();
 void AnimalListPred();
 void AnimalListPleio();
 void AnimalListPleioInit();
+void AnimalListPredPleio();
 void print();
 
 void Game_Core(Ecosystem& protag, int age);

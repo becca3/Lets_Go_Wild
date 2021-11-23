@@ -153,7 +153,7 @@ int startGame()
 
 		while (age < 60) 	//Length of rewilding project in years. Health of rewilding project in percentage
 		{
-			Game_Core(protag, age);
+			Game_CorePleio(protag, age);
 			std::string input3;
 
 			if (age < 60)
@@ -176,6 +176,64 @@ int startGame()
 				Aging(age);
 				randomEvent(protag, age);
 				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				PT_5(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				PT_6(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+				
+				PT_7(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				PT_8(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				//Introduce predators here
+				PT_9(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				PT_10(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n"; 
+
+				PT_11(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
+				PT_12(protag, age);
+				Aging(age);
+				randomEvent(protag, age);
+				print();
+
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 				EndGame();
