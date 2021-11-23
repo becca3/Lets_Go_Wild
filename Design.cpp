@@ -612,7 +612,50 @@ void randomEvent(Ecosystem& protag, int& age)
 	{
 		nothing4(protag, age);
 	}
-	//Add more nothings to reduce probability of bad things happening 
+	else if (events[0] == "nothing5")
+	{
+		nothing5(protag, age);
+	}
+	else if (events[0] == "nothing6")
+	{
+		nothing6(protag, age);
+	}
+	else if (events[0] == "nothing7")
+	{
+		nothing7(protag, age);
+	}
+	else if (events[0] == "nothing8")
+	{
+		nothing8(protag, age);
+	}
+	else if (events[0] == "nothing9")
+	{
+		nothing9(protag, age);
+	}
+	else if (events[0] == "nothing10")
+	{
+		nothing10(protag, age);
+	}
+	else if (events[0] == "nothing11")
+	{
+		nothing11(protag, age);
+	}
+	else if (events[0] == "nothing12")
+	{
+		nothing12(protag, age);
+	}
+	else if (events[0] == "nothing13")
+	{
+		nothing13(protag, age);
+	}
+	else if (events[0] == "nothing14")
+	{
+	nothing14(protag, age);
+	}
+	else if (events[0] == "nothing15")
+	{
+	nothing15(protag, age);
+	}
 }
 
 
