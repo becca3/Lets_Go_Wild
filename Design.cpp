@@ -43,7 +43,6 @@ void fire(Ecosystem& protag, int& age) //remove protag and age - test if works -
 		exit(0);
 	}
 }
-
 //Drought.
 void drought(Ecosystem& protag, int& age)
 {
@@ -59,7 +58,6 @@ void drought(Ecosystem& protag, int& age)
 		exit(0);
 	}
 }
-
 //Flood. 
 void flood(Ecosystem& protag, int& age)
 {
@@ -76,7 +74,6 @@ void flood(Ecosystem& protag, int& age)
 		exit(0);
 	}
 }
- 
 //Invasive species.
 void invasive(Ecosystem& protag, int& age)
 {
@@ -92,20 +89,49 @@ void invasive(Ecosystem& protag, int& age)
 		exit(0);
 	}
 }
-
 void disease(Ecosystem& protag, int& age)
 {
-	std::cout << "Bovine TB has broken out in your herd of cattle.This is a very serious disease with strict restrictions \
-				  surrounding it.Unfortunately, this means your cattle have had to be removed.You can reintroduce them in \
-		          the next round but not straight away, to reduce the risk of Bovine TB coming back. \n";
+	std::string input1;
+	std::cout << "Bovine TB has broken out. Cattle have been removed. Type 'Y' \n";
+	std::cin >> input1;
 
+	if (input1 == "Y")
+	{
+		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
+		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
+	}
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
+		exit(0);
+	}
 }
-
 void shooting(Ecosystem& protag, int& age)
 {
+	std::string input1;
+	std::cout << "There was a shooting on the land, do you want to publicise it? Y/N \n";
+	std::cin >> input1;
 
+	if (input1 == "Y")
+	{
+		life += 5;
+	}
+	else
+	{
+		life -= 5;
+	}
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
+		exit(0);
+	}
 }
-
 void protest(Ecosystem& protag, int& age)
 {
 	life -= 5;
@@ -118,52 +144,61 @@ void protest(Ecosystem& protag, int& age)
 		exit(0);
 	}
 }
-
 void extinction(Ecosystem& protag, int& age)
 {
 
 }
-
 void winter(Ecosystem& protag, int& age)
 {
+	std::string input1;
+	std::cout << "It's been a harsh winter. Do you want to add supplementary feed to your animals? Y/N \n";
+	std::cin >> input1;
 
+	if (input1 == "Y")
+	{
+		life -= 5;
+	}
+	else
+	{
+		life -= 10;
+	}
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Health has hit 0% \n";
+		std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
+		exit(0);
+	}
 }
-
 void carcasses(Ecosystem& protag, int& age)
 {
 
 }
-
 void poachers(Ecosystem& protag, int& age)
 {
 
 }
-
 void vistors(Ecosystem& protag, int& age)
 {
 
 }
-
 void dogwalk(Ecosystem& protag, int& age)
 {
 
 }
-
 void govfund(Ecosystem& protag, int& age)
 {
 
 }
-
 void partnership(Ecosystem& protag, int& age)
 {
 
 }
-
 void shoutout(Ecosystem& protag, int& age)
 {
 
 }
-
 void BBC(Ecosystem& protag, int& age)
 {
 
@@ -173,52 +208,42 @@ void RhinoPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void CattlePolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void ElkPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void ElephantPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void LionPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void HyenaPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void BisonPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void BearsPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void MammothPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 void WolfPolicy(Ecosystem& protag, int& age)
 {
 
 }
-
 
 void nothing(Ecosystem& protag, int& age)
 {
@@ -226,99 +251,55 @@ void nothing(Ecosystem& protag, int& age)
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing2(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing3(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing4(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing5(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing6(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing7(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing8(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing9(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
 	age += 0;
 }
-
 void nothing10(Ecosystem& protag, int& age)
-{
-	//std::cout << "Nothing devastating happened \n";
-	std::cout << "\n";
-	age += 0;
-}
-
-void nothing11(Ecosystem& protag, int& age)
-{
-	//std::cout << "Nothing devastating happened \n";
-	std::cout << "\n";
-	age += 0;
-}
-
-void nothing12(Ecosystem& protag, int& age)
-{
-	//std::cout << "Nothing devastating happened \n";
-	std::cout << "\n";
-	age += 0;
-}
-
-void nothing13(Ecosystem& protag, int& age)
-{
-	//std::cout << "Nothing devastating happened \n";
-	std::cout << "\n";
-	age += 0;
-}
-
-void nothing14(Ecosystem& protag, int& age)
-{
-	//std::cout << "Nothing devastating happened \n";
-	std::cout << "\n";
-	age += 0;
-}
-
-void nothing15(Ecosystem& protag, int& age)
 {
 	//std::cout << "Nothing devastating happened \n";
 	std::cout << "\n";
@@ -376,14 +357,8 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("nothing8");
 	events.push_back("nothing9");
 	events.push_back("nothing10");
-	events.push_back("nothing11");
-	events.push_back("nothing12");
-	events.push_back("nothing13");
-	events.push_back("nothing14");
-	events.push_back("nothing15");
 
-	//vectorise the events to follow which have occurred then give player choice to add supp. feeding 
-	//Refer to todays lecture 16/11/21 for other metrics 	
+	//vectorise the events to follow which have occurred then give player choice to add supp. feeding  	
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -393,52 +368,21 @@ void randomEvent(Ecosystem& protag, int& age)
 		//ShootingImg();
 		shooting(protag, age);
 		EventsOccurred.push_back("shooting");
-		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "shooting") != EventsOccurred.end())
-		{
-			std::cout << "There was a shooting on the land, do you want to publicise it? \n";
-			std::cin >> input1;
-
-			if (input1 == "Y")
-			{
-				life += 5;
-			}
-			else
-			{
-				life -= 5;
-			}
-			EventsOccurred.erase(EventsOccurred.begin());
-		}
+		EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "disease")
 	{
 		//DiseaseImg();
 		disease(protag, age);
 		EventsOccurred.push_back("disease");
-		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "disease") != EventsOccurred.end())
-		{
-			std::cout << "Bovine TB has broken out. Cattle have been removed. Type 'Y' \n";
-			std::cin >> input1;
-
-			if (input1 == "Y")
-			{
-				AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
-			}
-			EventsOccurred.erase(EventsOccurred.begin());
-		}
+		EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "protest")
 	{
 		//ProtestImg();
 		protest(protag, age);
-		EventsOccurred.push_back("protest");
-		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "protest") != EventsOccurred.end())
-		{
-			std::cout << "protest \n";
-			
-			life -= 5;
-
-			EventsOccurred.erase(EventsOccurred.begin());
-		}
+		EventsOccurred.push_back("protest");	
+		EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "extinction")
 	{
@@ -458,21 +402,7 @@ void randomEvent(Ecosystem& protag, int& age)
 		//WinterImg();
 		winter(protag, age);
 		EventsOccurred.push_back("winter");
-		if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "winter") != EventsOccurred.end())
-		{
-			std::cout << "It's been a harsh winter. Do you want to add supplementary feed to your animals? \n";
-			std::cin >> input1;
-
-			if (input1 == "Y")
-			{
-				life -= 5;
-			}
-			else if (input1 == "N")
-			{
-				life -= 10;
-			}
-			EventsOccurred.erase(EventsOccurred.begin());
-		}
+		EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "carcasses")
 	{
@@ -511,7 +441,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	EventsOccurred.push_back("invasive");
 	if (std::find(EventsOccurred.begin(), EventsOccurred.end(), "invasive") != EventsOccurred.end())
 	{
-		std::cout << "It's been a harsh winter. Do you want to add supplementary feed to your animals? \n";
+		std::cout << " \n";
 		std::cin >> input1;
 
 		life += 5;
@@ -635,26 +565,6 @@ void randomEvent(Ecosystem& protag, int& age)
 	else if (events[0] == "nothing10")
 	{
 		nothing10(protag, age);
-	}
-	else if (events[0] == "nothing11")
-	{
-		nothing11(protag, age);
-	}
-	else if (events[0] == "nothing12")
-	{
-		nothing12(protag, age);
-	}
-	else if (events[0] == "nothing13")
-	{
-		nothing13(protag, age);
-	}
-	else if (events[0] == "nothing14")
-	{
-	nothing14(protag, age);
-	}
-	else if (events[0] == "nothing15")
-	{
-	nothing15(protag, age);
 	}
 }
 
