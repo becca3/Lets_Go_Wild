@@ -61,45 +61,45 @@ int startGame()
 			if (age < 60)
 			{
 				T_2(protag, age);
-				Aging(age);
 				randomEvent(protag, age);
+				Aging(age);
 				print();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				T_3(protag, age);
-				Aging(age);
 				randomEvent(protag, age);
+				Aging(age);
 				print();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				T_4(protag, age);
-				Aging(age);
 				randomEvent(protag, age);
+				Aging(age);
 				print();
-
+				
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				T_5(protag, age);
-				Aging(age);
 				randomEvent(protag, age);
+				Aging(age);
 				print();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				TwentyImg();
 				T_6(protag, age);
-				Aging(age);
 				randomEvent(protag, age);
+				Aging(age);
 				print();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				T_7(protag, age);
 				Aging(age);
-				randomEvent(protag, age);
 				print();
+				randomEvent(protag, age);
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
