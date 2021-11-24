@@ -258,7 +258,7 @@ void randomEvent(Ecosystem& protag, int& age)
 			std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
 			exit(0);
 		}
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "disease")
 	{
@@ -267,11 +267,8 @@ void randomEvent(Ecosystem& protag, int& age)
 		std::cout << "Bovine TB has broken out. Cattle have been removed. Type 'Y' \n";
 		std::cin >> input1;
 
-		if (input1 == "Y")
-		{
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
-		}
+		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
+		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
 
 		if (life <= 0)
 		{
@@ -280,20 +277,19 @@ void randomEvent(Ecosystem& protag, int& age)
 			std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
 			exit(0);
 		}
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "protest")
 	{
 		//ProtestImg();
 			
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "extinction")
 	{
 		//ExtinctionImg();
 
-		EventsOccurred.erase(EventsOccurred.begin());
-	
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "winter")
 	{
@@ -310,51 +306,56 @@ void randomEvent(Ecosystem& protag, int& age)
 		{
 			life -= 10;
 		}
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "carcasses")
 	{
 		//CarcassesImg();
 
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "poachers")
 	{
 		//PoachersImg();
 	
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "invasive")
 	{
 		//InvasiveImg();
 
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "dogwalk")
 	{
 		//DogwalkImg();
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "partnership")
 	{
 		//PartnershipImg();
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "BBC")
 	{
 		//BBCImg();
 
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "visitors")
 	{
 		//VisotorsImg();
-		EventsOccurred.erase(EventsOccurred.begin());
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "shoutout")
 	{
-		//ShoutoutImg();
-		EventsOccurred.erase(EventsOccurred.begin());
+		ShoutoutImg();
+		//EventsOccurred.erase(EventsOccurred.begin());
+	}
+	else if (events[0] == "govfund")
+	{
+		GovFundImg();
+		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 
 	//Add the policy events here too 

@@ -9,7 +9,6 @@
 
 #include <iostream>
 
-//Trophic rewilding
 void LogoImg();
 void PeopleImg();
 void People2Img();
@@ -19,6 +18,11 @@ void ZeroImg();
 void TwentyImg();
 void SixtyImg();
 
+//Events images
+void ShoutoutImg();
+void GovFundImg();
+
+//Trophic rewilding
 void ElkImg();
 void FallowImg();
 void RedSqImg();

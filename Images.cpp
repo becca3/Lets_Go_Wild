@@ -140,6 +140,38 @@ void EndImg()
     destroyWindow("EndImage");
 }
 
+//Events images.
+
+void ShoutoutImg()
+{
+    std::string image_path = samples::findFile("shoutout.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("shoutout", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("shoutout");
+}
+
+void GovFundImg()
+{
+    std::string image_path = samples::findFile("GovFund.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("GovFund", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("GovFund");
+}
+
 //Trophic rewilding 
 void ElkImg()
 {
