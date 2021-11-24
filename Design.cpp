@@ -615,7 +615,6 @@ void T_2(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -627,157 +626,123 @@ void T_2(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -835,7 +800,6 @@ void T_3(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -847,159 +811,123 @@ void T_3(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1056,7 +984,6 @@ void T_4(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -1068,159 +995,123 @@ void T_4(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1280,7 +1171,6 @@ void T_5(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -1292,159 +1182,123 @@ void T_5(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1502,7 +1356,6 @@ void T_6(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -1514,159 +1367,123 @@ void T_6(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1723,7 +1540,6 @@ void T_7(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -1735,159 +1551,123 @@ void T_7(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1944,7 +1724,6 @@ void T_8(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -1956,159 +1735,123 @@ void T_8(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
-			}			
+			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -2167,7 +1910,6 @@ void T_9(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -2179,189 +1921,164 @@ void T_9(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 10;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 5;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 5;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
+		}
 		else if (input2 == "WOLF")
-			{
+		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
-			}
+		}
 		else if (input2 == "EURASIANLYNX")
-			{
+		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
-			}
+		}
 		else if (input2 == "WILDCAT")
-			{
+		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
-			}
+		}
 		else if (input2 == "BEARS")
-			{
+		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
-			}
-
+		}
 		AniUsed.push_back(input2);
 	}
 
@@ -2417,7 +2134,6 @@ void T_10(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -2429,189 +2145,164 @@ void T_10(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 10;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 5;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 5;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 
@@ -2667,7 +2358,6 @@ void T_11(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -2679,189 +2369,164 @@ void T_11(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 10;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 5;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 5;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 
@@ -2917,7 +2582,6 @@ void T_12(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -2929,189 +2593,164 @@ void T_12(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 10;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 5;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 5;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 10;
+			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
-
 		AniUsed.push_back(input2);
 	}
 
@@ -3122,6 +2761,7 @@ void T_12(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
+
 //To be edited
 void EndGame()
 {
@@ -3205,7 +2845,6 @@ void PT_2(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -3217,215 +2856,166 @@ void PT_2(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -3481,7 +3071,6 @@ void PT_3(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -3493,215 +3082,166 @@ void PT_3(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -3757,7 +3297,6 @@ void PT_4(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -3769,215 +3308,166 @@ void PT_4(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -4033,7 +3523,6 @@ void PT_5(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -4045,215 +3534,166 @@ void PT_5(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -4309,7 +3749,6 @@ void PT_6(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -4321,215 +3760,166 @@ void PT_6(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -4585,7 +3975,6 @@ void PT_7(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -4597,215 +3986,166 @@ void PT_7(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -4861,7 +4201,6 @@ void PT_8(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -4873,215 +4212,166 @@ void PT_8(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
+		AniUsed.push_back(input2);
 	}
-	AniUsed.push_back(input2);
 
 	if (life == 0)
 	{
@@ -5136,7 +4426,6 @@ void PT_9(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -5148,296 +4437,222 @@ void PT_9(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
-				std::cout << "You chose to add Wolf to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
-				else if (input2 == "EURASIANLYNX")
+			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
-				std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
-				else if (input2 == "WILDCAT")
+			else if (input2 == "WILDCAT")
 			{
 				WildcatImg();
-				std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
-				else if (input2 == "BEARS")
+			else if (input2 == "BEARS")
 			{
 				BearImg();
-				std::cout << "You chose to add Bears to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
-				else if (input2 == "LION")
+			else if (input2 == "LION")
 			{
 				LionImg();
-				std::cout << "You chose to add Lion to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
-				else if (input2 == "SPOTTEDHYENA")
+			else if (input2 == "SPOTTEDHYENA")
 			{
 				HyenaImg();
-				std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
-		else if (input2 == "RHINOCEROS")
-			{
-			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
 			life += 10;
-			}
+		}
+		else if (input2 == "RHINOCEROS")
+		{
+			RhinoImg();
+			life += 10;
+		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
-		MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
+			MammothImg();
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "LION")
 		{
 			LionImg();
-			std::cout << "You chose to add Lion to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "SPOTTEDHYENA")
 		{
 			HyenaImg();
-			std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		AniUsed.push_back(input2);
@@ -5494,7 +4709,6 @@ void PT_10(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -5506,296 +4720,222 @@ void PT_10(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
-				std::cout << "You chose to add Wolf to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
-				std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WILDCAT")
 			{
 				WildcatImg();
-				std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "BEARS")
 			{
 				BearImg();
-				std::cout << "You chose to add Bears to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "LION")
 			{
 				LionImg();
-				std::cout << "You chose to add Lion to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "SPOTTEDHYENA")
 			{
 				HyenaImg();
-				std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "LION")
 		{
 			LionImg();
-			std::cout << "You chose to add Lion to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "SPOTTEDHYENA")
 		{
 			HyenaImg();
-			std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		AniUsed.push_back(input2);
@@ -5852,7 +4992,6 @@ void PT_11(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -5864,296 +5003,222 @@ void PT_11(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
-				std::cout << "You chose to add Wolf to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
-				std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WILDCAT")
 			{
 				WildcatImg();
-				std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "BEARS")
 			{
 				BearImg();
-				std::cout << "You chose to add Bears to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "LION")
 			{
 				LionImg();
-				std::cout << "You chose to add Lion to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "SPOTTEDHYENA")
 			{
 				HyenaImg();
-				std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "LION")
 		{
 			LionImg();
-			std::cout << "You chose to add Lion to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "SPOTTEDHYENA")
 		{
 			HyenaImg();
-			std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		AniUsed.push_back(input2);
@@ -6210,7 +5275,6 @@ void PT_12(Ecosystem& protag, int age)
 		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
-			std::cout << "You chose to add Elk to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
@@ -6222,296 +5286,222 @@ void PT_12(Ecosystem& protag, int age)
 			if (input2 == "FALLOWDEER")
 			{
 				FallowImg();
-				std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REDSQUIRREL")
 			{
 				RedSqImg();
-				std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
-
 			}
 			else if (input2 == "ROEDEER")
 			{
 				RoeImg();
-				std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "EUROPEANBISON")
 			{
 				EUbiImg();
-				std::cout << "You chose to add European Bison to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDHORSES")
 			{
 				HorseImg();
-				std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "LONGHORNCATTLE")
 			{
 				LHCatImg();
-				std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANBEAVER")
 			{
 				EUBevImg();
-				std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "WILDBOAR")
 			{
 				WildBoarImg();
-				std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "STORK")
 			{
 				StorkImg();
-				std::cout << "You chose to add Stork to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WHITETAILEDEAGLE")
 			{
 				WTEImg();
-				std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "PINEMARTEN")
 			{
 				PiMarImg();
-				std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
 			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
-				std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 				life += 10;
 			}
 			else if (input2 == "ELEPHANT")
 			{
 				ElephantImg();
-				std::cout << "You chose to add Elephant to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 0;
 			}
 			else if (input2 == "WOOLYMAMMOTH")
 			{
 				MammothImg();
-				std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "REINDEER")
 			{
 				ReindeerImg();
-				std::cout << "You chose to add Reindeer to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
-				std::cout << "You chose to add Wolf to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
-				std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "WILDCAT")
 			{
 				WildcatImg();
-				std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 5;
 			}
 			else if (input2 == "BEARS")
 			{
 				BearImg();
-				std::cout << "You chose to add Bears to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "LION")
 			{
 				LionImg();
-				std::cout << "You chose to add Lion to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 			else if (input2 == "SPOTTEDHYENA")
 			{
 				HyenaImg();
-				std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-				std::cout << "Description\n";
 				life += 10;
 			}
 		}
-
 		else if (input2 == "FALLOWDEER")
 		{
 			FallowImg();
-			std::cout << "You chose to add Fallow Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REDSQUIRREL")
 		{
 			RedSqImg();
-			std::cout << "You chose to add Red Squirrel to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "ROEDEER")
 		{
 			RoeImg();
-			std::cout << "You chose to add Roe Deer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "EUROPEANBISON")
 		{
 			EUbiImg();
-			std::cout << "You chose to add European Bison to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDHORSES")
 		{
 			HorseImg();
-			std::cout << "You chose to add Wild Horses to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "LONGHORNCATTLE")
 		{
 			LHCatImg();
-			std::cout << "You chose to add Long Horn Cattle to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANBEAVER")
 		{
 			EUBevImg();
-			std::cout << "You chose to add Eurasian Beavers to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "WILDBOAR")
 		{
 			WildBoarImg();
-			std::cout << "You chose to add Wild Boar to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "STORK")
 		{
 			StorkImg();
-			std::cout << "You chose to add Stork to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WHITETAILEDEAGLE")
 		{
 			WTEImg();
-			std::cout << "You chose to add White-tailed Eagles to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "PINEMARTEN")
 		{
 			PiMarImg();
-			std::cout << "You chose to add Pine Marten to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
-			std::cout << "You chose to add Rhinoceros to your rewilding project. \n";
 			life += 10;
 		}
 		else if (input2 == "ELEPHANT")
 		{
 			ElephantImg();
-			std::cout << "You chose to add Elephant to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 0;
 		}
 		else if (input2 == "WOOLYMAMMOTH")
 		{
 			MammothImg();
-			std::cout << "You chose to add Wooly Mammoth to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "REINDEER")
 		{
 			ReindeerImg();
-			std::cout << "You chose to add Reindeer to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
-			std::cout << "You chose to add Wolf to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
-			std::cout << "You chose to add Eurasian Lynx to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "WILDCAT")
 		{
 			WildcatImg();
-			std::cout << "You chose to add Wild Cat to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 5;
 		}
 		else if (input2 == "BEARS")
 		{
 			BearImg();
-			std::cout << "You chose to add Bears to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "LION")
 		{
 			LionImg();
-			std::cout << "You chose to add Lion to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		else if (input2 == "SPOTTEDHYENA")
 		{
 			HyenaImg();
-			std::cout << "You chose to add Spotted Hyena to your rewilding project. \n";
-			std::cout << "Description\n";
 			life += 10;
 		}
 		AniUsed.push_back(input2);
