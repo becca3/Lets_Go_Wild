@@ -21,6 +21,11 @@ void SixtyImg();
 //Events images
 void ShoutoutImg();
 void GovFundImg();
+void VisitorsImg();
+void BBCImg();
+void DiseaseImg();
+void DogWalkerImg();
+void ShootingImg();
 
 //Trophic rewilding
 void ElkImg();

@@ -172,6 +172,81 @@ void GovFundImg()
     destroyWindow("GovFund");
 }
 
+void VisitorsImg()
+{
+    std::string image_path = samples::findFile("Visitors.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Visitors", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Visitors");
+}
+
+void BBCImg()
+{
+    std::string image_path = samples::findFile("BBC.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("BBC", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("BBC");
+}
+
+void DogWalkerImg()
+{
+    std::string image_path = samples::findFile("DogWalker.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("DogWalker", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("DogWalker");
+}
+
+void DiseaseImg()
+{
+    std::string image_path = samples::findFile("Disease.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Disease", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Disease");
+}
+
+void ShootingImg()
+{
+    std::string image_path = samples::findFile("Shooting.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Shooting", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Shooting");
+}
+
 //Trophic rewilding 
 void ElkImg()
 {

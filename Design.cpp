@@ -328,7 +328,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "dogwalk")
 	{
-		//DogwalkImg();
+		DogWalkerImg();
 		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "partnership")
@@ -338,13 +338,13 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "BBC")
 	{
-		//BBCImg();
+		BBCImg();
 
 		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "visitors")
 	{
-		//VisotorsImg();
+		VisitorsImg();
 		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "shoutout")
@@ -1865,7 +1865,7 @@ void T_8(Ecosystem& protag, int age)
 	}
 }
 
-//Add images and functions for predators here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//Add images and functions for predators here!!!
 void T_9(Ecosystem& protag, int age)
 {
 	std::string input;
