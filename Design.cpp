@@ -329,33 +329,32 @@ void randomEvent(Ecosystem& protag, int& age)
 	else if (events[0] == "dogwalk")
 	{
 		DogWalkerImg();
-		//EventsOccurred.erase(EventsOccurred.begin());
+		life -= 5;
 	}
 	else if (events[0] == "partnership")
 	{
-		//PartnershipImg();
-		//EventsOccurred.erase(EventsOccurred.begin());
+		PartnershipImg();
+		life += 5;
 	}
 	else if (events[0] == "BBC")
 	{
 		BBCImg();
-
-		//EventsOccurred.erase(EventsOccurred.begin());
+		life += 5;
 	}
 	else if (events[0] == "visitors")
 	{
 		VisitorsImg();
-		//EventsOccurred.erase(EventsOccurred.begin());
+		life -= 5;
 	}
 	else if (events[0] == "shoutout")
 	{
 		ShoutoutImg();
-		//EventsOccurred.erase(EventsOccurred.begin());
+		life += 5;
 	}
 	else if (events[0] == "govfund")
 	{
 		GovFundImg();
-		//EventsOccurred.erase(EventsOccurred.begin());
+		life += 10;
 	}
 
 	//Add the policy events here too 

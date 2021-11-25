@@ -26,6 +26,7 @@ void BBCImg();
 void DiseaseImg();
 void DogWalkerImg();
 void ShootingImg();
+void PartnershipImg();
 
 //Trophic rewilding
 void ElkImg();

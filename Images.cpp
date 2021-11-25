@@ -247,6 +247,21 @@ void ShootingImg()
     destroyWindow("Shooting");
 }
 
+void PartnershipImg()
+{
+    std::string image_path = samples::findFile("Partnership.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Partnership", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Partnership");
+}
+
 //Trophic rewilding 
 void ElkImg()
 {
