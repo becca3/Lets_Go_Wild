@@ -328,8 +328,11 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "dogwalk")
 	{
-		DogWalkerImg();
-		life -= 5;
+		if (std::find(AniUsed.begin(), AniUsed.end(), "EUROPEANBISON") != AniUsed.end())
+		{
+			DogWalkerImg();
+			life -= 5;
+		}
 	}
 	else if (events[0] == "partnership")
 	{
