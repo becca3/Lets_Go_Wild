@@ -100,7 +100,7 @@ void RhinoPolicy(Ecosystem& protag, int& age)
 {
 
 }
-void CattlePolicy(Ecosystem& protag, int& age)
+void HeckPolicy(Ecosystem& protag, int& age)
 {
 
 }
@@ -207,7 +207,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("BBC");
 
 	events.push_back("RhinoPolicy");
-	events.push_back("CattlePolicy");
+	events.push_back("HeckPolicy");
 	events.push_back("ElkPolicy");
 	events.push_back("ElephantPolicy");
 	events.push_back("LionPolicy");
@@ -219,16 +219,16 @@ void randomEvent(Ecosystem& protag, int& age)
 
 
 	//Multiply the number of "nothing" events to reduce chances of other events occurring 
-	events.push_back("nothing");
-	events.push_back("nothing2");
-	events.push_back("nothing3");
-	events.push_back("nothing4");
-	events.push_back("nothing5");
-	events.push_back("nothing6");
-	events.push_back("nothing7");
-	events.push_back("nothing8");
-	events.push_back("nothing9");
-	events.push_back("nothing10");
+	//events.push_back("nothing");
+	//events.push_back("nothing2");
+	//events.push_back("nothing3");
+	//events.push_back("nothing4");
+	//events.push_back("nothing5");
+	//events.push_back("nothing6");
+	//events.push_back("nothing7");
+	//events.push_back("nothing8");
+	//events.push_back("nothing9");
+	//events.push_back("nothing10");
 
 	//vectorise the events to follow which have occurred then give player choice to add supp. feeding  	
 
@@ -267,29 +267,22 @@ void randomEvent(Ecosystem& protag, int& age)
 		std::cout << "Bovine TB has broken out. Cattle have been removed. Type 'Y' \n";
 		std::cin >> input1;
 
-		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
-		AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
-
-		if (life <= 0)
+		if (std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE") != AniUsed.end())
 		{
-			std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-			std::cout << "Health has hit 0% \n";
-			std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
-			exit(0);
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
 		}
-		//EventsOccurred.erase(EventsOccurred.begin());
+		if (std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE") != AniUsed.end())
+		{
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
+		}
 	}
 	else if (events[0] == "protest")
 	{
 		//ProtestImg();
-			
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "extinction")
 	{
 		//ExtinctionImg();
-
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "winter")
 	{
@@ -306,25 +299,18 @@ void randomEvent(Ecosystem& protag, int& age)
 		{
 			life -= 10;
 		}
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "carcasses")
 	{
 		//CarcassesImg();
-
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "poachers")
 	{
 		//PoachersImg();
-	
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "invasive")
 	{
 		//InvasiveImg();
-
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "dogwalk")
 	{
@@ -361,48 +347,138 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 
 	//Add the policy events here too 
+	else if (events[0] == "RhinoPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "RHINOCEROS") != AniUsed.end())
+		{
+			RhinoPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "RHINOCEROS"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "HeckPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE") != AniUsed.end())
+		{
+			HeckPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "ElkPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "EURASIANELK") != AniUsed.end())
+		{
+			ElkPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "EURASIANELK"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "ElephantPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "ELEPHANT") != AniUsed.end())
+		{
+			ElephantPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "ELEPHANT"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "LionPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "LION") != AniUsed.end())
+		{
+			LionsPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LION"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "HyenaPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "SPOTTEDHYENA") != AniUsed.end())
+		{
+			HyenasPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "SPOTTEDHYENA"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "BisonPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "EUROPEANBISON") != AniUsed.end())
+		{
+			BisonPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "EUROPEANBISON"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "BearsPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "BEARS") != AniUsed.end())
+		{
+			BearsPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "BEARS"));
+			life -= 5;
+	}
+	}
+	else if (events[0] == "MammothPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "WOOLYMAMMOTH") != AniUsed.end())
+		{
+			MammothPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "WOOLYMAMMOTH"));
+			life -= 5;
+		}
+	}
+	else if (events[0] == "WolfPolicy")
+	{
+		if (std::find(AniUsed.begin(), AniUsed.end(), "WOLF") != AniUsed.end())
+		{
+			WolfPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "WOLF"));
+			life -= 5;
+		}
+	}
 
 	//These are to reduce probability of an actual event.
-	else if (events[0] == "nothing")
-	{
-		nothing(protag, age);
-	}
-	else if (events[0] == "nothing2")
-	{
-		nothing2(protag, age);
-	}
-	else if (events[0] == "nothing3")
-	{
-		nothing3(protag, age);
-	}
-	else if (events[0] == "nothing4")
-	{
-		nothing4(protag, age);
-	}
-	else if (events[0] == "nothing5")
-	{
-		nothing5(protag, age);
-	}
-	else if (events[0] == "nothing6")
-	{
-		nothing6(protag, age);
-	}
-	else if (events[0] == "nothing7")
-	{
-		nothing7(protag, age);
-	}
-	else if (events[0] == "nothing8")
-	{
-		nothing8(protag, age);
-	}
-	else if (events[0] == "nothing9")
-	{
-		nothing9(protag, age);
-	}
-	else if (events[0] == "nothing10")
-	{
-		nothing10(protag, age);
-	}
+	//else if (events[0] == "nothing")
+	//{
+	//	nothing(protag, age);
+	//}
+	//else if (events[0] == "nothing2")
+	//{
+	//	nothing2(protag, age);
+	//}
+	//else if (events[0] == "nothing3")
+	//{
+	//	nothing3(protag, age);
+	//}
+	//else if (events[0] == "nothing4")
+	//{
+	//	nothing4(protag, age);
+	//}
+	//else if (events[0] == "nothing5")
+	//{
+	//	nothing5(protag, age);
+	//}
+	//else if (events[0] == "nothing6")
+	//{
+	//	nothing6(protag, age);
+	//}
+	//else if (events[0] == "nothing7")
+	//{
+	//	nothing7(protag, age);
+	//}
+	//else if (events[0] == "nothing8")
+	//{
+	//	nothing8(protag, age);
+	//}
+	//else if (events[0] == "nothing9")
+	//{
+	//	nothing9(protag, age);
+	//}
+	//else if (events[0] == "nothing10")
+	//{
+	//	nothing10(protag, age);
+	//}
 }
 
 

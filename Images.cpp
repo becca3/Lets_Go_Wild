@@ -141,7 +141,6 @@ void EndImg()
 }
 
 //Events images.
-
 void ShoutoutImg()
 {
     std::string image_path = samples::findFile("shoutout.jpg");
@@ -156,7 +155,6 @@ void ShoutoutImg()
     int k = waitKey(50000);
     destroyWindow("shoutout");
 }
-
 void GovFundImg()
 {
     std::string image_path = samples::findFile("GovFund.jpg");
@@ -171,7 +169,6 @@ void GovFundImg()
     int k = waitKey(50000);
     destroyWindow("GovFund");
 }
-
 void VisitorsImg()
 {
     std::string image_path = samples::findFile("Visitors.jpg");
@@ -186,7 +183,6 @@ void VisitorsImg()
     int k = waitKey(50000);
     destroyWindow("Visitors");
 }
-
 void BBCImg()
 {
     std::string image_path = samples::findFile("BBC.jpg");
@@ -201,7 +197,6 @@ void BBCImg()
     int k = waitKey(50000);
     destroyWindow("BBC");
 }
-
 void DogWalkerImg()
 {
     std::string image_path = samples::findFile("DogWalker.jpg");
@@ -216,7 +211,6 @@ void DogWalkerImg()
     int k = waitKey(50000);
     destroyWindow("DogWalker");
 }
-
 void DiseaseImg()
 {
     std::string image_path = samples::findFile("Disease.jpg");
@@ -231,7 +225,6 @@ void DiseaseImg()
     int k = waitKey(50000);
     destroyWindow("Disease");
 }
-
 void ShootingImg()
 {
     std::string image_path = samples::findFile("Shooting.jpg");
@@ -246,7 +239,6 @@ void ShootingImg()
     int k = waitKey(50000);
     destroyWindow("Shooting");
 }
-
 void PartnershipImg()
 {
     std::string image_path = samples::findFile("Partnership.jpg");
@@ -260,6 +252,148 @@ void PartnershipImg()
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
     destroyWindow("Partnership");
+}
+
+//Policy images.
+void RhinoPolicyImg()
+{
+    std::string image_path = samples::findFile("RhinoPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("RhinoPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("RhinoPolicy");
+}
+void HeckPolicyImg()
+{
+    std::string image_path = samples::findFile("HeckPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("HeckPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("HeckPolicy");
+}
+void ElkPolicyImg()
+{
+    std::string image_path = samples::findFile("ElkPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("ElkPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("ElkPolicy");
+}
+void LionsPolicyImg()
+{
+    std::string image_path = samples::findFile("LionPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("LionPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("LionPolicy");
+}
+void ElephantPolicyImg()
+{
+    std::string image_path = samples::findFile("ElephantPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("ElephantPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("ElephantPolicy");
+}
+void HyenasPolicyImg()
+{
+    std::string image_path = samples::findFile("HyenaPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("HyenaPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("HyenaPolicy");
+}
+void BearsPolicyImg()
+{
+    std::string image_path = samples::findFile("BearsPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("BearsPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("BearsPolicy");
+}
+void MammothPolicyImg()
+{
+    std::string image_path = samples::findFile("MammothPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("MammothPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("MammothPolicy");
+}
+void BisonPolicyImg()
+{
+    std::string image_path = samples::findFile("BisonPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("BisonPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("BisonPolicy");
+}
+void WolfPolicyImg()
+{
+    std::string image_path = samples::findFile("WolfPolicy.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("WolfPolicy", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("WolfPolicy");
 }
 
 //Trophic rewilding 

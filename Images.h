@@ -28,6 +28,18 @@ void DogWalkerImg();
 void ShootingImg();
 void PartnershipImg();
 
+//Policies
+void RhinoPolicyImg();
+void HeckPolicyImg();
+void ElkPolicyImg();
+void ElephantPolicyImg();
+void LionsPolicyImg();
+void HyenasPolicyImg();
+void BisonPolicyImg();
+void BearsPolicyImg();
+void MammothPolicyImg();
+void WolfPolicyImg();
+
 //Trophic rewilding
 void ElkImg();
 void FallowImg();
