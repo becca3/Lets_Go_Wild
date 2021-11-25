@@ -355,7 +355,7 @@ void randomEvent(Ecosystem& protag, int& age)
 		life += 10;
 	}
 
-	//Add the policy events here too 
+	//Policy events. 
 	else if (events[0] == "RhinoPolicy")
 	{
 		if (std::find(AniUsed.begin(), AniUsed.end(), "RHINOCEROS") != AniUsed.end())
@@ -2857,21 +2857,25 @@ void EndGame()
 
 	if (life == 10)
 	{
+		ZeroImg();
 		std::cout << "You didn't change anything\n";
 		EndImg();
 	}
 	else if (life >= 10 && life <= 25)
 	{
+		ZeroImg();
 		std::cout << "You made some change - good\n";
 		EndImg();
 	}
 	else if (life >= 26 && life <= 50)
 	{
+		TwentyImg();
 		std::cout << "You made big change - great\n";
 		EndImg();
 	}
 	else if (life >= 51)
 	{
+		SixtyImg(); //Add text to images here
 		std::cout << "You made huge change - amazing\n";
 		EndImg();
 	}
