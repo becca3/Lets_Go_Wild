@@ -15,9 +15,12 @@ int main(int argc, char** argv)
 	//Player input taken.
 	std::string input;
 	std::cout << "Welcome to Lets Go Wild!\n";
+
 	//Displays logo.
 	LogoImg();
+	HedgehogImg();
 	PeopleImg();
+	Ecowoman2Img();
 	EcoWomanImg();
 	EcomanImg();
 	People2Img();

@@ -137,46 +137,46 @@ void WolfPolicy(Ecosystem& protag, int& age)
 
 }
 
-void nothing(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing2(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing3(Ecosystem& protag, int& age)
-{
-
-}
-void nothing4(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing5(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing6(Ecosystem& protag, int& age)
-{
-
-}
-void nothing7(Ecosystem& protag, int& age)
-{
-
-}
-void nothing8(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing9(Ecosystem& protag, int& age)
-{
-	
-}
-void nothing10(Ecosystem& protag, int& age)
-{
-
-}
+//void nothing(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing2(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing3(Ecosystem& protag, int& age)
+//{
+//
+//}
+//void nothing4(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing5(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing6(Ecosystem& protag, int& age)
+//{
+//
+//}
+//void nothing7(Ecosystem& protag, int& age)
+//{
+//
+//}
+//void nothing8(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing9(Ecosystem& protag, int& age)
+//{
+//	
+//}
+//void nothing10(Ecosystem& protag, int& age)
+//{
+//
+//}
 
 //Adds 5 years
 void Aging(int& age)

@@ -19,7 +19,35 @@ void LogoImg()
     int k = waitKey(10000);
     destroyWindow("Welcome to Let's Go Wild!");
 }
+void HedgehogImg()
+{
+    std::string image_path = samples::findFile("Hedgehog.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Instructions", img);
 
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(10000);
+    destroyWindow("Instructions");
+}
+void Ecowoman2Img()
+{
+    std::string image_path = samples::findFile("Ecowoman2.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Rewilding", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(10000);
+    destroyWindow("Rewilding");
+
+}
 void PeopleImg()
 {
     std::string image_path = samples::findFile("people.jpg");
@@ -34,7 +62,6 @@ void PeopleImg()
     int k = waitKey(50000);
     destroyWindow("People");
 }
-
 void People2Img()
 {
     std::string image_path = samples::findFile("people2.jpg");
@@ -49,7 +76,6 @@ void People2Img()
     int k = waitKey(50000);
     destroyWindow("People");
 }
-
 void EcoWomanImg()
 {
     std::string image_path = samples::findFile("ecowoman.jpg");
@@ -64,7 +90,6 @@ void EcoWomanImg()
     int k = waitKey(50000);
     destroyWindow("ecowoman");
 }
-
 void EcomanImg()
 {
     std::string image_path = samples::findFile("ecoman.jpg");
@@ -79,7 +104,6 @@ void EcomanImg()
     int k = waitKey(50000);
     destroyWindow("ecoman");
 }
-
 void ZeroImg()
 {
     std::string image_path = samples::findFile("Zero.jpg");
@@ -94,7 +118,6 @@ void ZeroImg()
     int k = waitKey(50000);
     destroyWindow("Zero");
 }
-
 void TwentyImg()
 {
     std::string image_path = samples::findFile("Twenty.jpg");
@@ -109,7 +132,6 @@ void TwentyImg()
     int k = waitKey(50000);
     destroyWindow("Twenty");
 }
-
 void SixtyImg()
 {
     std::string image_path = samples::findFile("Sixty.jpg");
@@ -124,7 +146,6 @@ void SixtyImg()
     int k = waitKey(50000);
     destroyWindow("Sixty");
 }
-
 void EndImg()
 {
     std::string image_path = samples::findFile("EndImage.jpg");

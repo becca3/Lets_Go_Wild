@@ -10,6 +10,8 @@
 #include <iostream>
 
 void LogoImg();
+void HedgehogImg();
+void Ecowoman2Img();
 void PeopleImg();
 void People2Img();
 void EcoWomanImg();
