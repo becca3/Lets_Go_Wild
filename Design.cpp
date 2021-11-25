@@ -237,7 +237,7 @@ void randomEvent(Ecosystem& protag, int& age)
 
 	if (events[0] == "shooting")
 	{
-		//ShootingImg();
+		ShootingImg();
 		std::string input1;
 		std::cout << "There was a shooting on the land, do you want to publicise it? Y/N \n";
 		std::cin >> input1;
@@ -250,19 +250,10 @@ void randomEvent(Ecosystem& protag, int& age)
 		{
 			life -= 5;
 		}
-
-		if (life <= 0)
-		{
-			std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-			std::cout << "Health has hit 0% \n";
-			std::cout << "DESCRIPTION ABOUT HOW INVASIVE SPP AFFECT LAND.\n";
-			exit(0);
-		}
-		//EventsOccurred.erase(EventsOccurred.begin());
 	}
 	else if (events[0] == "disease")
 	{
-		//DiseaseImg();
+		DiseaseImg();
 		std::string input1;
 		std::cout << "Bovine TB has broken out. Cattle have been removed. Type 'Y' \n";
 		std::cin >> input1;
@@ -270,23 +261,27 @@ void randomEvent(Ecosystem& protag, int& age)
 		if (std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE") != AniUsed.end())
 		{
 			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "HECKCATTLE"));
+			life -= 10;
 		}
 		if (std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE") != AniUsed.end())
 		{
 			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
+			life -= 10;
 		}
 	}
 	else if (events[0] == "protest")
 	{
-		//ProtestImg();
+		ProtestImg();
+		life -= 5;
 	}
 	else if (events[0] == "extinction")
 	{
-		//ExtinctionImg();
+		ExtinctionImg();
+		life -= 10;
 	}
 	else if (events[0] == "winter")
 	{
-		//WinterImg();
+		WinterImg();
 		std::string input1;
 		std::cout << "It's been a harsh winter. Do you want to add supplementary feed to your animals? Y/N \n";
 		std::cin >> input1;
@@ -306,11 +301,25 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "poachers")
 	{
-		//PoachersImg();
+		PoachersImg();
+		life -= 5;
 	}
 	else if (events[0] == "invasive")
 	{
-		//InvasiveImg();
+		InvasiveImg();
+		std::string input1;
+
+		std::cout << "A non-native invasive species has appeared on your land. Would you like to remove it? Y/N \n";
+		std::cin >> input1;
+
+		if (input1 == "Y")
+		{
+			life -= 5;
+		}
+		else
+		{
+			life -= 10;
+		}
 	}
 	else if (events[0] == "dogwalk")
 	{

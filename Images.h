@@ -27,6 +27,11 @@ void DiseaseImg();
 void DogWalkerImg();
 void ShootingImg();
 void PartnershipImg();
+void InvasiveImg();
+void WinterImg();
+void ProtestImg();
+void ExtinctionImg();
+void PoachersImg();
 
 //Policies
 void RhinoPolicyImg();

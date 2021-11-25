@@ -253,6 +253,76 @@ void PartnershipImg()
     int k = waitKey(50000);
     destroyWindow("Partnership");
 }
+void InvasiveImg()
+{
+    std::string image_path = samples::findFile("Invasive.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Invasive", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Invasive");
+}
+void WinterImg()
+{
+    std::string image_path = samples::findFile("Winter.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Winter", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Winter");
+}
+void ProtestImg()
+{
+    std::string image_path = samples::findFile("Protest.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Protest", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Protest");
+}
+void ExtinctionImg()
+{
+    std::string image_path = samples::findFile("Extinct.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Extinct", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Extinct");
+}
+void PoachersImg()
+{
+    std::string image_path = samples::findFile("Poachers.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Poachers", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Poachers");
+}
 
 //Policy images.
 void RhinoPolicyImg()
