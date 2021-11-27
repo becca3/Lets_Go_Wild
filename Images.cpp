@@ -30,7 +30,7 @@ void HedgehogImg()
     imshow("Instructions", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(10000);
+    int k = waitKey(20000);
     destroyWindow("Instructions");
 }
 void Ecowoman2Img()
