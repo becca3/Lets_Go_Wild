@@ -146,6 +146,62 @@ void SixtyImg()
     int k = waitKey(50000);
     destroyWindow("Sixty");
 }
+void wetlandsImg()
+{
+    std::string image_path = samples::findFile("wetlands.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Wetland", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Wetland");
+}
+void fireImg()
+{
+    std::string image_path = samples::findFile("fire.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Fire regime", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Fire regime");
+}
+void floodImg()
+{
+    std::string image_path = samples::findFile("flood.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Floods", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Floods");
+}
+void droughtImg()
+{
+    std::string image_path = samples::findFile("drought.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Drought", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Drought");
+}
 void EndImg()
 {
     std::string image_path = samples::findFile("EndImage.jpg");

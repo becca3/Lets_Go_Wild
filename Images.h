@@ -19,6 +19,10 @@ void EcomanImg();
 void ZeroImg();
 void TwentyImg();
 void SixtyImg();
+void wetlandsImg();
+void fireImg();
+void floodImg();
+void droughtImg();
 
 //Events images
 void ShoutoutImg();
