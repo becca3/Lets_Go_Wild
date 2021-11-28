@@ -23,6 +23,7 @@ void wetlandsImg();
 void fireImg();
 void floodImg();
 void droughtImg();
+void carcassImg();
 
 //Events images
 void ShoutoutImg();

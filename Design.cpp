@@ -269,6 +269,22 @@ void randomEvent(Ecosystem& protag, int& age)
 		droughtImg();
 		life -= 5;
 	}
+	else if (events[0] == "carcass")
+	{
+		carcassImg();
+		std::string input1;
+		std::cout << "Do you want to remove the carcass or not? Y/N \n";
+		std::cin >> input1;
+
+		if (input1 == "Y")
+		{
+			life -= 5;
+		}
+		else
+		{
+			life += 5;
+		}
+	}
 	else if (events[0] == "disease")
 	{
 		DiseaseImg();
