@@ -95,6 +95,10 @@ void BBC(Ecosystem& protag, int& age)
 {
 
 }
+void carcass(Ecosystem& protag, int& age)
+{
+
+}
 
 void RhinoPolicy(Ecosystem& protag, int& age)
 {
@@ -208,6 +212,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("partnership");
 	events.push_back("shoutout");
 	events.push_back("BBC");
+	events.push_back("carcass");
 
 	events.push_back("RhinoPolicy");
 	events.push_back("HeckPolicy");
