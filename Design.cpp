@@ -284,7 +284,7 @@ void randomEvent(Ecosystem& protag, int& age)
 		if (std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE") != AniUsed.end())
 		{
 			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "LONGHORNCATTLE"));
-			life -= 10;
+			life -= 12;
 		}
 	}
 	else if (events[0] == "protest")
