@@ -118,6 +118,20 @@ void ZeroImg()
     int k = waitKey(50000);
     destroyWindow("Zero");
 }
+void ZeroEOGImg()
+{
+    std::string image_path = samples::findFile("ZeroEOG.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("End of game", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("End of game");
+}
 void TwentyImg()
 {
     std::string image_path = samples::findFile("Twenty.jpg");
@@ -132,6 +146,20 @@ void TwentyImg()
     int k = waitKey(50000);
     destroyWindow("Twenty");
 }
+void TwentyEOGImg()
+{
+    std::string image_path = samples::findFile("TwentyEOG.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("End of game", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("End of game");
+}
 void SixtyImg()
 {
     std::string image_path = samples::findFile("Sixty.jpg");
@@ -145,6 +173,34 @@ void SixtyImg()
     //Wait for a keystroke in the window then closes the window.
     int k = waitKey(50000);
     destroyWindow("Sixty");
+}
+void SixtyEOGImg()
+{
+    std::string image_path = samples::findFile("SixtyEOG.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("End of game", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("End of game");
+}
+void SixtyEOGPlusImg()
+{
+    std::string image_path = samples::findFile("SixtyEOGPlus.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("End of game", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("End of game");
 }
 void wetlandsImg()
 {

@@ -141,47 +141,6 @@ void WolfPolicy(Ecosystem& protag, int& age)
 
 }
 
-//void nothing(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing2(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing3(Ecosystem& protag, int& age)
-//{
-//
-//}
-//void nothing4(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing5(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing6(Ecosystem& protag, int& age)
-//{
-//
-//}
-//void nothing7(Ecosystem& protag, int& age)
-//{
-//
-//}
-//void nothing8(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing9(Ecosystem& protag, int& age)
-//{
-//	
-//}
-//void nothing10(Ecosystem& protag, int& age)
-//{
-//
-//}
-
 //Adds 5 years
 void Aging(int& age)
 {
@@ -224,21 +183,6 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("MammothPolicy");
 	events.push_back("WolfPolicy");
 	events.push_back("BearsPolicy");
-
-
-	//Multiply the number of "nothing" events to reduce chances of other events occurring 
-	//events.push_back("nothing");
-	//events.push_back("nothing2");
-	//events.push_back("nothing3");
-	//events.push_back("nothing4");
-	//events.push_back("nothing5");
-	//events.push_back("nothing6");
-	//events.push_back("nothing7");
-	//events.push_back("nothing8");
-	//events.push_back("nothing9");
-	//events.push_back("nothing10");
-
-	//vectorise the events to follow which have occurred then give player choice to add supp. feeding  	
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -336,7 +280,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "carcasses")
 	{
-		//CarcassesImg();
+		carcassImg();
 	}
 	else if (events[0] == "poachers")
 	{
@@ -465,7 +409,7 @@ void randomEvent(Ecosystem& protag, int& age)
 			BearsPolicyImg();
 			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "BEARS"));
 			life -= 12;
-	}
+		}
 	}
 	else if (events[0] == "MammothPolicy")
 	{
@@ -485,50 +429,7 @@ void randomEvent(Ecosystem& protag, int& age)
 			life -= 8;
 		}
 	}
-
-	//These are to reduce probability of an actual event.
-	//else if (events[0] == "nothing")
-	//{
-	//	nothing(protag, age);
-	//}
-	//else if (events[0] == "nothing2")
-	//{
-	//	nothing2(protag, age);
-	//}
-	//else if (events[0] == "nothing3")
-	//{
-	//	nothing3(protag, age);
-	//}
-	//else if (events[0] == "nothing4")
-	//{
-	//	nothing4(protag, age);
-	//}
-	//else if (events[0] == "nothing5")
-	//{
-	//	nothing5(protag, age);
-	//}
-	//else if (events[0] == "nothing6")
-	//{
-	//	nothing6(protag, age);
-	//}
-	//else if (events[0] == "nothing7")
-	//{
-	//	nothing7(protag, age);
-	//}
-	//else if (events[0] == "nothing8")
-	//{
-	//	nothing8(protag, age);
-	//}
-	//else if (events[0] == "nothing9")
-	//{
-	//	nothing9(protag, age);
-	//}
-	//else if (events[0] == "nothing10")
-	//{
-	//	nothing10(protag, age);
-	//}
 }
-
 
 //Function to read in file from folder and print list of available animals to display to user. 
 void AnimalList()
@@ -701,13 +602,13 @@ void T_2(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -878,7 +779,8 @@ void T_2(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -888,13 +790,13 @@ void T_3(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1064,7 +966,8 @@ void T_3(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -1074,13 +977,13 @@ void T_4(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1249,7 +1152,8 @@ void T_4(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -1259,15 +1163,13 @@ void T_5(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	//add 20 year map
-
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1437,7 +1339,8 @@ void T_5(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -1447,13 +1350,13 @@ void T_6(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0 % \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1623,7 +1526,8 @@ void T_6(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -1633,13 +1537,13 @@ void T_7(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1808,7 +1712,8 @@ void T_7(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -1818,13 +1723,13 @@ void T_8(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -1993,7 +1898,8 @@ void T_8(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -2004,13 +1910,13 @@ void T_9(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -2220,7 +2126,8 @@ void T_9(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -2230,13 +2137,13 @@ void T_10(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -2445,7 +2352,8 @@ void T_10(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -2455,13 +2363,13 @@ void T_11(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -2670,7 +2578,8 @@ void T_11(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -2680,13 +2589,13 @@ void T_12(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -2895,7 +2804,8 @@ void T_12(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -2903,30 +2813,26 @@ void T_12(Ecosystem& protag, int age)
 //To be edited
 void EndGame()
 {
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
-	if (life == 10)
+	if (life >= 0 && life <= 20)
 	{
-		ZeroImg();
-		std::cout << "You didn't change anything\n";
+		ZeroEOGImg();
 		EndImg();
 	}
-	else if (life >= 10 && life <= 25)
+	else if (life >= 21 && life <= 50)
 	{
-		ZeroImg();
-		std::cout << "You made some change - good\n";
+		TwentyEOGImg();
 		EndImg();
 	}
-	else if (life >= 26 && life <= 50)
+	else if (life >= 51 && life <= 75)
 	{
-		TwentyImg();
-		std::cout << "You made big change - great\n";
+		SixtyEOGImg();
 		EndImg();
 	}
-	else if (life >= 51)
+	else if (life >= 76)
 	{
-		SixtyImg(); //Add text to images here
-		std::cout << "You made huge change - amazing\n";
+		SixtyEOGPlusImg();
 		EndImg();
 	}
 }
@@ -2945,13 +2851,13 @@ void PT_2(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -3162,7 +3068,8 @@ void PT_2(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -3172,13 +3079,13 @@ void PT_3(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -3389,7 +3296,8 @@ void PT_3(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -3399,13 +3307,13 @@ void PT_4(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0 % \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -3616,7 +3524,8 @@ void PT_4(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -3626,13 +3535,13 @@ void PT_5(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -3843,7 +3752,8 @@ void PT_5(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -3853,13 +3763,13 @@ void PT_6(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -4070,7 +3980,8 @@ void PT_6(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -4080,13 +3991,13 @@ void PT_7(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -4297,7 +4208,8 @@ void PT_7(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -4307,13 +4219,13 @@ void PT_8(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health. \n";
+	std::cout << "Your rewilding project is at " << life << "% progress. \n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -4524,7 +4436,8 @@ void PT_8(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -4535,13 +4448,13 @@ void PT_9(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -4809,7 +4722,8 @@ void PT_9(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -4819,13 +4733,13 @@ void PT_10(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -5093,7 +5007,8 @@ void PT_10(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -5103,13 +5018,13 @@ void PT_11(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -5377,7 +5292,8 @@ void PT_11(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }
@@ -5387,13 +5303,13 @@ void PT_12(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << "% health.\n";
+	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life <= 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
-		std::cout << "DESCRIPTION ABOUT HOW TO DO BETTER ETC.";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 
@@ -5661,7 +5577,8 @@ void PT_12(Ecosystem& protag, int age)
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Health has hit 0% \n";
+		std::cout << "Progress has hit 0% \n";
+		EndGame();
 		exit(0);
 	}
 }

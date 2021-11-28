@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	{
 		int age = startGame();
 
-		if (age >= 60) //Need to add health to this.
+		if (age >= 60) 
 		{
 			std::cout << "You have completed Lets Go Wild!\n";
 		}
