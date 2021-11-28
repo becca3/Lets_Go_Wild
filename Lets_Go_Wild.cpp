@@ -9,7 +9,6 @@
 int startGame();
 Ecosystem createEco();
 
-
 int main(int argc, char** argv)
 {
 	//Player input taken.

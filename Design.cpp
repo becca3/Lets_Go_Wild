@@ -15,11 +15,27 @@
 //Not best practice.
 using namespace std;
 
-//Geenrate randomness
+//Generate randomness
 using Random = effolkronium::random_static;
 
 //Start of life bar
 int life = 20;
+
+void LifeBZero()
+{
+	if (life < 0)
+	{
+		life = 0;
+	}
+}
+
+void LifeAHundred()
+{
+	if (life > 100)
+	{
+		life = 100;
+	}
+}
 
 //Vector to hold list of playable animals.
 std::vector<std::string> AniList;
@@ -2813,6 +2829,8 @@ void T_12(Ecosystem& protag, int age)
 //To be edited
 void EndGame()
 {
+	LifeBZero();
+	LifeAHundred();
 	std::cout << "Your rewilding project is at " << life << "% progress.\n";
 
 	if (life >= 0 && life <= 20)
