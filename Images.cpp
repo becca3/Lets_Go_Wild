@@ -7,7 +7,7 @@ using namespace cv;
 //Intro and ending
 void LogoImg()
 {
-    std::string image_path = samples::findFile("Logo.jpg");
+    std::string image_path = samples::findFile("Logo2.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {

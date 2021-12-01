@@ -167,8 +167,6 @@ void Aging(int& age)
 void randomEvent(Ecosystem& protag, int& age)
 {
 	std::vector<std::string> events;
-	std::vector<std::string> EventsOccurred;
-
 	std::string input1;
 
 	events.push_back("fire");
@@ -276,6 +274,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	else if (events[0] == "extinction")
 	{
 		ExtinctionImg();
+		
 		life -= 10;
 	}
 	else if (events[0] == "winter")
@@ -293,10 +292,6 @@ void randomEvent(Ecosystem& protag, int& age)
 		{
 			life -= 10;
 		}
-	}
-	else if (events[0] == "carcasses")
-	{
-		carcassImg();
 	}
 	else if (events[0] == "poachers")
 	{
@@ -618,7 +613,7 @@ void T_2(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -806,7 +801,7 @@ void T_3(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -993,7 +988,7 @@ void T_4(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -1179,7 +1174,7 @@ void T_5(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -1366,7 +1361,7 @@ void T_6(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -1553,7 +1548,7 @@ void T_7(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -1739,7 +1734,7 @@ void T_8(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -1926,7 +1921,7 @@ void T_9(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -2153,7 +2148,7 @@ void T_10(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -2379,7 +2374,7 @@ void T_11(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -2605,7 +2600,7 @@ void T_12(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -2831,7 +2826,7 @@ void EndGame()
 {
 	LifeBZero();
 	LifeAHundred();
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life >= 0 && life <= 20)
 	{
@@ -2869,7 +2864,7 @@ void PT_2(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -3097,7 +3092,7 @@ void PT_3(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -3325,7 +3320,7 @@ void PT_4(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -3553,7 +3548,7 @@ void PT_5(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -3781,7 +3776,7 @@ void PT_6(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -4009,7 +4004,7 @@ void PT_7(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -4237,7 +4232,7 @@ void PT_8(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress. \n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -4466,7 +4461,7 @@ void PT_9(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -4751,7 +4746,7 @@ void PT_10(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -5036,7 +5031,7 @@ void PT_11(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
@@ -5321,7 +5316,7 @@ void PT_12(Ecosystem& protag, int age)
 	std::string input;
 	std::string input2;
 
-	std::cout << "Your rewilding project is at " << life << " progress.\n";
+	std::cout << "Your rewilding progress is " << life << "\n";
 
 	if (life <= 0)
 	{
