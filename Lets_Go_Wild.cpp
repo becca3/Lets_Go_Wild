@@ -18,6 +18,7 @@ int main(int argc, char** argv)
 	//Displays logo.
 	LogoImg();
 	HedgehogImg();
+	GameTermsImg();
 	PeopleImg();
 	Ecowoman2Img();
 	EcoWomanImg();

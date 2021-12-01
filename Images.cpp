@@ -30,8 +30,22 @@ void HedgehogImg()
     imshow("Instructions", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(20000);
+    int k = waitKey(40000);
     destroyWindow("Instructions");
+}
+void GameTermsImg()
+{
+    std::string image_path = samples::findFile("GameTerms.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Game Terms", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Game Terms");
 }
 void Ecowoman2Img()
 {
@@ -44,7 +58,7 @@ void Ecowoman2Img()
     imshow("Rewilding", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(10000);
+    int k = waitKey(20000);
     destroyWindow("Rewilding");
 
 }
