@@ -47,7 +47,8 @@ int startGame()
 
 	Ecosystem protag = createEco();
 
-	std::cout << "Would you like to do Trophic (1) or Pleistocene (2) rewilding? \n";
+	std::cout << "Would you like to do Trophic or Pleistocene rewilding? \n";
+	std::cout << "Type 1 for trophic or 2 for Pleistocene rewilding: ";
 	std::cin >> input1;
 
 	if (input1 == "1")
@@ -56,7 +57,7 @@ int startGame()
 		AnimalList();
 		print();
 
-		while (age < 60) 	//Length of rewilding project in years. Health of rewilding project in percentage
+		while (age < 60) 	//Length of rewilding project in years. Progress of rewilding project according to equation 
 		{
 			Game_Core(protag, age);
 			std::string input3;
@@ -113,7 +114,8 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
-				//Introduce predators here.
+				//Introduce predators here
+				//PredImg();
 				T_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -217,6 +219,7 @@ int startGame()
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				//Introduce predators here
+				//PleioPredImg();
 				PT_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);

@@ -224,8 +224,15 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "flood")
 	{
-		floodImg();
-		life -= 5;
+		if (std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			life -= 0;
+		}
+		else
+		{
+			floodImg();
+			life -= 5;
+		}
 	}
 	else if (events[0] == "drought")
 	{
@@ -379,10 +386,10 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "ElephantPolicy")
 	{
-		if (std::find(AniUsed.begin(), AniUsed.end(), "ELEPHANT") != AniUsed.end())
+		if (std::find(AniUsed.begin(), AniUsed.end(), "ASIANELEPHANT") != AniUsed.end())
 		{
 			ElephantPolicyImg();
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "ELEPHANT"));
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "ASIANELEPHANT"));
 			life -= 18;
 		}
 	}
@@ -424,10 +431,10 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "MammothPolicy")
 	{
-		if (std::find(AniUsed.begin(), AniUsed.end(), "WOOLYMAMMOTH") != AniUsed.end())
+		if (std::find(AniUsed.begin(), AniUsed.end(), "WOOLLYMAMMOTH") != AniUsed.end())
 		{
 			MammothPolicyImg();
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "WOOLYMAMMOTH"));
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "WOOLLYMAMMOTH"));
 			life -= 18;
 		}
 	}
@@ -651,15 +658,15 @@ void T_2(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -795,7 +802,6 @@ void T_2(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_3(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -838,15 +844,15 @@ void T_3(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -982,7 +988,6 @@ void T_3(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_4(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1024,15 +1029,15 @@ void T_4(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -1168,7 +1173,6 @@ void T_4(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_5(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1211,15 +1215,15 @@ void T_5(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -1355,7 +1359,6 @@ void T_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_6(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1398,15 +1401,15 @@ void T_6(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -1542,7 +1545,6 @@ void T_6(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_7(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1584,15 +1586,15 @@ void T_7(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -1728,7 +1730,6 @@ void T_7(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_8(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1770,15 +1771,15 @@ void T_8(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -1958,15 +1959,15 @@ void T_9(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -2142,7 +2143,6 @@ void T_9(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_10(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -2184,15 +2184,15 @@ void T_10(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -2368,7 +2368,6 @@ void T_10(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_11(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -2410,15 +2409,15 @@ void T_11(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -2594,7 +2593,6 @@ void T_11(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void T_12(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -2636,15 +2634,15 @@ void T_12(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -2902,15 +2900,15 @@ void PT_2(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -2979,12 +2977,12 @@ void PT_2(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -3060,12 +3058,12 @@ void PT_2(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -3086,7 +3084,6 @@ void PT_2(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_3(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3130,15 +3127,15 @@ void PT_3(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -3207,12 +3204,12 @@ void PT_3(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -3288,12 +3285,12 @@ void PT_3(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -3314,7 +3311,6 @@ void PT_3(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_4(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3358,15 +3354,15 @@ void PT_4(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -3435,12 +3431,12 @@ void PT_4(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -3516,12 +3512,12 @@ void PT_4(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -3542,7 +3538,6 @@ void PT_4(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_5(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3586,15 +3581,15 @@ void PT_5(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -3663,12 +3658,12 @@ void PT_5(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -3744,12 +3739,12 @@ void PT_5(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -3770,7 +3765,6 @@ void PT_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_6(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3814,15 +3808,15 @@ void PT_6(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -3891,12 +3885,12 @@ void PT_6(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -3972,12 +3966,12 @@ void PT_6(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -3998,7 +3992,6 @@ void PT_6(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_7(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -4042,15 +4035,15 @@ void PT_7(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -4119,12 +4112,12 @@ void PT_7(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -4200,12 +4193,12 @@ void PT_7(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -4226,7 +4219,6 @@ void PT_7(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_8(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -4270,15 +4262,15 @@ void PT_8(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -4347,12 +4339,12 @@ void PT_8(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -4428,12 +4420,12 @@ void PT_8(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -4454,7 +4446,6 @@ void PT_8(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 //Intro of predators
 void PT_9(Ecosystem& protag, int age)
 {
@@ -4497,15 +4488,15 @@ void PT_9(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -4574,12 +4565,12 @@ void PT_9(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -4685,12 +4676,12 @@ void PT_9(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -4740,7 +4731,6 @@ void PT_9(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_10(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -4782,15 +4772,15 @@ void PT_10(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -4859,12 +4849,12 @@ void PT_10(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -4970,12 +4960,12 @@ void PT_10(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -5025,7 +5015,6 @@ void PT_10(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_11(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -5067,15 +5056,15 @@ void PT_11(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -5144,12 +5133,12 @@ void PT_11(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -5255,12 +5244,12 @@ void PT_11(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;
@@ -5310,7 +5299,6 @@ void PT_11(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
 void PT_12(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -5352,15 +5340,15 @@ void PT_12(Ecosystem& protag, int age)
 			std::cin >> input2;
 		}
 
-		if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
 		{
 			ElkImg();
 			life += 7;
 		}
-		else if (input2 == "ELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
 		{
 			wetlandsImg();
-			std::cout << "You cannot place Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
 			std::cout << "Please choose a different animal\n";
 			std::cin >> input2;
 
@@ -5429,12 +5417,12 @@ void PT_12(Ecosystem& protag, int age)
 				RhinoImg();
 				life += 14;
 			}
-			else if (input2 == "ELEPHANT")
+			else if (input2 == "ASIANELEPHANT")
 			{
 				ElephantImg();
 				life += 18;
 			}
-			else if (input2 == "WOOLYMAMMOTH")
+			else if (input2 == "WOOLLYMAMMOTH")
 			{
 				MammothImg();
 				life += 18;
@@ -5540,12 +5528,12 @@ void PT_12(Ecosystem& protag, int age)
 			RhinoImg();
 			life += 14;
 		}
-		else if (input2 == "ELEPHANT")
+		else if (input2 == "ASIANELEPHANT")
 		{
 			ElephantImg();
 			life += 18;
 		}
-		else if (input2 == "WOOLYMAMMOTH")
+		else if (input2 == "WOOLLYMAMMOTH")
 		{
 			MammothImg();
 			life += 18;

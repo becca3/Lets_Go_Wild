@@ -16,7 +16,7 @@ void LogoImg()
     imshow("Welcome to Let's Go Wild!", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(10000);
+    int k = waitKey(50000);
     destroyWindow("Welcome to Let's Go Wild!");
 }
 void HedgehogImg()
@@ -30,7 +30,7 @@ void HedgehogImg()
     imshow("Instructions", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(40000);
+    int k = waitKey(50000);
     destroyWindow("Instructions");
 }
 void GameTermsImg()
@@ -58,7 +58,7 @@ void Ecowoman2Img()
     imshow("Rewilding", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(20000);
+    int k = waitKey(50000);
     destroyWindow("Rewilding");
 
 }
@@ -642,7 +642,6 @@ void ElkImg()
     int k = waitKey(50000);
     destroyWindow("elk");
 }
-
 void FallowImg()
 {
     std::string image_path = samples::findFile("FallowDeer.jpg");
@@ -657,7 +656,6 @@ void FallowImg()
     int k = waitKey(50000);
     destroyWindow("FallowDeer");
 }
-
 void RedSqImg()
 {
     std::string image_path = samples::findFile("RedSquirrel.jpg");
@@ -672,7 +670,6 @@ void RedSqImg()
     int k = waitKey(50000);
     destroyWindow("RedSquirrel");
 }
-
 void RoeImg()
 {
     std::string image_path = samples::findFile("RoeDeer.jpg");
@@ -687,7 +684,6 @@ void RoeImg()
     int k = waitKey(50000);
     destroyWindow("RoeDeer");
 }
-
 void EUbiImg()
 {
     std::string image_path = samples::findFile("Bison.jpg");
@@ -702,7 +698,6 @@ void EUbiImg()
     int k = waitKey(50000);
     destroyWindow("Bison");
 }
-
 void HorseImg()
 {
     std::string image_path = samples::findFile("Horse.jpg");
@@ -717,7 +712,6 @@ void HorseImg()
     int k = waitKey(50000);
     destroyWindow("Horse");
 }
-
 void LHCatImg()
 {
     std::string image_path = samples::findFile("LHCattle.jpg");
@@ -732,7 +726,6 @@ void LHCatImg()
     int k = waitKey(50000);
     destroyWindow("LHCattle");
 }
-
 void WildBoarImg()
 {
     std::string image_path = samples::findFile("WildBoar.jpg");
@@ -747,7 +740,6 @@ void WildBoarImg()
     int k = waitKey(50000);
     destroyWindow("WildBoar");
 }
-
 void StorkImg()
 {
     std::string image_path = samples::findFile("Stork.jpg");
@@ -762,7 +754,6 @@ void StorkImg()
     int k = waitKey(50000);
     destroyWindow("Stork");
 }
-
 void WTEImg()
 {
     std::string image_path = samples::findFile("WTEagle.jpg");
@@ -777,7 +768,6 @@ void WTEImg()
     int k = waitKey(50000);
     destroyWindow("WTEagle");
 }
-
 void PiMarImg()
 {
     std::string image_path = samples::findFile("PineMarten.jpg");
@@ -792,7 +782,6 @@ void PiMarImg()
     int k = waitKey(50000);
     destroyWindow("PineMarten");
 }
-
 void TamPigImg()
 {
     std::string image_path = samples::findFile("TamworthPig.jpg");
@@ -807,7 +796,6 @@ void TamPigImg()
     int k = waitKey(50000);
     destroyWindow("TamworthPig");
 }
-
 void HeckImg()
 {
     std::string image_path = samples::findFile("HeckCattle.jpg");
@@ -822,7 +810,6 @@ void HeckImg()
     int k = waitKey(50000);
     destroyWindow("HeckCattle");
 }
-
 void RedDeerImg()
 {
     std::string image_path = samples::findFile("RedDeer.jpg");
@@ -837,7 +824,6 @@ void RedDeerImg()
     int k = waitKey(50000);
     destroyWindow("RedDeer");
 }
-
 void EUBevImg()
 {
     std::string image_path = samples::findFile("Beaver.jpg");
@@ -868,7 +854,20 @@ void PredImg()
     int k = waitKey(50000);
     destroyWindow("PredatorIntro");
 }
+void PleioPredImg()
+{
+    std::string image_path = samples::findFile("PleioPredatorIntro.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Predator Intro", img);
 
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Predator Intro");
+}
 void WolfImg()
 {
     std::string image_path = samples::findFile("Wolf.jpg");
@@ -883,7 +882,6 @@ void WolfImg()
     int k = waitKey(50000);
     destroyWindow("Wolf");
 }
-
 void BearImg()
 {
     std::string image_path = samples::findFile("Bear.jpg");
@@ -898,7 +896,6 @@ void BearImg()
     int k = waitKey(50000);
     destroyWindow("Bear");
 }
-
 void EULyImg()
 {
     std::string image_path = samples::findFile("Lynx.jpg");
@@ -913,7 +910,6 @@ void EULyImg()
     int k = waitKey(50000);
     destroyWindow("Lynx");
 }
-
 void WildcatImg()
 {
     std::string image_path = samples::findFile("Wildcat.jpg");
@@ -944,7 +940,6 @@ void RhinoImg()
     int k = waitKey(50000);
     destroyWindow("Rhino");
 }
-
 void ElephantImg()
 {
     std::string image_path = samples::findFile("Elephant.jpg");
@@ -959,7 +954,6 @@ void ElephantImg()
     int k = waitKey(50000);
     destroyWindow("Elephant");
 }
-
 void MammothImg()
 {
     std::string image_path = samples::findFile("Mammoth.jpg");
@@ -974,7 +968,6 @@ void MammothImg()
     int k = waitKey(50000);
     destroyWindow("Mammoth");
 }
-
 void LionImg()
 {
     std::string image_path = samples::findFile("Lion.jpg");
@@ -989,7 +982,6 @@ void LionImg()
     int k = waitKey(50000);
     destroyWindow("Lion");
 }
-
 void ReindeerImg()
 {
     std::string image_path = samples::findFile("Reindeer.jpg");
@@ -1004,7 +996,6 @@ void ReindeerImg()
     int k = waitKey(50000);
     destroyWindow("Reindeer");
 }
-
 void HyenaImg()
 {
     std::string image_path = samples::findFile("Hyena.jpg");

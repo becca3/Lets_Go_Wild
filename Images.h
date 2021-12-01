@@ -87,6 +87,9 @@ void LionImg();
 void ReindeerImg();
 void HyenaImg();
 
+void PredImg();
+void PleioPredImg();
+
 void EndImg();
 
 #endif // !IMAGES_H
