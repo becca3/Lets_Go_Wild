@@ -42,6 +42,7 @@ void LifeAHundred();
 void Game_Core(Ecosystem& protag, int age);
 void Game_CorePleio(Ecosystem& protag, int age);
 //Trophic RW
+void T_1(Ecosystem& protag, int age);
 void T_2(Ecosystem& protag, int age);
 void T_3(Ecosystem& protag, int age);
 void T_4(Ecosystem& protag, int age);
@@ -56,6 +57,7 @@ void T_11(Ecosystem& protag, int age);
 void T_12(Ecosystem& protag, int age);
 
 //Pleistocene RW
+void PT_1(Ecosystem& protag, int age);
 void PT_2(Ecosystem& protag, int age);
 void PT_3(Ecosystem& protag, int age);
 void PT_4(Ecosystem& protag, int age);

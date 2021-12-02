@@ -469,14 +469,6 @@ void AnimalList()
 		}
 		newfile.close();   //Close the file object
 	}
-
-	RedDeerImg();
-	TamPigImg();
-	HeckImg();
-
-	AniUsed.push_back("REDDEER");
-	AniUsed.push_back("TAMWORTHPIGS");
-	AniUsed.push_back("HECKCATTLE");
 }
 
 //This function lists animals available for reintroduction with the exclusion of predators. TROPHIC RW
@@ -521,15 +513,6 @@ void AnimalListPleio()
 		}
 		newfile.close();   //Close the file object
 	}
-
-	RedDeerImg();
-	TamPigImg();
-	HeckImg();
-
-
-	AniUsed.push_back("REDDEER");
-	AniUsed.push_back("TAMWORTHPIGS");
-	AniUsed.push_back("HECKCATTLE");
 }
 
 //Prints animal list for Pleistocene - excluding predators.
@@ -614,7 +597,540 @@ void Game_Core(Ecosystem& protag, int age)
 	std::cout << "\n";
 }
 
-//Turn 2 - first user input
+void T_1(Ecosystem& protag, int age)
+{
+	std::string input;
+	std::string input2;
+	std::string input3;
+	std::string input4;
+
+	std::cout << "Your rewilding progress is " << life << "\n";
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Progress has hit 0 \n";
+		EndGame();
+		exit(0);
+	}
+
+
+	std::cout << "\nYou now have 2 choices: \n";
+	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
+	std::cout << "2 - Choose to add another species from the following list: \n";
+	std::cout << "\n";
+
+	AnimalListInit();
+	std::cout << "\n";
+
+	std::cout << "Select 1 or 2: \n";
+	std::cin >> input;
+
+	if (input == "1")
+	{
+		//Aging(age);
+	}
+	else if (input == "2")
+	{
+		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input2;
+		
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input2;
+
+			if (input2 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input2 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input2 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input2 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input2 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input2 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input2 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input2 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input2 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input2 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input2 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+		}
+		else if (input2 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input2 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input2 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input2 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input2 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input2 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input2 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input2 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input2 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input2 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input2 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input2 == "HECKCATTLE")
+			{
+			HeckImg();
+			life += 10;
+			}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
+		AniUsed.push_back(input2);
+
+		std::cout << "Please type the name of the second species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input3;
+
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input3))
+		{
+			std::cout << "Animal already in rewilding project\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input3;
+		}
+
+		if (input3 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input3 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input3;
+
+			if (input3 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input3 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input3 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input3 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input3 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input3 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input3 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input3 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input3 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input3 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input3 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input3 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input3 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input3 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+		}
+		else if (input3 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input3 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input3 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input3 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input3 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input3 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input3 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input3 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input3 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input3 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input3 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input3 == "HECKCATTLE")
+			{
+			HeckImg();
+			life += 10;
+			}
+		else if (input3 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input3 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
+
+			AniUsed.push_back(input3);
+
+		std::cout << "Please type the name of the third species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input4;
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input4))
+		{
+			std::cout << "Animal already in rewilding project\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input4;
+		}
+
+		if (input4 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input4 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input4;
+
+			if (input4 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input4 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input4 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input4 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input4 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input4 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input4 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input4 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input4 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input4 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input4 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input4 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input4 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input4 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+		}
+		else if (input4 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input4 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input4 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input4 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input4 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input4 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input4 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input4 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input4 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input4 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input4 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input4 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
+		}
+		else if (input4 == "REDDEER")
+		{
+			RedDeerImg();
+			life += 8;
+		}
+		else if (input4 == "TAMWORTHPIGS")
+		{
+			TamPigImg();
+			life += 5;
+		}
+		AniUsed.push_back(input4);
+	}
+
+	if (life == 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Progress has hit 0 \n";
+		EndGame();
+		exit(0);
+	}
+}
 void T_2(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -730,6 +1246,16 @@ void T_2(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -791,6 +1317,16 @@ void T_2(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		AniUsed.push_back(input2);
 	}
 
@@ -916,6 +1452,16 @@ void T_3(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -977,6 +1523,16 @@ void T_3(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		AniUsed.push_back(input2);
 	}
 
@@ -1101,6 +1657,16 @@ void T_4(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1162,6 +1728,16 @@ void T_4(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		AniUsed.push_back(input2);
 	}
 
@@ -1287,6 +1863,16 @@ void T_5(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1348,6 +1934,16 @@ void T_5(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		AniUsed.push_back(input2);
 	}
 
@@ -1359,6 +1955,8 @@ void T_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
+
+//Add images and functions for predators here!!!
 void T_6(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1374,20 +1972,20 @@ void T_6(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
-	//Insert map?
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
+	std::cout << "You can now introduce predators!! Your herbivores have established and your rewilding project can now support predators.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -1473,6 +2071,36 @@ void T_6(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1533,6 +2161,36 @@ void T_6(Ecosystem& protag, int age)
 		{
 			HeckImg();
 			life += 10;
+		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1561,11 +2219,12 @@ void T_7(Ecosystem& protag, int age)
 	}
 
 	std::cout << "\n5 years on, your rewilding project has changed.\n";
+	std::cout << "You can now introduce predators!! Your herbivores have established and your rewilding project can now support predators.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -1658,6 +2317,36 @@ void T_7(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1718,6 +2407,36 @@ void T_7(Ecosystem& protag, int age)
 		{
 			HeckImg();
 			life += 10;
+		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
 		}
 		AniUsed.push_back(input2);
 	}
@@ -1746,11 +2465,12 @@ void T_8(Ecosystem& protag, int age)
 	}
 
 	std::cout << "\n5 years on, your rewilding project has changed.\n";
+	std::cout << "You can now introduce predators!! Your herbivores have established and your rewilding project can now support predators.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
@@ -1843,6 +2563,36 @@ void T_8(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1904,6 +2654,36 @@ void T_8(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
 		AniUsed.push_back(input2);
 	}
 
@@ -1915,8 +2695,6 @@ void T_8(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
-//Add images and functions for predators here!!!
 void T_9(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -2031,6 +2809,16 @@ void T_9(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
@@ -2112,6 +2900,16 @@ void T_9(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
@@ -2256,6 +3054,16 @@ void T_10(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
@@ -2337,6 +3145,16 @@ void T_10(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
@@ -2481,6 +3299,16 @@ void T_11(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
@@ -2562,6 +3390,16 @@ void T_11(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
@@ -2706,6 +3544,16 @@ void T_12(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "WOLF")
 			{
 				WolfImg();
@@ -2787,6 +3635,16 @@ void T_12(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "WOLF")
 		{
 			WolfImg();
@@ -2857,6 +3715,650 @@ void Game_CorePleio(Ecosystem& protag, int age)
 }
 
 //Turn 2 - first user input
+void PT_1(Ecosystem& protag, int age)
+{
+	std::string input;
+	std::string input2;
+	std::string input3;
+	std::string input4;
+
+	std::cout << "Your rewilding progress is " << life << "\n";
+
+	if (life <= 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Progress has hit 0 \n";
+		EndGame();
+		exit(0);
+	}
+
+	std::cout << "\nYou now have 2 choices: \n";
+	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
+	std::cout << "2 - Choose to add another species from the following list: \n";
+	std::cout << "\n";
+
+	AnimalListPleioInit();
+	std::cout << "\n";
+
+	std::cout << "Select 1 or 2: \n";
+	std::cin >> input;
+
+	if (input == "1")
+	{
+		//Aging(age);
+	}
+	else if (input == "2")
+	{
+		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input2;
+
+		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
+		{
+			std::cout << "Animal already in rewilding project\n";
+			std::cout << "Please type the name of the species you'd like to add: \n";
+			std::cin >> input2;
+		}
+
+		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input2;
+
+			if (input2 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input2 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input2 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input2 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input2 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input2 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input2 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input2 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input2 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input2 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input2 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input2 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input2 == "RHINOCEROS")
+			{
+				RhinoImg();
+				life += 14;
+			}
+			else if (input2 == "ASIANELEPHANT")
+			{
+				ElephantImg();
+				life += 18;
+			}
+			else if (input2 == "WOOLLYMAMMOTH")
+			{
+				MammothImg();
+				life += 18;
+			}
+			else if (input2 == "REINDEER")
+			{
+				ReindeerImg();
+				life += 10;
+			}
+		}
+		else if (input2 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input2 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input2 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input2 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input2 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input2 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input2 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input2 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input2 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input2 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input2 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input2 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
+		}
+		else if (input2 == "REDDEER")
+		{
+			RedDeerImg();
+			life += 8;
+		}
+		else if (input2 == "TAMWORTHPIGS")
+		{
+			TamPigImg();
+			life += 5;
+		}
+		else if (input2 == "RHINOCEROS")
+		{
+			RhinoImg();
+			life += 14;
+		}
+		else if (input2 == "ASIANELEPHANT")
+		{
+			ElephantImg();
+			life += 18;
+		}
+		else if (input2 == "WOOLLYMAMMOTH")
+		{
+			MammothImg();
+			life += 18;
+		}
+		else if (input2 == "REINDEER")
+		{
+			ReindeerImg();
+			life += 10;
+		}
+		AniUsed.push_back(input2);
+
+		std::cout << "Please type the name of the second species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input3;
+
+		if (input3 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input3 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input3;
+
+			if (input3 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input3 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input3 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input3 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input3 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input3 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input3 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input3 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input3 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input3 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input3 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input3 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input3 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input3 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input3 == "RHINOCEROS")
+			{
+				RhinoImg();
+				life += 14;
+			}
+			else if (input3 == "ASIANELEPHANT")
+			{
+				ElephantImg();
+				life += 18;
+			}
+			else if (input3 == "WOOLLYMAMMOTH")
+			{
+				MammothImg();
+				life += 18;
+			}
+			else if (input3 == "REINDEER")
+			{
+				ReindeerImg();
+				life += 10;
+			}
+		}
+		else if (input3 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input3 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input3 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input3 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input3 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input3 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input3 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input3 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input3 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input3 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input3 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input3 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
+		}
+		else if (input3 == "REDDEER")
+		{
+			RedDeerImg();
+			life += 8;
+		}
+		else if (input3 == "TAMWORTHPIGS")
+		{
+			TamPigImg();
+			life += 5;
+		}
+		else if (input3 == "RHINOCEROS")
+		{
+			RhinoImg();
+			life += 14;
+		}
+		else if (input3 == "ASIANELEPHANT")
+		{
+			ElephantImg();
+			life += 18;
+		}
+		else if (input3 == "WOOLLYMAMMOTH")
+		{
+			MammothImg();
+			life += 18;
+		}
+		else if (input3 == "REINDEER")
+		{
+			ReindeerImg();
+			life += 10;
+		}
+		AniUsed.push_back(input3);
+
+		std::cout << "Please type the name of the third species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cin >> input4;
+
+		if (input4 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
+		{
+			ElkImg();
+			life += 7;
+		}
+		else if (input4 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") == AniUsed.end())
+		{
+			wetlandsImg();
+			std::cout << "You cannot place Eurasian Elk into a rewilding project until Beavers have established!\n";
+			std::cout << "Please choose a different animal\n";
+			std::cin >> input4;
+
+			if (input4 == "FALLOWDEER")
+			{
+				FallowImg();
+				life += 9;
+			}
+			else if (input4 == "REDSQUIRREL")
+			{
+				RedSqImg();
+				life += 5;
+			}
+			else if (input4 == "ROEDEER")
+			{
+				RoeImg();
+				life += 8;
+			}
+			else if (input4 == "EUROPEANBISON")
+			{
+				EUbiImg();
+				life += 11;
+			}
+			else if (input4 == "WILDHORSES")
+			{
+				HorseImg();
+				life += 11;
+			}
+			else if (input4 == "LONGHORNCATTLE")
+			{
+				LHCatImg();
+				life += 12;
+			}
+			else if (input4 == "EURASIANBEAVER")
+			{
+				EUBevImg();
+				life += 8;
+			}
+			else if (input4 == "WILDBOAR")
+			{
+				WildBoarImg();
+				life += 6;
+			}
+			else if (input4 == "STORK")
+			{
+				StorkImg();
+				life += 4;
+			}
+			else if (input4 == "WHITETAILEDEAGLE")
+			{
+				WTEImg();
+				life += 4;
+			}
+			else if (input4 == "PINEMARTEN")
+			{
+				PiMarImg();
+				life += 3;
+			}
+			else if (input4 == "HECKCATTLE")
+			{
+				HeckImg();
+				life += 10;
+			}
+			else if (input4 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input4 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
+			else if (input4 == "RHINOCEROS")
+			{
+				RhinoImg();
+				life += 14;
+			}
+			else if (input4 == "ASIANELEPHANT")
+			{
+				ElephantImg();
+				life += 18;
+			}
+			else if (input4 == "WOOLLYMAMMOTH")
+			{
+				MammothImg();
+				life += 18;
+			}
+			else if (input4 == "REINDEER")
+			{
+				ReindeerImg();
+				life += 10;
+			}
+		}
+		else if (input4 == "FALLOWDEER")
+		{
+			FallowImg();
+			life += 9;
+		}
+		else if (input4 == "REDSQUIRREL")
+		{
+			RedSqImg();
+			life += 5;
+		}
+		else if (input4 == "ROEDEER")
+		{
+			RoeImg();
+			life += 8;
+		}
+		else if (input4 == "EUROPEANBISON")
+		{
+			EUbiImg();
+			life += 11;
+		}
+		else if (input4 == "WILDHORSES")
+		{
+			HorseImg();
+			life += 11;
+		}
+		else if (input4 == "LONGHORNCATTLE")
+		{
+			LHCatImg();
+			life += 12;
+		}
+		else if (input4 == "EURASIANBEAVER")
+		{
+			EUBevImg();
+			life += 8;
+		}
+		else if (input4 == "WILDBOAR")
+		{
+			WildBoarImg();
+			life += 6;
+		}
+		else if (input4 == "STORK")
+		{
+			StorkImg();
+			life += 4;
+		}
+		else if (input4 == "WHITETAILEDEAGLE")
+		{
+			WTEImg();
+			life += 4;
+		}
+		else if (input4 == "PINEMARTEN")
+		{
+			PiMarImg();
+			life += 3;
+		}
+		else if (input4 == "HECKCATTLE")
+		{
+			HeckImg();
+			life += 10;
+		}
+		else if (input4 == "REDDEER")
+		{
+			RedDeerImg();
+			life += 8;
+		}
+		else if (input4 == "TAMWORTHPIGS")
+		{
+			TamPigImg();
+			life += 5;
+		}
+		else if (input4 == "RHINOCEROS")
+		{
+			RhinoImg();
+			life += 14;
+		}
+		else if (input4 == "ASIANELEPHANT")
+		{
+			ElephantImg();
+			life += 18;
+		}
+		else if (input4 == "WOOLLYMAMMOTH")
+		{
+			MammothImg();
+			life += 18;
+		}
+		else if (input4 == "REINDEER")
+		{
+			ReindeerImg();
+			life += 10;
+		}
+		AniUsed.push_back(input4);
+	}
+
+	if (life == 0)
+	{
+		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
+		std::cout << "Progress has hit 0 \n";
+		EndGame();
+		exit(0);
+	}
+}
 void PT_2(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -2972,6 +4474,16 @@ void PT_2(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -3052,6 +4564,16 @@ void PT_2(Ecosystem& protag, int age)
 		{
 			HeckImg();
 			life += 10;
+		}
+		else if (input2 == "REDDEER")
+		{
+		RedDeerImg();
+		life += 8;
+		}
+		else if (input2 == "TAMWORTHPIGS")
+		{
+		TamPigImg();
+		life += 5;
 		}
 		else if (input2 == "RHINOCEROS")
 		{
@@ -3199,6 +4721,16 @@ void PT_3(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -3280,6 +4812,16 @@ void PT_3(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -3426,6 +4968,16 @@ void PT_4(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -3507,6 +5059,16 @@ void PT_4(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -3653,6 +5215,16 @@ void PT_5(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -3734,6 +5306,16 @@ void PT_5(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -3765,6 +5347,8 @@ void PT_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
+
+//Intro of predators
 void PT_6(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3780,21 +5364,19 @@ void PT_6(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-
-	AnimalListPleioInit();
+	AnimalListPredPleio();
 	std::cout << "\n";
-
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -3880,6 +5462,16 @@ void PT_6(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -3899,6 +5491,36 @@ void PT_6(Ecosystem& protag, int age)
 			{
 				ReindeerImg();
 				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
+			else if (input2 == "LION")
+			{
+				LionImg();
+				life += 15;
+			}
+			else if (input2 == "SPOTTEDHYENA")
+			{
+				HyenaImg();
+				life += 14;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
@@ -3961,6 +5583,16 @@ void PT_6(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -3981,9 +5613,38 @@ void PT_6(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
+		else if (input2 == "LION")
+		{
+			LionImg();
+			life += 15;
+		}
+		else if (input2 == "SPOTTEDHYENA")
+		{
+			HyenaImg();
+			life += 14;
+		}
 		AniUsed.push_back(input2);
 	}
-
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
@@ -4007,21 +5668,19 @@ void PT_7(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-
-	AnimalListPleioInit();
+	AnimalListPredPleio();
 	std::cout << "\n";
-
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -4107,6 +5766,16 @@ void PT_7(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -4126,6 +5795,36 @@ void PT_7(Ecosystem& protag, int age)
 			{
 				ReindeerImg();
 				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
+			else if (input2 == "LION")
+			{
+				LionImg();
+				life += 15;
+			}
+			else if (input2 == "SPOTTEDHYENA")
+			{
+				HyenaImg();
+				life += 14;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
@@ -4188,6 +5887,16 @@ void PT_7(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -4208,9 +5917,38 @@ void PT_7(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
+		else if (input2 == "LION")
+		{
+			LionImg();
+			life += 15;
+		}
+		else if (input2 == "SPOTTEDHYENA")
+		{
+			HyenaImg();
+			life += 14;
+		}
 		AniUsed.push_back(input2);
 	}
-
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
@@ -4234,21 +5972,19 @@ void PT_8(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-
-	AnimalListPleioInit();
+	AnimalListPredPleio();
 	std::cout << "\n";
-
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -4334,6 +6070,16 @@ void PT_8(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -4353,6 +6099,36 @@ void PT_8(Ecosystem& protag, int age)
 			{
 				ReindeerImg();
 				life += 10;
+			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
+			else if (input2 == "LION")
+			{
+				LionImg();
+				life += 15;
+			}
+			else if (input2 == "SPOTTEDHYENA")
+			{
+				HyenaImg();
+				life += 14;
 			}
 		}
 		else if (input2 == "FALLOWDEER")
@@ -4415,6 +6191,16 @@ void PT_8(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -4435,9 +6221,38 @@ void PT_8(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
+		else if (input2 == "LION")
+		{
+			LionImg();
+			life += 15;
+		}
+		else if (input2 == "SPOTTEDHYENA")
+		{
+			HyenaImg();
+			life += 14;
+		}
 		AniUsed.push_back(input2);
 	}
-
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
@@ -4446,7 +6261,6 @@ void PT_8(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-//Intro of predators
 void PT_9(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -4560,6 +6374,16 @@ void PT_9(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -4671,6 +6495,16 @@ void PT_9(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -4844,6 +6678,16 @@ void PT_10(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -4955,6 +6799,16 @@ void PT_10(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -5128,6 +6982,16 @@ void PT_11(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -5239,6 +7103,16 @@ void PT_11(Ecosystem& protag, int age)
 			HeckImg();
 			life += 10;
 		}
+		else if (input2 == "REDDEER")
+			{
+			RedDeerImg();
+			life += 8;
+			}
+		else if (input2 == "TAMWORTHPIGS")
+			{
+			TamPigImg();
+			life += 5;
+			}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -5412,6 +7286,16 @@ void PT_12(Ecosystem& protag, int age)
 				HeckImg();
 				life += 10;
 			}
+			else if (input2 == "REDDEER")
+			{
+				RedDeerImg();
+				life += 8;
+			}
+			else if (input2 == "TAMWORTHPIGS")
+			{
+				TamPigImg();
+				life += 5;
+			}
 			else if (input2 == "RHINOCEROS")
 			{
 				RhinoImg();
@@ -5522,6 +7406,16 @@ void PT_12(Ecosystem& protag, int age)
 		{
 			HeckImg();
 			life += 10;
+		}
+		else if (input2 == "REDDEER")
+		{
+		RedDeerImg();
+		life += 8;
+		}
+		else if (input2 == "TAMWORTHPIGS")
+		{
+		TamPigImg();
+		life += 5;
 		}
 		else if (input2 == "RHINOCEROS")
 		{

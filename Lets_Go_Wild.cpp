@@ -42,7 +42,7 @@ int main(int argc, char** argv)
 int startGame()
 {
 	std::string input;
-	int age = 5;
+	int age = 0;
 	std::string input1;
 
 	Ecosystem protag = createEco();
@@ -64,6 +64,12 @@ int startGame()
 
 			if (age < 60)
 			{
+				T_1(protag, age);
+				Aging(age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
 				T_2(protag, age);
 				randomEvent(protag, age);
 				Aging(age);
@@ -93,6 +99,8 @@ int startGame()
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				TwentyImg();
+				//Introduce predators here
+				PredImg();
 				T_6(protag, age);
 				randomEvent(protag, age);
 				Aging(age);
@@ -114,8 +122,6 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
-				//Introduce predators here
-				PredImg();
 				T_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -168,6 +174,13 @@ int startGame()
 
 			if (age < 60)
 			{
+
+				PT_1(protag, age);
+				Aging(age);
+				print();
+
+				std::cout << "\nYour rewilding project is " << age << " years old\n";
+
 				PT_2(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -197,6 +210,8 @@ int startGame()
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				TwentyImg();
+				//Introduce predators here
+				PleioPredImg();
 				PT_6(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -218,8 +233,6 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
-				//Introduce predators here
-				PleioPredImg();
 				PT_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
