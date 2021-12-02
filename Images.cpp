@@ -842,7 +842,7 @@ void EUBevImg()
 //Function telling user that predators can be introduced
 void PredImg()
 {
-    std::string image_path = samples::findFile("PredatorIntro.jpg");
+    std::string image_path = samples::findFile("Predators.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
@@ -856,7 +856,7 @@ void PredImg()
 }
 void PleioPredImg()
 {
-    std::string image_path = samples::findFile("PleioPredatorIntro.jpg");
+    std::string image_path = samples::findFile("PleioPredators.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {

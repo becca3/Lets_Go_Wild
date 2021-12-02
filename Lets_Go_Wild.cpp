@@ -115,7 +115,7 @@ int startGame()
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				//Introduce predators here
-				//PredImg();
+				PredImg();
 				T_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -219,7 +219,7 @@ int startGame()
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
 				//Introduce predators here
-				//PleioPredImg();
+				PleioPredImg();
 				PT_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
