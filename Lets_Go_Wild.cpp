@@ -91,6 +91,9 @@ int startGame()
 				
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				TwentyImg();
+				//Introduce predators here
+				PredImg();
 				T_5(protag, age);
 				randomEvent(protag, age);
 				Aging(age);
@@ -98,9 +101,6 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
-				TwentyImg();
-				//Introduce predators here
-				PredImg();
 				T_6(protag, age);
 				randomEvent(protag, age);
 				Aging(age);
@@ -122,6 +122,7 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				FortyImg();
 				T_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -148,7 +149,6 @@ int startGame()
 				randomEvent(protag, age);
 				print();
 
-				SixtyImg();
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 				EndGame();
@@ -202,6 +202,10 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				TwentyImg();
+
+				//Introduce predators here
+				PleioPredImg();
 				PT_5(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -209,9 +213,6 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
-				TwentyImg();
-				//Introduce predators here
-				PleioPredImg();
 				PT_6(protag, age);
 				Aging(age);
 				randomEvent(protag, age);
@@ -233,6 +234,7 @@ int startGame()
 
 				std::cout << "\nYour rewilding project is " << age << " years old\n";
 
+				FortyImg();
 				PT_9(protag, age);
 				Aging(age);
 				randomEvent(protag, age);

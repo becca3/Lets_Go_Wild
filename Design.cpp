@@ -19,7 +19,7 @@ using namespace std;
 using Random = effolkronium::random_static;
 
 //Start of life bar
-int life = 20;
+int life = 0;
 
 void LifeBZero()
 {
@@ -604,33 +604,13 @@ void T_1(Ecosystem& protag, int age)
 	std::string input3;
 	std::string input4;
 
-	std::cout << "Your rewilding progress is " << life << "\n";
-
-	if (life <= 0)
-	{
-		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Progress has hit 0 \n";
-		EndGame();
-		exit(0);
-	}
-
-
-	std::cout << "\nYou now have 2 choices: \n";
-	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
-	std::cout << "2 - Choose to add another species from the following list: \n";
-	std::cout << "\n";
+	std::cout << "Type 1 \n";
+	std::cin >> input;
 
 	AnimalListInit();
 	std::cout << "\n";
 
-	std::cout << "Select 1 or 2: \n";
-	std::cin >> input;
-
 	if (input == "1")
-	{
-		//Aging(age);
-	}
-	else if (input == "2")
 	{
 		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
 		std::cin >> input2;
@@ -1749,6 +1729,8 @@ void T_4(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
+
+//Add images and functions for predators here!!!
 void T_5(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -1764,20 +1746,20 @@ void T_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
-	//Insert map?
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
+	std::cout << "You can now introduce predators!! Your herbivores have established and your rewilding project can now support predators.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-	AnimalListInit();
+	AnimalListPred();
 	std::cout << "\n";
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -1873,6 +1855,26 @@ void T_5(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -1935,15 +1937,35 @@ void T_5(Ecosystem& protag, int age)
 			life += 10;
 		}
 		else if (input2 == "REDDEER")
-			{
+		{
 			RedDeerImg();
 			life += 8;
-			}
+		}
 		else if (input2 == "TAMWORTHPIGS")
-			{
+		{
 			TamPigImg();
 			life += 5;
-			}
+		}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
 		AniUsed.push_back(input2);
 	}
 
@@ -1955,8 +1977,6 @@ void T_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
-//Add images and functions for predators here!!!
 void T_6(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -3696,12 +3716,12 @@ void EndGame()
 	}
 	else if (life >= 51 && life <= 75)
 	{
-		SixtyEOGImg();
+		FortyEOGImg();
 		EndImg();
 	}
 	else if (life >= 76)
 	{
-		SixtyEOGPlusImg();
+		SixtyImg();
 		EndImg();
 	}
 }
@@ -3722,32 +3742,13 @@ void PT_1(Ecosystem& protag, int age)
 	std::string input3;
 	std::string input4;
 
-	std::cout << "Your rewilding progress is " << life << "\n";
-
-	if (life <= 0)
-	{
-		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
-		std::cout << "Progress has hit 0 \n";
-		EndGame();
-		exit(0);
-	}
-
-	std::cout << "\nYou now have 2 choices: \n";
-	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
-	std::cout << "2 - Choose to add another species from the following list: \n";
-	std::cout << "\n";
+	std::cout << "Type 1 \n";
+	std::cin >> input;
 
 	AnimalListPleioInit();
 	std::cout << "\n";
-
-	std::cout << "Select 1 or 2: \n";
-	std::cin >> input;
-
+	
 	if (input == "1")
-	{
-		//Aging(age);
-	}
-	else if (input == "2")
 	{
 		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
 		std::cin >> input2;
@@ -5100,6 +5101,8 @@ void PT_4(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
+
+//Intro of predators
 void PT_5(Ecosystem& protag, int age)
 {
 	std::string input;
@@ -5115,21 +5118,19 @@ void PT_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 
-	std::cout << "\n5 years on, your rewilding project has changed. \n";
+	std::cout << "\n5 years on, your rewilding project has changed.\n";
 	std::cout << "\nYou now have 2 choices: \n";
 	std::cout << "1 - Leave everything as it is and see what happens over the next 5 years? \n";
 	std::cout << "2 - Choose to add another species from the following list: \n";
 	std::cout << "\n";
-
-	AnimalListPleioInit();
+	AnimalListPredPleio();
 	std::cout << "\n";
-
 	std::cout << "Select 1 or 2: \n";
 	std::cin >> input;
 
 	if (input == "1")
 	{
-		//Aging(age);
+		Aging(age);
 	}
 	else if (input == "2")
 	{
@@ -5245,6 +5246,36 @@ void PT_5(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
+			else if (input2 == "WOLF")
+			{
+				WolfImg();
+				life += 8;
+			}
+			else if (input2 == "EURASIANLYNX")
+			{
+				EULyImg();
+				life += 9;
+			}
+			else if (input2 == "WILDCAT")
+			{
+				WildcatImg();
+				life += 6;
+			}
+			else if (input2 == "BEARS")
+			{
+				BearImg();
+				life += 12;
+			}
+			else if (input2 == "LION")
+			{
+				LionImg();
+				life += 15;
+			}
+			else if (input2 == "SPOTTEDHYENA")
+			{
+				HyenaImg();
+				life += 14;
+			}
 		}
 		else if (input2 == "FALLOWDEER")
 		{
@@ -5307,15 +5338,15 @@ void PT_5(Ecosystem& protag, int age)
 			life += 10;
 		}
 		else if (input2 == "REDDEER")
-			{
+		{
 			RedDeerImg();
 			life += 8;
-			}
+		}
 		else if (input2 == "TAMWORTHPIGS")
-			{
+		{
 			TamPigImg();
 			life += 5;
-			}
+		}
 		else if (input2 == "RHINOCEROS")
 		{
 			RhinoImg();
@@ -5336,9 +5367,38 @@ void PT_5(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
+		else if (input2 == "WOLF")
+		{
+			WolfImg();
+			life += 8;
+		}
+		else if (input2 == "EURASIANLYNX")
+		{
+			EULyImg();
+			life += 9;
+		}
+		else if (input2 == "WILDCAT")
+		{
+			WildcatImg();
+			life += 6;
+		}
+		else if (input2 == "BEARS")
+		{
+			BearImg();
+			life += 12;
+		}
+		else if (input2 == "LION")
+		{
+			LionImg();
+			life += 15;
+		}
+		else if (input2 == "SPOTTEDHYENA")
+		{
+			HyenaImg();
+			life += 14;
+		}
 		AniUsed.push_back(input2);
 	}
-
 	if (life == 0)
 	{
 		std::cout << "Game Over!! Your rewilding project was destroyed :( \n";
@@ -5347,8 +5407,6 @@ void PT_5(Ecosystem& protag, int age)
 		exit(0);
 	}
 }
-
-//Intro of predators
 void PT_6(Ecosystem& protag, int age)
 {
 	std::string input;

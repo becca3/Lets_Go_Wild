@@ -174,9 +174,37 @@ void TwentyEOGImg()
     int k = waitKey(50000);
     destroyWindow("End of game");
 }
+void FortyImg()
+{
+    std::string image_path = samples::findFile("forty.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Forty years", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Forty years");
+}
+void FortyEOGImg()
+{
+    std::string image_path = samples::findFile("fortyEOG.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Forty years", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(50000);
+    destroyWindow("Forty years");
+}
 void SixtyImg()
 {
-    std::string image_path = samples::findFile("Sixty.jpg");
+    std::string image_path = samples::findFile("SixtyEOGPlus.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
@@ -191,20 +219,6 @@ void SixtyImg()
 void SixtyEOGImg()
 {
     std::string image_path = samples::findFile("SixtyEOG.jpg");
-    Mat img = imread(image_path, IMREAD_COLOR);
-    if (img.empty())
-    {
-        std::cout << "Could not read the image: " << image_path << std::endl;
-    }
-    imshow("End of game", img);
-
-    //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
-    destroyWindow("End of game");
-}
-void SixtyEOGPlusImg()
-{
-    std::string image_path = samples::findFile("SixtyEOGPlus.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
@@ -530,7 +544,7 @@ void ElkPolicyImg()
 }
 void LionsPolicyImg()
 {
-    std::string image_path = samples::findFile("LionPolicy.jpg");
+    std::string image_path = samples::findFile("LionsPolicy.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
     if (img.empty())
     {
