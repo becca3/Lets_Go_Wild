@@ -16,7 +16,7 @@ void LogoImg()
     imshow("Welcome to Let's Go Wild!", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Welcome to Let's Go Wild!");
 }
 void HedgehogImg()
@@ -30,7 +30,7 @@ void HedgehogImg()
     imshow("Instructions", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Instructions");
 }
 void GameTermsImg()
@@ -44,7 +44,7 @@ void GameTermsImg()
     imshow("Game Terms", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Game Terms");
 }
 void Ecowoman2Img()
@@ -58,7 +58,7 @@ void Ecowoman2Img()
     imshow("Rewilding", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Rewilding");
 
 }
@@ -73,7 +73,7 @@ void PeopleImg()
     imshow("People", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("People");
 }
 void People2Img()
@@ -87,7 +87,7 @@ void People2Img()
     imshow("People", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("People");
 }
 void EcoWomanImg()
@@ -101,7 +101,7 @@ void EcoWomanImg()
     imshow("ecowoman", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("ecowoman");
 }
 void EcomanImg()
@@ -115,7 +115,7 @@ void EcomanImg()
     imshow("ecoman", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("ecoman");
 }
 void ZeroImg()
@@ -129,7 +129,7 @@ void ZeroImg()
     imshow("Zero", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Zero");
 }
 void ZeroEOGImg()
@@ -143,7 +143,7 @@ void ZeroEOGImg()
     imshow("End of game", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("End of game");
 }
 void TwentyImg()
@@ -157,7 +157,7 @@ void TwentyImg()
     imshow("Twenty", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Twenty");
 }
 void TwentyEOGImg()
@@ -171,7 +171,7 @@ void TwentyEOGImg()
     imshow("End of game", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("End of game");
 }
 void FortyImg()
@@ -185,7 +185,7 @@ void FortyImg()
     imshow("Forty years", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Forty years");
 }
 void FortyEOGImg()
@@ -199,7 +199,7 @@ void FortyEOGImg()
     imshow("Forty years", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Forty years");
 }
 void SixtyImg()
@@ -213,7 +213,7 @@ void SixtyImg()
     imshow("Sixty", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Sixty");
 }
 void SixtyEOGImg()
@@ -227,7 +227,7 @@ void SixtyEOGImg()
     imshow("End of game", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("End of game");
 }
 void wetlandsImg()
@@ -241,7 +241,7 @@ void wetlandsImg()
     imshow("Wetland", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Wetland");
 }
 void fireImg()
@@ -255,7 +255,7 @@ void fireImg()
     imshow("Fire regime", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Fire regime");
 }
 void floodImg()
@@ -269,7 +269,7 @@ void floodImg()
     imshow("Floods", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Floods");
 }
 void droughtImg()
@@ -283,7 +283,7 @@ void droughtImg()
     imshow("Drought", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Drought");
 }
 void carcassImg()
@@ -297,7 +297,7 @@ void carcassImg()
     imshow("Carcass", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Carcass");
 }
 void EndImg()
@@ -311,7 +311,7 @@ void EndImg()
     imshow("EndImage", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("EndImage");
 }
 
@@ -327,7 +327,7 @@ void ShoutoutImg()
     imshow("shoutout", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("shoutout");
 }
 void GovFundImg()
@@ -341,7 +341,7 @@ void GovFundImg()
     imshow("GovFund", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("GovFund");
 }
 void VisitorsImg()
@@ -355,7 +355,7 @@ void VisitorsImg()
     imshow("Visitors", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Visitors");
 }
 void BBCImg()
@@ -369,7 +369,7 @@ void BBCImg()
     imshow("BBC", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("BBC");
 }
 void DogWalkerImg()
@@ -383,7 +383,7 @@ void DogWalkerImg()
     imshow("DogWalker", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("DogWalker");
 }
 void DiseaseImg()
@@ -397,7 +397,7 @@ void DiseaseImg()
     imshow("Disease", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Disease");
 }
 void ShootingImg()
@@ -411,7 +411,7 @@ void ShootingImg()
     imshow("Shooting", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Shooting");
 }
 void PartnershipImg()
@@ -425,7 +425,7 @@ void PartnershipImg()
     imshow("Partnership", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Partnership");
 }
 void InvasiveImg()
@@ -439,7 +439,7 @@ void InvasiveImg()
     imshow("Invasive", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Invasive");
 }
 void WinterImg()
@@ -453,7 +453,7 @@ void WinterImg()
     imshow("Winter", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Winter");
 }
 void ProtestImg()
@@ -467,7 +467,7 @@ void ProtestImg()
     imshow("Protest", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Protest");
 }
 void ExtinctionImg()
@@ -481,7 +481,7 @@ void ExtinctionImg()
     imshow("Extinct", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Extinct");
 }
 void PoachersImg()
@@ -495,7 +495,7 @@ void PoachersImg()
     imshow("Poachers", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Poachers");
 }
 
@@ -511,7 +511,7 @@ void RhinoPolicyImg()
     imshow("RhinoPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("RhinoPolicy");
 }
 void HeckPolicyImg()
@@ -525,7 +525,7 @@ void HeckPolicyImg()
     imshow("HeckPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("HeckPolicy");
 }
 void ElkPolicyImg()
@@ -539,7 +539,7 @@ void ElkPolicyImg()
     imshow("ElkPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("ElkPolicy");
 }
 void LionsPolicyImg()
@@ -553,7 +553,7 @@ void LionsPolicyImg()
     imshow("LionPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("LionPolicy");
 }
 void ElephantPolicyImg()
@@ -567,7 +567,7 @@ void ElephantPolicyImg()
     imshow("ElephantPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("ElephantPolicy");
 }
 void HyenasPolicyImg()
@@ -581,7 +581,7 @@ void HyenasPolicyImg()
     imshow("HyenaPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("HyenaPolicy");
 }
 void BearsPolicyImg()
@@ -595,7 +595,7 @@ void BearsPolicyImg()
     imshow("BearsPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("BearsPolicy");
 }
 void MammothPolicyImg()
@@ -609,7 +609,7 @@ void MammothPolicyImg()
     imshow("MammothPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("MammothPolicy");
 }
 void BisonPolicyImg()
@@ -623,7 +623,7 @@ void BisonPolicyImg()
     imshow("BisonPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("BisonPolicy");
 }
 void WolfPolicyImg()
@@ -637,7 +637,7 @@ void WolfPolicyImg()
     imshow("WolfPolicy", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("WolfPolicy");
 }
 
@@ -653,7 +653,7 @@ void ElkImg()
     imshow("elk", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("elk");
 }
 void FallowImg()
@@ -667,7 +667,7 @@ void FallowImg()
     imshow("FallowDeer", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("FallowDeer");
 }
 void RedSqImg()
@@ -681,7 +681,7 @@ void RedSqImg()
     imshow("RedSquirrel", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("RedSquirrel");
 }
 void RoeImg()
@@ -695,7 +695,7 @@ void RoeImg()
     imshow("RoeDeer", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("RoeDeer");
 }
 void EUbiImg()
@@ -709,7 +709,7 @@ void EUbiImg()
     imshow("Bison", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Bison");
 }
 void HorseImg()
@@ -723,7 +723,7 @@ void HorseImg()
     imshow("Horse", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Horse");
 }
 void LHCatImg()
@@ -737,7 +737,7 @@ void LHCatImg()
     imshow("LHCattle", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("LHCattle");
 }
 void WildBoarImg()
@@ -751,7 +751,7 @@ void WildBoarImg()
     imshow("WildBoar", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("WildBoar");
 }
 void StorkImg()
@@ -765,7 +765,7 @@ void StorkImg()
     imshow("Stork", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Stork");
 }
 void WTEImg()
@@ -779,7 +779,7 @@ void WTEImg()
     imshow("WTEagle", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("WTEagle");
 }
 void PiMarImg()
@@ -793,7 +793,7 @@ void PiMarImg()
     imshow("PineMarten", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("PineMarten");
 }
 void TamPigImg()
@@ -807,7 +807,7 @@ void TamPigImg()
     imshow("TamworthPig", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("TamworthPig");
 }
 void HeckImg()
@@ -821,7 +821,7 @@ void HeckImg()
     imshow("HeckCattle", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("HeckCattle");
 }
 void RedDeerImg()
@@ -835,7 +835,7 @@ void RedDeerImg()
     imshow("RedDeer", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("RedDeer");
 }
 void EUBevImg()
@@ -849,7 +849,7 @@ void EUBevImg()
     imshow("Beaver", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Beaver");
 }
 
@@ -865,7 +865,7 @@ void PredImg()
     imshow("PredatorIntro", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("PredatorIntro");
 }
 void PleioPredImg()
@@ -879,7 +879,7 @@ void PleioPredImg()
     imshow("Predator Intro", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Predator Intro");
 }
 void WolfImg()
@@ -893,7 +893,7 @@ void WolfImg()
     imshow("Wolf", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Wolf");
 }
 void BearImg()
@@ -907,7 +907,7 @@ void BearImg()
     imshow("Bear", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Bear");
 }
 void EULyImg()
@@ -921,7 +921,7 @@ void EULyImg()
     imshow("Lynx", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Lynx");
 }
 void WildcatImg()
@@ -935,7 +935,7 @@ void WildcatImg()
     imshow("Wildcat", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Wildcat");
 }
 
@@ -951,7 +951,7 @@ void RhinoImg()
     imshow("Rhino", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Rhino");
 }
 void ElephantImg()
@@ -965,7 +965,7 @@ void ElephantImg()
     imshow("Elephant", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Elephant");
 }
 void MammothImg()
@@ -979,7 +979,7 @@ void MammothImg()
     imshow("Mammoth", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Mammoth");
 }
 void LionImg()
@@ -993,7 +993,7 @@ void LionImg()
     imshow("Lion", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Lion");
 }
 void ReindeerImg()
@@ -1007,7 +1007,7 @@ void ReindeerImg()
     imshow("Reindeer", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Reindeer");
 }
 void HyenaImg()
@@ -1021,6 +1021,6 @@ void HyenaImg()
     imshow("Hyena", img);
 
     //Wait for a keystroke in the window then closes the window.
-    int k = waitKey(50000);
+    int k = waitKey(90000);
     destroyWindow("Hyena");
 }
