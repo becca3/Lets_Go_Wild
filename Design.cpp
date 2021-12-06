@@ -440,10 +440,10 @@ void randomEvent(Ecosystem& protag, int& age)
 	}
 	else if (events[0] == "WolfPolicy")
 	{
-		if (std::find(AniUsed.begin(), AniUsed.end(), "WOLF") != AniUsed.end())
+		if (std::find(AniUsed.begin(), AniUsed.end(), "EURASIANWOLF") != AniUsed.end())
 		{
 			WolfPolicyImg();
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "WOLF"));
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "EURASIANWOLF"));
 			life -= 8;
 		}
 	}
@@ -613,6 +613,7 @@ void T_1(Ecosystem& protag, int age)
 	if (input == "1")
 	{
 		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 		
 		if (input2 == "EURASIANELK" && std::find(AniUsed.begin(), AniUsed.end(), "EURASIANBEAVER") != AniUsed.end())
@@ -667,7 +668,7 @@ void T_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -738,7 +739,7 @@ void T_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -833,7 +834,7 @@ void T_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input3 == "STORK")
+			else if (input3 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -904,7 +905,7 @@ void T_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input3 == "STORK")
+		else if (input3 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -999,7 +1000,7 @@ void T_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input4 == "STORK")
+			else if (input4 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -1070,7 +1071,7 @@ void T_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input4 == "STORK")
+		else if (input4 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -1145,6 +1146,7 @@ void T_2(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -1206,7 +1208,7 @@ void T_2(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -1277,7 +1279,7 @@ void T_2(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -1351,6 +1353,7 @@ void T_3(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -1412,7 +1415,7 @@ void T_3(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -1483,7 +1486,7 @@ void T_3(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -1556,6 +1559,7 @@ void T_4(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -1617,7 +1621,7 @@ void T_4(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -1688,7 +1692,7 @@ void T_4(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -1764,6 +1768,7 @@ void T_5(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -1825,7 +1830,7 @@ void T_5(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -1855,17 +1860,17 @@ void T_5(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -1916,7 +1921,7 @@ void T_5(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -1946,17 +1951,17 @@ void T_5(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -2010,6 +2015,7 @@ void T_6(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -2071,7 +2077,7 @@ void T_6(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -2101,17 +2107,17 @@ void T_6(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -2162,7 +2168,7 @@ void T_6(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -2192,17 +2198,17 @@ void T_6(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -2256,6 +2262,7 @@ void T_7(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -2317,7 +2324,7 @@ void T_7(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -2347,17 +2354,17 @@ void T_7(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -2408,7 +2415,7 @@ void T_7(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -2438,17 +2445,17 @@ void T_7(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -2502,6 +2509,7 @@ void T_8(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -2563,7 +2571,7 @@ void T_8(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -2593,17 +2601,17 @@ void T_8(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -2654,7 +2662,7 @@ void T_8(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -2684,17 +2692,17 @@ void T_8(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -2748,6 +2756,7 @@ void T_9(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -2809,7 +2818,7 @@ void T_9(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -2839,17 +2848,17 @@ void T_9(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -2900,7 +2909,7 @@ void T_9(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -2930,17 +2939,17 @@ void T_9(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -2993,6 +3002,7 @@ void T_10(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -3054,7 +3064,7 @@ void T_10(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -3084,17 +3094,17 @@ void T_10(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -3145,7 +3155,7 @@ void T_10(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -3175,17 +3185,17 @@ void T_10(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -3238,6 +3248,7 @@ void T_11(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -3299,7 +3310,7 @@ void T_11(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -3329,17 +3340,17 @@ void T_11(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -3390,7 +3401,7 @@ void T_11(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -3420,17 +3431,17 @@ void T_11(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -3483,6 +3494,7 @@ void T_12(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -3544,7 +3556,7 @@ void T_12(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -3574,17 +3586,17 @@ void T_12(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -3635,7 +3647,7 @@ void T_12(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -3665,17 +3677,17 @@ void T_12(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -3751,6 +3763,7 @@ void PT_1(Ecosystem& protag, int age)
 	if (input == "1")
 	{
 		std::cout << "Please type the name of the first species you'd like to add followed by the enter key. Select 3 species to introduce: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -3812,7 +3825,7 @@ void PT_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -3903,7 +3916,7 @@ void PT_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -4010,7 +4023,7 @@ void PT_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input3 == "STORK")
+			else if (input3 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -4101,7 +4114,7 @@ void PT_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input3 == "STORK")
+		else if (input3 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -4208,7 +4221,7 @@ void PT_1(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input4 == "STORK")
+			else if (input4 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -4299,7 +4312,7 @@ void PT_1(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input4 == "STORK")
+		else if (input4 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -4394,6 +4407,7 @@ void PT_2(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -4455,7 +4469,7 @@ void PT_2(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -4546,7 +4560,7 @@ void PT_2(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -4641,6 +4655,7 @@ void PT_3(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -4702,7 +4717,7 @@ void PT_3(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -4793,7 +4808,7 @@ void PT_3(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -4888,6 +4903,7 @@ void PT_4(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -4949,7 +4965,7 @@ void PT_4(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -5040,7 +5056,7 @@ void PT_4(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -5135,6 +5151,7 @@ void PT_5(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -5196,7 +5213,7 @@ void PT_5(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -5246,17 +5263,17 @@ void PT_5(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -5317,7 +5334,7 @@ void PT_5(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -5367,17 +5384,17 @@ void PT_5(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -5439,6 +5456,7 @@ void PT_6(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -5500,7 +5518,7 @@ void PT_6(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -5550,17 +5568,17 @@ void PT_6(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -5621,7 +5639,7 @@ void PT_6(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -5671,17 +5689,17 @@ void PT_6(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -5743,6 +5761,7 @@ void PT_7(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -5804,7 +5823,7 @@ void PT_7(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -5854,17 +5873,17 @@ void PT_7(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -5925,7 +5944,7 @@ void PT_7(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -5975,17 +5994,17 @@ void PT_7(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -6047,6 +6066,7 @@ void PT_8(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -6108,7 +6128,7 @@ void PT_8(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -6158,17 +6178,17 @@ void PT_8(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -6229,7 +6249,7 @@ void PT_8(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -6279,17 +6299,17 @@ void PT_8(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -6351,6 +6371,7 @@ void PT_9(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -6412,7 +6433,7 @@ void PT_9(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -6462,17 +6483,17 @@ void PT_9(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -6533,7 +6554,7 @@ void PT_9(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -6583,17 +6604,17 @@ void PT_9(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -6655,6 +6676,7 @@ void PT_10(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -6716,7 +6738,7 @@ void PT_10(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -6766,17 +6788,17 @@ void PT_10(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -6837,7 +6859,7 @@ void PT_10(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -6887,17 +6909,17 @@ void PT_10(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -6959,6 +6981,7 @@ void PT_11(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -7020,7 +7043,7 @@ void PT_11(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -7070,17 +7093,17 @@ void PT_11(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -7141,7 +7164,7 @@ void PT_11(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -7191,17 +7214,17 @@ void PT_11(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
@@ -7263,6 +7286,7 @@ void PT_12(Ecosystem& protag, int age)
 	else if (input == "2")
 	{
 		std::cout << "Please type the name of the species you'd like to add: \n";
+		std::cout << "Please use ALL CAPITAL LETTERS and NOSPACES \n";
 		std::cin >> input2;
 
 		while (std::count(AniUsed.begin(), AniUsed.end(), input2))
@@ -7324,7 +7348,7 @@ void PT_12(Ecosystem& protag, int age)
 				WildBoarImg();
 				life += 6;
 			}
-			else if (input2 == "STORK")
+			else if (input2 == "WHITESTORK")
 			{
 				StorkImg();
 				life += 4;
@@ -7374,17 +7398,17 @@ void PT_12(Ecosystem& protag, int age)
 				ReindeerImg();
 				life += 10;
 			}
-			else if (input2 == "WOLF")
+			else if (input2 == "EURASIANWOLF")
 			{
 				WolfImg();
-				life += 8;
+				life += 12;
 			}
 			else if (input2 == "EURASIANLYNX")
 			{
 				EULyImg();
 				life += 9;
 			}
-			else if (input2 == "WILDCAT")
+			else if (input2 == "EUROPEANWILDCAT")
 			{
 				WildcatImg();
 				life += 6;
@@ -7445,7 +7469,7 @@ void PT_12(Ecosystem& protag, int age)
 			WildBoarImg();
 			life += 6;
 		}
-		else if (input2 == "STORK")
+		else if (input2 == "WHITESTORK")
 		{
 			StorkImg();
 			life += 4;
@@ -7495,17 +7519,17 @@ void PT_12(Ecosystem& protag, int age)
 			ReindeerImg();
 			life += 10;
 		}
-		else if (input2 == "WOLF")
+		else if (input2 == "EURASIANWOLF")
 		{
 			WolfImg();
-			life += 8;
+			life += 12;
 		}
 		else if (input2 == "EURASIANLYNX")
 		{
 			EULyImg();
 			life += 9;
 		}
-		else if (input2 == "WILDCAT")
+		else if (input2 == "EUROPEANWILDCAT")
 		{
 			WildcatImg();
 			life += 6;
