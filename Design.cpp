@@ -648,7 +648,7 @@ void T_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -719,7 +719,7 @@ void T_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -814,7 +814,7 @@ void T_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input3 == "WILDHORSES")
+			else if (input3 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -885,7 +885,7 @@ void T_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input3 == "WILDHORSES")
+		else if (input3 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -980,7 +980,7 @@ void T_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input4 == "WILDHORSES")
+			else if (input4 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -1051,7 +1051,7 @@ void T_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input4 == "WILDHORSES")
+		else if (input4 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -1188,7 +1188,7 @@ void T_2(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -1259,7 +1259,7 @@ void T_2(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -1395,7 +1395,7 @@ void T_3(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -1466,7 +1466,7 @@ void T_3(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -1601,7 +1601,7 @@ void T_4(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -1672,7 +1672,7 @@ void T_4(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -1810,7 +1810,7 @@ void T_5(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -1901,7 +1901,7 @@ void T_5(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -2057,7 +2057,7 @@ void T_6(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -2148,7 +2148,7 @@ void T_6(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -2304,7 +2304,7 @@ void T_7(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -2395,7 +2395,7 @@ void T_7(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -2551,7 +2551,7 @@ void T_8(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -2642,7 +2642,7 @@ void T_8(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -2798,7 +2798,7 @@ void T_9(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -2889,7 +2889,7 @@ void T_9(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -3044,7 +3044,7 @@ void T_10(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -3135,7 +3135,7 @@ void T_10(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -3290,7 +3290,7 @@ void T_11(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -3381,7 +3381,7 @@ void T_11(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -3536,7 +3536,7 @@ void T_12(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -3627,7 +3627,7 @@ void T_12(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -3805,7 +3805,7 @@ void PT_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -3896,7 +3896,7 @@ void PT_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -4003,7 +4003,7 @@ void PT_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input3 == "WILDHORSES")
+			else if (input3 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -4094,7 +4094,7 @@ void PT_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input3 == "WILDHORSES")
+		else if (input3 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -4201,7 +4201,7 @@ void PT_1(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input4 == "WILDHORSES")
+			else if (input4 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -4292,7 +4292,7 @@ void PT_1(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input4 == "WILDHORSES")
+		else if (input4 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -4449,7 +4449,7 @@ void PT_2(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -4540,7 +4540,7 @@ void PT_2(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -4697,7 +4697,7 @@ void PT_3(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -4788,7 +4788,7 @@ void PT_3(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -4945,7 +4945,7 @@ void PT_4(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -5036,7 +5036,7 @@ void PT_4(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -5193,7 +5193,7 @@ void PT_5(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -5314,7 +5314,7 @@ void PT_5(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -5498,7 +5498,7 @@ void PT_6(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -5619,7 +5619,7 @@ void PT_6(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -5803,7 +5803,7 @@ void PT_7(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -5924,7 +5924,7 @@ void PT_7(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -6108,7 +6108,7 @@ void PT_8(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -6229,7 +6229,7 @@ void PT_8(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -6413,7 +6413,7 @@ void PT_9(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -6534,7 +6534,7 @@ void PT_9(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -6718,7 +6718,7 @@ void PT_10(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -6839,7 +6839,7 @@ void PT_10(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -7023,7 +7023,7 @@ void PT_11(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -7144,7 +7144,7 @@ void PT_11(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
@@ -7328,7 +7328,7 @@ void PT_12(Ecosystem& protag, int age)
 				EUbiImg();
 				life += 11;
 			}
-			else if (input2 == "WILDHORSES")
+			else if (input2 == "EXMOORPONY")
 			{
 				HorseImg();
 				life += 11;
@@ -7449,7 +7449,7 @@ void PT_12(Ecosystem& protag, int age)
 			EUbiImg();
 			life += 11;
 		}
-		else if (input2 == "WILDHORSES")
+		else if (input2 == "EXMOORPONY")
 		{
 			HorseImg();
 			life += 11;
