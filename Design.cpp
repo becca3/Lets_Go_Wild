@@ -144,7 +144,7 @@ void BisonPolicy(Ecosystem& protag, int& age)
 {
 
 }
-void BearsPolicy(Ecosystem& protag, int& age)
+void BROWNBEARPolicy(Ecosystem& protag, int& age)
 {
 
 }
@@ -196,7 +196,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	events.push_back("BisonPolicy");
 	events.push_back("MammothPolicy");
 	events.push_back("WolfPolicy");
-	events.push_back("BearsPolicy");
+	events.push_back("BROWNBEARPolicy");
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -359,10 +359,10 @@ void randomEvent(Ecosystem& protag, int& age)
 	//Policy events. 
 	else if (events[0] == "RhinoPolicy")
 	{
-		if (std::find(AniUsed.begin(), AniUsed.end(), "RHINOCEROS") != AniUsed.end())
+		if (std::find(AniUsed.begin(), AniUsed.end(), "SOUTHERNWHITERHINOCEROS") != AniUsed.end())
 		{
 			RhinoPolicyImg();
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "RHINOCEROS"));
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "SOUTHERNWHITERHINOCEROS"));
 			life -= 14;
 		}
 	}
@@ -420,12 +420,12 @@ void randomEvent(Ecosystem& protag, int& age)
 			life -= 11;
 		}
 	}
-	else if (events[0] == "BearsPolicy")
+	else if (events[0] == "BROWNBEARPolicy")
 	{
-		if (std::find(AniUsed.begin(), AniUsed.end(), "BEARS") != AniUsed.end())
+		if (std::find(AniUsed.begin(), AniUsed.end(), "BROWNBEAR") != AniUsed.end())
 		{
-			BearsPolicyImg();
-			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "BEARS"));
+			BROWNBEARPolicyImg();
+			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "BROWNBEAR"));
 			life -= 12;
 		}
 	}
@@ -1875,7 +1875,7 @@ void T_5(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -1966,7 +1966,7 @@ void T_5(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -2122,7 +2122,7 @@ void T_6(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -2213,7 +2213,7 @@ void T_6(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -2369,7 +2369,7 @@ void T_7(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -2460,7 +2460,7 @@ void T_7(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -2616,7 +2616,7 @@ void T_8(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -2707,7 +2707,7 @@ void T_8(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -2863,7 +2863,7 @@ void T_9(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -2954,7 +2954,7 @@ void T_9(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -3109,7 +3109,7 @@ void T_10(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -3200,7 +3200,7 @@ void T_10(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -3355,7 +3355,7 @@ void T_11(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -3446,7 +3446,7 @@ void T_11(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -3601,7 +3601,7 @@ void T_12(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -3692,7 +3692,7 @@ void T_12(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -3855,7 +3855,7 @@ void PT_1(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -3946,7 +3946,7 @@ void PT_1(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 		}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -4053,7 +4053,7 @@ void PT_1(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input3 == "RHINOCEROS")
+			else if (input3 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -4144,7 +4144,7 @@ void PT_1(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 		}
-		else if (input3 == "RHINOCEROS")
+		else if (input3 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -4251,7 +4251,7 @@ void PT_1(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input4 == "RHINOCEROS")
+			else if (input4 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -4342,7 +4342,7 @@ void PT_1(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 		}
-		else if (input4 == "RHINOCEROS")
+		else if (input4 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -4499,7 +4499,7 @@ void PT_2(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -4590,7 +4590,7 @@ void PT_2(Ecosystem& protag, int age)
 		TamPigImg();
 		life += 5;
 		}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -4747,7 +4747,7 @@ void PT_3(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -4838,7 +4838,7 @@ void PT_3(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -4995,7 +4995,7 @@ void PT_4(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -5086,7 +5086,7 @@ void PT_4(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -5243,7 +5243,7 @@ void PT_5(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -5278,7 +5278,7 @@ void PT_5(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -5364,7 +5364,7 @@ void PT_5(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 		}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -5399,7 +5399,7 @@ void PT_5(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -5548,7 +5548,7 @@ void PT_6(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -5583,7 +5583,7 @@ void PT_6(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -5669,7 +5669,7 @@ void PT_6(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -5704,7 +5704,7 @@ void PT_6(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -5853,7 +5853,7 @@ void PT_7(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -5888,7 +5888,7 @@ void PT_7(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -5974,7 +5974,7 @@ void PT_7(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -6009,7 +6009,7 @@ void PT_7(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -6158,7 +6158,7 @@ void PT_8(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -6193,7 +6193,7 @@ void PT_8(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -6279,7 +6279,7 @@ void PT_8(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -6314,7 +6314,7 @@ void PT_8(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -6463,7 +6463,7 @@ void PT_9(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -6498,7 +6498,7 @@ void PT_9(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -6584,7 +6584,7 @@ void PT_9(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -6619,7 +6619,7 @@ void PT_9(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -6768,7 +6768,7 @@ void PT_10(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -6803,7 +6803,7 @@ void PT_10(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -6889,7 +6889,7 @@ void PT_10(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -6924,7 +6924,7 @@ void PT_10(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -7073,7 +7073,7 @@ void PT_11(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -7108,7 +7108,7 @@ void PT_11(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -7194,7 +7194,7 @@ void PT_11(Ecosystem& protag, int age)
 			TamPigImg();
 			life += 5;
 			}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -7229,7 +7229,7 @@ void PT_11(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
@@ -7378,7 +7378,7 @@ void PT_12(Ecosystem& protag, int age)
 				TamPigImg();
 				life += 5;
 			}
-			else if (input2 == "RHINOCEROS")
+			else if (input2 == "SOUTHERNWHITERHINOCEROS")
 			{
 				RhinoImg();
 				life += 14;
@@ -7413,7 +7413,7 @@ void PT_12(Ecosystem& protag, int age)
 				WildcatImg();
 				life += 6;
 			}
-			else if (input2 == "BEARS")
+			else if (input2 == "BROWNBEAR")
 			{
 				BearImg();
 				life += 12;
@@ -7499,7 +7499,7 @@ void PT_12(Ecosystem& protag, int age)
 		TamPigImg();
 		life += 5;
 		}
-		else if (input2 == "RHINOCEROS")
+		else if (input2 == "SOUTHERNWHITERHINOCEROS")
 		{
 			RhinoImg();
 			life += 14;
@@ -7534,7 +7534,7 @@ void PT_12(Ecosystem& protag, int age)
 			WildcatImg();
 			life += 6;
 		}
-		else if (input2 == "BEARS")
+		else if (input2 == "BROWNBEAR")
 		{
 			BearImg();
 			life += 12;
