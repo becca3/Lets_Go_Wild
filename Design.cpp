@@ -424,7 +424,7 @@ void randomEvent(Ecosystem& protag, int& age)
 	{
 		if (std::find(AniUsed.begin(), AniUsed.end(), "BROWNBEAR") != AniUsed.end())
 		{
-			BROWNBEARPolicyImg();
+			BearsPolicyImg();
 			AniUsed.erase(std::find(AniUsed.begin(), AniUsed.end(), "BROWNBEAR"));
 			life -= 12;
 		}
