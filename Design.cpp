@@ -420,7 +420,7 @@ void randomEvent(Ecosystem& protag, int& age)
 			life -= 11;
 		}
 	}
-	else if (events[0] == "BROWNBEARPolicy")
+	else if (events[0] == "BearsPolicy")
 	{
 		if (std::find(AniUsed.begin(), AniUsed.end(), "BROWNBEAR") != AniUsed.end())
 		{

@@ -59,7 +59,7 @@ int startGame()
 
 		while (age < 60) 	//Length of rewilding project in years. Progress of rewilding project according to equation 
 		{
-			Game_Core(protag, age);
+			//Game_Core(protag, age);
 			std::string input3;
 
 			if (age < 60)
@@ -169,7 +169,7 @@ int startGame()
 
 		while (age < 60) 	//Length of rewilding project in years. Health of rewilding project in percentage
 		{
-			Game_CorePleio(protag, age);
+			//Game_CorePleio(protag, age);
 			std::string input3;
 
 			if (age < 60)
